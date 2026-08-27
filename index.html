@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100"+ Display Procurement Dashboard | Sub-$1,000 Budget Strategy</title>
+    <meta name="description" content="Executive decision dashboard evaluating 100-inch Short Throw and Ultra Short Throw projector solutions under a $1,000 budget cap.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Navigation Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-projector logo-icon"></i>
+                <div class="logo-text">
+                    <span class="brand">LUMEN</span><span class="accent">STRAT</span>
+                    <span class="subtext">100"+ Executive Procurement Hub</span>
+                </div>
+            </div>
+            <nav class="nav-links">
+                <a href="#kpi-overview" class="active"><i class="fa-solid fa-chart-pie"></i> Metrics</a>
+                <a href="#calculator"><i class="fa-solid fa-calculator"></i> TCO Calculator</a>
+                <a href="#comparison"><i class="fa-solid fa-code-compare"></i> Model Matrix</a>
+                <a href="#gallery"><i class="fa-solid fa-images"></i> Visual Gallery</a>
+                <a href="#integration"><i class="fa-solid fa-sliders"></i> IT Integration</a>
+                <a href="#procurement"><i class="fa-solid fa-cart-shopping"></i> Buying Channels</a>
+            </nav>
+            <div class="badge-status">
+                <span class="status-dot"></span> Budget Approved (&lt; $1,000)
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero / Banner Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="tag-pill"><i class="fa-solid fa-award"></i> Corporate Procurement Strategy</div>
+            <h1>100"+ Display Solution <span class="gradient-text">Under $1,000 USD</span></h1>
+            <p class="hero-subtitle">
+                Evaluating Ultra-Short Throw (UST) Laser technology vs. traditional 98" flat panel displays. Maximize screen real estate, eliminate wall mounting overhead, and optimize Total Cost of Ownership (TCO).
+            </p>
+            <div class="hero-actions">
+                <a href="#comparison" class="btn btn-primary"><i class="fa-solid fa-eye"></i> Explore Top Pick (Epson LS300)</a>
+                <a href="#calculator" class="btn btn-secondary"><i class="fa-solid fa-calculator"></i> Calculate TCO & ROI</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Performance Indicators (KPI Cards) -->
+    <section id="kpi-overview" class="section-container">
+        <div class="section-header">
+            <h2>Executive Dashboard Metrics</h2>
+            <p>Key financial and technical metrics for the $1,000 display procurement strategy.</p>
+        </div>
+        <div class="kpi-grid">
+            <div class="kpi-card">
+                <div class="kpi-icon cyan"><i class="fa-solid fa-expand"></i></div>
+                <div class="kpi-data">
+                    <span class="kpi-value">100" – 120"</span>
+                    <span class="kpi-label">Target Display Size</span>
+                </div>
+                <div class="kpi-footer"><i class="fa-solid fa-arrow-up text-cyan"></i> 4x screen area of standard 55"</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-icon blue"><i class="fa-solid fa-tag"></i></div>
+                <div class="kpi-data">
+                    <span class="kpi-value">$999.99</span>
+                    <span class="kpi-label">Approved Budget Cap</span>
+                </div>
+                <div class="kpi-footer"><i class="fa-solid fa-check text-green"></i> Compliant with purchase limits</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-icon purple"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                <div class="kpi-data">
+                    <span class="kpi-value">20,000 Hrs</span>
+                    <span class="kpi-label">Laser Engine Lifespan</span>
+                </div>
+                <div class="kpi-footer"><i class="fa-solid fa-shield-halved text-purple"></i> Zero bulb maintenance needed</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-icon green"><i class="fa-solid fa-coins"></i></div>
+                <div class="kpi-data">
+                    <span class="kpi-value">$0.40 <small>/ day</small></span>
+                    <span class="kpi-label">Amortized Daily Cost</span>
+                </div>
+                <div class="kpi-footer"><i class="fa-solid fa-chart-line text-green"></i> Calculated over 6.85 years (8h/day)</div>
+            </div>
+            <div class="kpi-card highlight-card">
+                <div class="kpi-icon gold"><i class="fa-solid fa-piggy-bank"></i></div>
+                <div class="kpi-data">
+                    <span class="kpi-value">+$1,500+</span>
+                    <span class="kpi-label">Savings vs 98" TV Panel</span>
+                </div>
+                <div class="kpi-footer"><i class="fa-solid fa-bolt text-gold"></i> Bypasses $2,500+ commercial glass price</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive TCO & Lifespan Calculator -->
+    <section id="calculator" class="section-container glass-panel">
+        <div class="section-header">
+            <h2><i class="fa-solid fa-sliders text-accent"></i> Interactive TCO & Lifespan Calculator</h2>
+            <p>Adjust usage parameters to simulate real-time amortized cost and total operating lifespan.</p>
+        </div>
+        <div class="calculator-grid">
+            <div class="calc-controls">
+                <div class="input-group">
+                    <div class="label-row">
+                        <label for="hours-slider"><i class="fa-regular fa-clock"></i> Daily Operating Hours:</label>
+                        <span id="hours-val" class="badge-value">8 Hours / Day</span>
+                    </div>
+                    <input type="range" id="hours-slider" min="1" max="24" value="8" step="1">
+                    <div class="slider-ticks">
+                        <span>1h</span><span>4h</span><span>8h (Standard)</span><span>16h</span><span>24h</span>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="label-row">
+                        <label for="price-slider"><i class="fa-solid fa-dollar-sign"></i> Hardware Acquisition Cost:</label>
+                        <span id="price-val" class="badge-value">$999 USD</span>
+                    </div>
+                    <input type="range" id="price-slider" min="500" max="1500" value="999" step="25">
+                    <div class="slider-ticks">
+                        <span>$500</span><span>$750</span><span>$999 (Epson LS300)</span><span>$1,250</span><span>$1,500</span>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="label-row">
+                        <label for="tv-price-slider"><i class="fa-solid fa-tv"></i> Benchmark 98" TV Cost:</label>
+                        <span id="tv-price-val" class="badge-value">$2,500 USD</span>
+                    </div>
+                    <input type="range" id="tv-price-slider" min="1500" max="4000" value="2500" step="100">
+                </div>
+            </div>
+
+            <div class="calc-results">
+                <h3>Simulated Financial Outcomes</h3>
+                <div class="result-cards-grid">
+                    <div class="res-card">
+                        <span class="res-label">Total Lifespan (Years)</span>
+                        <span id="res-years" class="res-value">6.85 Years</span>
+                        <span class="res-sub">Until 70% brightness threshold</span>
+                    </div>
+                    <div class="res-card">
+                        <span class="res-label">Amortized Daily Cost</span>
+                        <span id="res-daily" class="res-value">$0.40 / day</span>
+                        <span class="res-sub">Hardware cost per day of use</span>
+                    </div>
+                    <div class="res-card">
+                        <span class="res-label">Total Operating Days</span>
+                        <span id="res-days" class="res-value">2,500 Days</span>
+                        <span class="res-sub">Based on 20,000 laser hours</span>
+                    </div>
+                    <div class="res-card Highlight">
+                        <span class="res-label">Net Capital Savings</span>
+                        <span id="res-savings" class="res-value">$1,501.00</span>
+                        <span class="res-sub">Saved vs. benchmark TV panel</span>
+                    </div>
+                </div>
+
+                <!-- TCO Visual Progress Bar / Chart -->
+                <div class="chart-container">
+                    <div class="chart-label-row">
+                        <span>Projector Cost vs 98" TV Panel</span>
+                        <span id="pct-savings">60% Cost Reduction</span>
+                    </div>
+                    <div class="stacked-bar">
+                        <div id="bar-projector" class="bar-fill projector" style="width: 40%;">Projector ($999)</div>
+                        <div id="bar-savings" class="bar-fill savings" style="width: 60%;">Savings ($1,501)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hardware Comparison Matrix -->
+    <section id="comparison" class="section-container">
+        <div class="section-header">
+            <h2>Hardware Option Matrix</h2>
+            <p>Comparing top short throw display candidates against standard commercial television panels.</p>
+        </div>
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">All Options</button>
+            <button class="filter-btn" data-filter="recommended">Top Choice (UST)</button>
+            <button class="filter-btn" data-filter="secondary">Secondary Choice (ST)</button>
+            <button class="filter-btn" data-filter="rejected">Commercial TV (Baseline)</button>
+        </div>
+        <div class="matrix-grid">
+            <!-- Candidate 1: Epson LS300 -->
+            <div class="matrix-card recommended-card" data-category="recommended">
+                <div class="card-badge"><i class="fa-solid fa-crown"></i> TOP RECOMMENDED PICK</div>
+                <div class="card-header">
+                    <h3>Epson EpiqVision Ultra LS300</h3>
+                    <span class="price-tag">$850 – $999 <small>(Certified ReNew)</small></span>
+                </div>
+                <div class="card-img-wrapper">
+                    <img src="assets/images/epson_ls300_setup.jpg" alt="Epson LS300 Setup" class="card-img">
+                </div>
+                <ul class="spec-list">
+                    <li><i class="fa-solid fa-check text-green"></i> <strong>Technology:</strong> Ultra Short Throw (3LCD Laser Engine)</li>
+                    <li><i class="fa-solid fa-check text-green"></i> <strong>Wall Distance:</strong> 8" to 12" from wall for 100"–120"</li>
+                    <li><i class="fa-solid fa-check text-green"></i> <strong>Brightness:</strong> 3,600 Lumens (Equal Color/White)</li>
+                    <li><i class="fa-solid fa-check text-green"></i> <strong>Audio:</strong> Integrated Audiophile Yamaha 2.1 Soundbar</li>
+                    <li><i class="fa-solid fa-check text-green"></i> <strong>Lifespan:</strong> 20,000 Hours (Zero Lamp Replacements)</li>
+                    <li><i class="fa-solid fa-check text-green"></i> <strong>Warranty:</strong> Full 2-Year Epson Factory Warranty</li>
+                    <li><i class="fa-solid fa-check text-green"></i> <strong>Dumb TV Mode:</strong> Full Basic TV Mode -> HDMI 1 Boot</li>
+                </ul>
+                <div class="card-action">
+                    <a href="#procurement" class="btn btn-primary btn-block">View Procurement Outlets</a>
+                </div>
+            </div>
+
+            <!-- Candidate 2: BenQ TH671ST -->
+            <div class="matrix-card secondary-card" data-category="secondary">
+                <div class="card-badge secondary-badge">SECONDARY OPTION</div>
+                <div class="card-header">
+                    <h3>BenQ TH671ST Short Throw</h3>
+                    <span class="price-tag">$749 – $899 <small>(Brand New)</small></span>
+                </div>
+                <div class="card-img-wrapper">
+                    <img src="assets/images/hdmi_streaming_setup.jpg" alt="BenQ Short Throw" class="card-img">
+                </div>
+                <ul class="spec-list">
+                    <li><i class="fa-solid fa-check text-blue"></i> <strong>Technology:</strong> Short Throw (Single-Chip DLP Lamp)</li>
+                    <li><i class="fa-solid fa-triangle-exclamation text-yellow"></i> <strong>Wall Distance:</strong> 4.5 feet away on table</li>
+                    <li><i class="fa-solid fa-check text-blue"></i> <strong>Brightness:</strong> 3,000 ANSI Lumens</li>
+                    <li><i class="fa-solid fa-xmark text-red"></i> <strong>Audio:</strong> Basic 5W Speaker (Soundbar Required)</li>
+                    <li><i class="fa-solid fa-xmark text-red"></i> <strong>Lifespan:</strong> ~4,000 Hrs (Bulb replacements needed)</li>
+                    <li><i class="fa-solid fa-check text-blue"></i> <strong>Warranty:</strong> 3-Year Limited Warranty</li>
+                    <li><i class="fa-solid fa-check text-blue"></i> <strong>Dumb TV Mode:</strong> Native monitor function</li>
+                </ul>
+                <div class="card-action">
+                    <button class="btn btn-secondary btn-block" onclick="scrollToSection('gallery')">Inspect Specs</button>
+                </div>
+            </div>
+
+            <!-- Candidate 3: Traditional 98" TV -->
+            <div class="matrix-card rejected-card" data-category="rejected">
+                <div class="card-badge rejected-badge">REJECTED BASELINE</div>
+                <div class="card-header">
+                    <h3>Commercial 98" Flat Panel TV</h3>
+                    <span class="price-tag">$2,200 – $25,000+</span>
+                </div>
+                <div class="card-img-wrapper">
+                    <img src="assets/images/tv_vs_projector.jpg" alt="98 inch TV panel" class="card-img">
+                </div>
+                <ul class="spec-list">
+                    <li><i class="fa-solid fa-xmark text-red"></i> <strong>Budget Compliance:</strong> EXCEEDS $1,000 LIMIT by 150%+</li>
+                    <li><i class="fa-solid fa-xmark text-red"></i> <strong>Weight:</strong> Heavy (130 lbs - 180 lbs)</li>
+                    <li><i class="fa-solid fa-xmark text-red"></i> <strong>Installation:</strong> Requires structural wall backing</li>
+                    <li><i class="fa-solid fa-xmark text-red"></i> <strong>Portability:</strong> Stationary; impossible to move easily</li>
+                    <li><i class="fa-solid fa-check text-green"></i> <strong>Brightness:</strong> High peak luminance</li>
+                    <li><i class="fa-solid fa-xmark text-red"></i> <strong>Smart Bloat:</strong> Heavy ad tracking & forced accounts</li>
+                </ul>
+                <div class="card-action">
+                    <button class="btn btn-outline btn-block" disabled>Not Budget Compliant</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Presentation Gallery & Lightbox -->
+    <section id="gallery" class="section-container glass-panel">
+        <div class="section-header">
+            <h2>Visual Presentation Gallery</h2>
+            <p>Click any high-resolution asset to inspect hardware details, room setups, and component architecture.</p>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item" onclick="openLightbox('assets/images/epson_ls300_setup.jpg', 'Epson LS300 Ultra-Short Throw Office Setup', 'Sleek projector sitting 8 inches from wall in a modern conference room, displaying a 100-inch presentation.')">
+                <img src="assets/images/epson_ls300_setup.jpg" alt="Epson LS300 Office Setup">
+                <div class="gallery-overlay">
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                    <span>100" Office Setup View</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('assets/images/tv_vs_projector.jpg', 'Traditional 98 TV vs UST Laser Projector Comparison', 'Direct visual comparison showing bulky 98 TV panel vs compact 100 UST laser setup.')">
+                <img src="assets/images/tv_vs_projector.jpg" alt="TV vs UST Projector">
+                <div class="gallery-overlay">
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                    <span>TV vs UST Comparison</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('assets/images/yamaha_speaker_system.jpg', 'Integrated Yamaha 2.1 Audiophile Speaker System', 'Macro cutaway showing twin high-end drivers, dedicated subwoofer, and Yamaha DSP enclosure.')">
+                <img src="assets/images/yamaha_speaker_system.jpg" alt="Yamaha 2.1 Speaker System">
+                <div class="gallery-overlay">
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                    <span>Yamaha 2.1 Audio System</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox('assets/images/hdmi_streaming_setup.jpg', 'Google TV HDMI Pass-Through Architecture', 'Showing Google TV 4K Box connected via HDMI 1 with Basic TV mode active.')">
+                <img src="assets/images/hdmi_streaming_setup.jpg" alt="HDMI Streaming Setup">
+                <div class="gallery-overlay">
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                    <span>HDMI Streamer Setup</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="lightbox-modal" onclick="closeLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" alt="Enlarged View">
+        <div class="lightbox-caption">
+            <h4 id="lightbox-title">Image Title</h4>
+            <p id="lightbox-desc">Image Description</p>
+        </div>
+    </div>
+
+    <!-- IT Integration Guide & Dumb TV Workflow -->
+    <section id="integration" class="section-container">
+        <div class="section-header">
+            <h2><i class="fa-solid fa-shield-halved text-cyan"></i> Enterprise IT Integration Workflow</h2>
+            <p>Configuring the Epson LS300 into a "Dumb TV" commercial monitor for Google TV Streamer / PC pass-through.</p>
+        </div>
+        <div class="workflow-steps">
+            <div class="step-card">
+                <div class="step-num">1</div>
+                <div class="step-content">
+                    <h3>Enable "Basic TV" Mode</h3>
+                    <p>During initial setup (or after factory reset), choose <strong>Basic TV</strong> instead of Google TV. This strips out forced Google accounts, smart TV ad tracking, and OS bloatware.</p>
+                </div>
+            </div>
+            <div class="step-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+
+            <div class="step-card">
+                <div class="step-num">2</div>
+                <div class="step-content">
+                    <h3>Set Power-On Input</h3>
+                    <p>Navigate to <code>Settings &gt; System &gt; Power &amp; Energy &gt; Power On Behavior</code> and select <strong>"Last Input Used"</strong>. The projector will bypass all internal menus on startup.</p>
+                </div>
+            </div>
+            <div class="step-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+
+            <div class="step-card">
+                <div class="step-num">3</div>
+                <div class="step-content">
+                    <h3>Plug in Google TV Streamer</h3>
+                    <p>Connect your company **Google TV 4K Box** (or presentation PC) directly into **HDMI 1**. Powering on the streaming box remote instantly wakes the projector to HDMI 1.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Procurement Outlets & Action Plan -->
+    <section id="procurement" class="section-container glass-panel">
+        <div class="section-header">
+            <h2>Procurement Outlets &amp; Purchase Plan</h2>
+            <p>Verified channels for purchasing the Epson EpiqVision Ultra LS300 under $1,000.</p>
+        </div>
+
+        <div class="outlet-grid">
+            <div class="outlet-card">
+                <div class="outlet-header">
+                    <h3>Epson Official ReNew Outlet</h3>
+                    <span class="badge-status-green">Direct Factory</span>
+                </div>
+                <div class="outlet-price">$899.99 – $999.99</div>
+                <p>Purchased directly from Epson. Includes full 2-Year Limited Factory Warranty, 30-day return policy, and free shipping.</p>
+                <a href="https://epson.com" target="_blank" rel="noopener" class="btn btn-primary btn-block"><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Epson Outlet Store</a>
+            </div>
+
+            <div class="outlet-card">
+                <div class="outlet-header">
+                    <h3>eBay Certified Refurbished</h3>
+                    <span class="badge-status-blue">Highest Stock</span>
+                </div>
+                <div class="outlet-price">$749.99 – $899.99</div>
+                <p>Top-rated refurbished electronics liquidators with eBay Money Back Guarantee and standard 1 to 2-year warranty options.</p>
+                <a href="https://www.ebay.com/sch/i.html?_nkw=Epson+EpiqVision+Ultra+LS300" target="_blank" rel="noopener" class="btn btn-secondary btn-block"><i class="fa-solid fa-arrow-up-right-from-square"></i> Search eBay Listings</a>
+            </div>
+
+            <div class="outlet-card">
+                <div class="outlet-header">
+                    <h3>Back Market / Mercari</h3>
+                    <span class="badge-status-purple">Open-Box Deals</span>
+                </div>
+                <div class="outlet-price">$700.00 – $850.00</div>
+                <p>Verified renewed electronics platforms offering customer return units with warranty coverage.</p>
+                <a href="https://www.backmarket.com" target="_blank" rel="noopener" class="btn btn-outline btn-block"><i class="fa-solid fa-arrow-up-right-from-square"></i> Search Back Market</a>
+            </div>
+        </div>
+
+        <!-- Interactive Procurement Checklist -->
+        <div class="checklist-box">
+            <h3><i class="fa-solid fa-list-check text-green"></i> Procurement Action Checklist</h3>
+            <ul class="checklist-items">
+                <li>
+                    <label class="checkbox-container">
+                        <input type="checkbox" checked>
+                        <span class="checkmark"></span>
+                        <strong>Step 1: Approve Purchase Order ($999.99)</strong> — Confirm budget authorization under company purchasing limit.
+                    </label>
+                </li>
+                <li>
+                    <label class="checkbox-container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <strong>Step 2: Order Epson LS300 (Certified ReNew / Refurbished)</strong> — Procure via Epson Outlet or eBay Certified Refurbished.
+                    </label>
+                </li>
+                <li>
+                    <label class="checkbox-container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <strong>Step 3: Procure Google TV 4K Box ($49 - $99)</strong> — Order external streaming device for HDMI 1 pass-through.
+                    </label>
+                </li>
+                <li>
+                    <label class="checkbox-container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <strong>Step 4: Execute "Basic TV" IT Configuration</strong> — Set power-on behavior to HDMI 1 on arrival.
+                    </label>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2026 LumenStrat Procurement Systems. Internal Executive Proposal Artifact.</p>
+            <p class="footer-sub">Optimized for 100"+ Short Throw Display Solutions under $1,000 USD.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
