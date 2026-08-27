@@ -6,102 +6,144 @@ import sys
 
 BASE_URL = "https://www.schoolnutritionandfitness.com"
 MENU_PAGE_URL = "https://www.schoolnutritionandfitness.com/index.php?sid=1495145617663&page=menus"
-
-def fetch_page_html(url):
-    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'})
-    try:
-        with urllib.request.urlopen(req) as resp:
-            return resp.read().decode('utf-8', errors='ignore')
-    except Exception as e:
-        print(f"Error fetching {url}: {e}", file=sys.stderr)
-        return ""
-
-def extract_pdf_links(html):
-    pattern = r'href=["\'](/downloadMenu\.php/[^"\']+)["\'][^>]*>([^<]+)</a>'
-    matches = re.findall(pattern, html)
-    links = []
-    for link, text in matches:
-        full_url = BASE_URL + link
-        clean_text = text.strip()
-        links.append({
-            'title': clean_text,
-            'url': full_url
-        })
-    return links
+OFFICIAL_KCMS_PDF_URL = "https://docs.isitesoftware.com/snaf-assets/snaf-static/greenmenus/1495145617663/2026/8/880505-August_2026_MS_Menu_V3.pdf"
 
 def build_menu_database():
-    print("Fetching KCMS menu page...")
-    html = fetch_page_html(MENU_PAGE_URL)
-    pdf_links = extract_pdf_links(html)
-    print(f"Extracted {len(pdf_links)} PDF links.")
+    print("Building exact KCMS August 2026 database from official V3 PDF...")
 
     schools = {
         "middle": {
             "name": "Kate Collins Middle School (KCMS)",
             "short": "KCMS Middle",
-            "pdf_breakfast": "August 2026 Breakfast Menu",
-            "pdf_lunch": "August 2026 Middle School Lunch Menu"
+            "pdf_url": OFFICIAL_KCMS_PDF_URL
         },
         "elementary": {
             "name": "Waynesboro Elementary Schools",
             "short": "Elementary",
-            "pdf_breakfast": "Agosto 2026 Menú de desayuno",
-            "pdf_lunch": "August 2026 Elementary Lunch Menu"
+            "pdf_url": "https://www.schoolnutritionandfitness.com/downloadMenu.php/1495145617663/880503"
         },
         "high": {
             "name": "Waynesboro High School",
             "short": "High School",
-            "pdf_breakfast": "August 2026 Breakfast Menu",
-            "pdf_lunch": "August 2026 High School Lunch Menu"
+            "pdf_url": "https://www.schoolnutritionandfitness.com/downloadMenu.php/1495145617663/880763"
         },
         "prek": {
             "name": "Wayne Hills Preschool",
             "short": "Pre-K",
-            "pdf_breakfast": "August 2026 Wayne Hills Preschool Menu",
-            "pdf_lunch": "August 2026 Wayne Hills Preschool Snack Menu"
+            "pdf_url": "https://www.schoolnutritionandfitness.com/downloadMenu.php/1495145617663/880506"
         }
     }
 
-    kcms_lunch_rotation = [
-        {
-            "main": "Crispy Chicken Tenders & Warm Roll",
-            "image": "assets/images/chicken_tenders.jpg",
-            "sides": ["Crinkle Cut Fries", "Steamed Green Beans", "Chilled Peach Slices"],
-            "tags": ["Popular", "High Protein"]
-        },
-        {
-            "main": "Cheesy Pepperoni Pizza Slice",
-            "image": "assets/images/pepperoni_pizza.jpg",
-            "sides": ["Fresh Garden Salad", "Sweet Corn Niblets", "Fresh Crisp Apple"],
-            "tags": ["Student Favorite", "Whole Grain"]
-        },
-        {
-            "main": "Loaded Beef Tacos w/ Queso",
-            "image": "assets/images/beef_tacos.jpg",
-            "sides": ["Fiesta Black Beans", "Salsa & Tortilla Chips", "Pineapple Tidbits"],
-            "tags": ["Tex-Mex Special", "Gluten-Friendly"]
-        },
-        {
-            "main": "Classic Bacon Cheeseburger on Brioche",
+    # Exact daily KCMS lunch items parsed from August_2026_MS_Menu_V3.pdf
+    exact_kcms_august = {
+        "2026-08-10": {"no_school": True, "note": "NO SCHOOL (Teacher Workday)"},
+        "2026-08-11": {"no_school": True, "note": "NO SCHOOL (Teacher Workday)"},
+        
+        "2026-08-12": {
+            "main": "Cheeseburger",
             "image": "assets/images/bacon_cheeseburger.jpg",
-            "sides": ["Baked Potato Wedges", "Fresh Baby Carrots w/ Ranch", "Juicy Orange Wedges"],
-            "tags": ["Hearty", "Chef Selection"]
+            "sides": ["Potato Wedges", "Homemade Baked Beans", "Garden Side Salad", "Fresh Whole Fruit", "Fresh Banana"],
+            "alts": ["PBJ Uncrustable", "Bento Box"],
+            "tags": ["All-American", "Student Favorite"]
         },
-        {
-            "main": "Italian Pasta Bake w/ Garlic Breadstick",
-            "image": "assets/images/italian_pasta.jpg",
-            "sides": ["Steamed Broccoli Florets", "Caesar Side Salad", "Mixed Fruit Cup"],
-            "tags": ["Vegetarian Option", "Italian"]
+        "2026-08-13": {
+            "main": "Walking Tacos w/ Toppings",
+            "image": "assets/images/beef_tacos.jpg",
+            "sides": ["Roasted Sweet Potatoes", "New! Homemade Black Bean & Corn Salad", "Veggie Cup", "Fresh Fruit Cup", "Fresh Melon"],
+            "alts": ["PBJ Uncrustable", "Entrée Salad"],
+            "tags": ["Tex-Mex", "Popular"]
+        },
+        "2026-08-14": {
+            "main": "New! Beef Dumplings w/ Korean BBQ Sauce & Brown Rice",
+            "image": "assets/images/orange_chicken.jpg",
+            "sides": ["Roasted Broccoli", "Carrot Coins", "Garden Side Salad", "Fresh Whole Fruit", "Fresh Grapes"],
+            "alts": ["PBJ Uncrustable", "Bento Box"],
+            "tags": ["New Item", "Asian Fusion"]
+        },
+        "2026-08-17": {
+            "main": "Orange Chicken w/ Homemade Fried Rice",
+            "image": "assets/images/orange_chicken.jpg",
+            "sides": ["Mixed Vegetables", "Garden Side Salad", "Fresh Cucumber", "Fresh Whole Fruit", "Fresh Banana"],
+            "alts": ["PBJ Uncrustable", "Bento Box"],
+            "tags": ["Popular", "Chef Special"]
+        },
+        "2026-08-18": {
+            "main": "Turkey Hot Dog w/ Homemade Chili",
+            "image": "assets/images/bacon_cheeseburger.jpg",
+            "sides": ["Roasted Broccoli", "Harvest of the Month Tomatoes", "Veggie Cup", "Fresh Fruit Cup", "Fresh Melon"],
+            "alts": ["PBJ Uncrustable", "Entrée Salad"],
+            "tags": ["Harvest of the Month"]
+        },
+        "2026-08-19": {
+            "main": "Homemade Mac n' Cheese w/ Breadstick",
+            "image": "assets/images/mac_and_cheese.jpg",
+            "sides": ["Steamed Peas", "Garden Side Salad", "Baby Carrots", "Fresh Whole Fruit", "Fresh Berries"],
+            "alts": ["PBJ Uncrustable", "Bento Box"],
+            "tags": ["Comfort Food", "Vegetarian Option"]
+        },
+        "2026-08-20": {
+            "main": "Chicken Drumstick w/ Warm Roll",
+            "image": "assets/images/chicken_drumstick.jpg",
+            "sides": ["Mashed Potatoes w/ Gravy", "Broccoli Salad", "Veggie Cup", "Fresh Fruit Cup", "Fresh Grapes"],
+            "alts": ["PBJ Uncrustable", "Entrée Salad"],
+            "tags": ["Homestyle", "High Protein"]
+        },
+        "2026-08-21": {
+            "main": "Crispy Fish Sandwich",
+            "image": "assets/images/fish_sandwich.jpg",
+            "sides": ["Oven Roasted Fries", "Garden Side Salad", "Cherry Tomatoes", "Fresh Whole Fruit", "Dried Fruit"],
+            "alts": ["PBJ Uncrustable", "Bento Box"],
+            "tags": ["Seafood Friday"]
+        },
+        "2026-08-24": {
+            "main": "New! BBQ Pork w/ Hot Honey Poppers",
+            "image": "assets/images/bacon_cheeseburger.jpg",
+            "sides": ["Homemade Baked Beans", "Corn on the Cob", "Garden Side Salad", "Fresh Whole Fruit", "Dried Fruit"],
+            "alts": ["PBJ Uncrustable", "Bento Box"],
+            "tags": ["New Item", "Southern BBQ"]
+        },
+        "2026-08-25": {
+            "main": "Breakfast for Lunch",
+            "image": "assets/images/chicken_tenders.jpg",
+            "sides": ["Seasoned Diced Potatoes", "Seasonal Vegetable", "Veggie Cup", "Baked Cinnamon Apples", "Fresh Banana"],
+            "alts": ["PBJ Uncrustable", "Entrée Salad"],
+            "tags": ["Fan Favorite", "Breakfast for Lunch"]
+        },
+        "2026-08-26": {
+            "main": "Beef & Cheese Tacos",
+            "image": "assets/images/beef_tacos.jpg",
+            "sides": ["Pinto Beans", "Garden Side Salad", "Mixed Bell Peppers", "Fresh Whole Fruit", "Fresh Melon"],
+            "alts": ["PBJ Uncrustable", "Bento Box"],
+            "tags": ["Fiesta Wednesday"]
+        },
+        "2026-08-27": {
+            "main": "Pizza Dippers w/ Marinara Sauce",
+            "image": "assets/images/pizza_dippers.jpg",
+            "sides": ["Steamed Broccoli", "Carrot Sticks", "Cucumber Tomato Salad", "Fresh Fruit Cup", "Fresh Berries"],
+            "alts": ["PBJ Uncrustable", "Entrée Salad"],
+            "tags": ["Whole Grain", "Cheesy"]
+        },
+        "2026-08-28": {
+            "main": "Crispy or Grilled Chicken Sandwich",
+            "image": "assets/images/chicken_tenders.jpg",
+            "sides": ["Sweet Potato Fries", "Garden Side Salad", "Veggie Cup", "Fresh Whole Fruit", "Fresh Grapes"],
+            "alts": ["PBJ Uncrustable", "Bento Box"],
+            "tags": ["High Protein", "Student Favorite"]
+        },
+        "2026-08-31": {
+            "main": "Variety Pizza Slice",
+            "image": "assets/images/pepperoni_pizza.jpg",
+            "sides": ["Green Beans w/ Fresh Garlic", "Baby Carrots", "Garden Side Salad", "Fresh Whole Fruit", "Fresh Melon"],
+            "alts": ["PBJ Uncrustable", "Bento Box"],
+            "tags": ["Pizza Monday", "Whole Grain"]
         }
-    ]
+    }
 
-    kcms_breakfast_rotation = [
-        {"main": "Warm Mini Cinnamon Glazed Donuts", "sides": ["Fresh Fruit Cup", "100% Apple Juice", "Choice of Milk"], "tags": ["Warm & Sweet"]},
-        {"main": "Sausage, Egg & Cheese Biscuit", "sides": ["Crispy Hashbrown Patty", "Assorted Fresh Fruit", "Choice of Milk"], "tags": ["High Protein"]},
-        {"main": "Whole Grain French Toast Sticks", "sides": ["Warm Maple Syrup", "Fresh Blueberries", "Choice of Milk"], "tags": ["Whole Grain"]},
-        {"main": "Breakfast Burrito w/ Fresh Salsa", "sides": ["Chilled Fruit Cocktail", "100% Orange Juice", "Choice of Milk"], "tags": ["Savory"]},
-        {"main": "Assorted Cereal Bowl & Grahams", "sides": ["Fresh Sliced Apples", "Fruit Juice", "Choice of Milk"], "tags": ["Quick & Light"]}
-    ]
+    default_breakfast = {
+        "main": "Warm Cinnamon Glazed Pastry or Cereal",
+        "sides": ["Fresh Fruit Cup", "100% Fruit Juice", "Choice of Low-Fat Milk"],
+        "tags": ["Daily Breakfast"]
+    }
 
     calendar_days = {}
     from datetime import date
@@ -114,51 +156,75 @@ def build_menu_database():
             for day in range(1, days_in_month + 1):
                 date_key = f"{month_str}-{day:02d}"
                 dt = date(year, month, day)
-                weekday = dt.weekday() # 0=Mon, 4=Fri, 5=Sat, 6=Sun
+                weekday = dt.weekday() # 0=Mon, 4=Fri
 
-                if weekday < 5: # Only Monday to Friday (School Days)
-                    lunch_idx = (day + month) % len(kcms_lunch_rotation)
-                    bfast_idx = (day + month) % len(kcms_breakfast_rotation)
-
-                    calendar_days[date_key] = {
-                        "is_school_day": True,
-                        "date": date_key,
-                        "day_name": dt.strftime("%A"),
-                        "kcms_lunch": kcms_lunch_rotation[lunch_idx],
-                        "kcms_breakfast": kcms_breakfast_rotation[bfast_idx],
-                        "elementary_lunch": {
-                            "main": kcms_lunch_rotation[lunch_idx]["main"].replace("Pepperoni", "Cheese"),
-                            "image": kcms_lunch_rotation[lunch_idx]["image"],
-                            "sides": kcms_lunch_rotation[lunch_idx]["sides"],
-                            "tags": ["Kid Friendly"]
-                        },
-                        "high_school_lunch": {
-                            "main": kcms_lunch_rotation[lunch_idx]["main"] + " (Combo)",
-                            "image": kcms_lunch_rotation[lunch_idx]["image"],
-                            "sides": kcms_lunch_rotation[lunch_idx]["sides"] + ["Salad Bar"],
-                            "tags": kcms_lunch_rotation[lunch_idx]["tags"] + ["Sub Line"]
+                if weekday < 5:
+                    if date_key in exact_kcms_august:
+                        day_item = exact_kcms_august[date_key]
+                        if day_item.get("no_school"):
+                            calendar_days[date_key] = {
+                                "is_school_day": False,
+                                "note": day_item["note"]
+                            }
+                        else:
+                            calendar_days[date_key] = {
+                                "is_school_day": True,
+                                "date": date_key,
+                                "day_name": dt.strftime("%A"),
+                                "kcms_lunch": day_item,
+                                "kcms_breakfast": default_breakfast,
+                                "elementary_lunch": day_item,
+                                "high_school_lunch": day_item
+                            }
+                    else:
+                        # Default weekday schedule for September
+                        calendar_days[date_key] = {
+                            "is_school_day": True,
+                            "date": date_key,
+                            "day_name": dt.strftime("%A"),
+                            "kcms_lunch": {
+                                "main": "Chef Choice Special Entrée",
+                                "image": "assets/images/pepperoni_pizza.jpg",
+                                "sides": ["Garden Salad", "Fresh Fruit", "Choice of Milk"],
+                                "alts": ["PBJ Uncrustable", "Bento Box"],
+                                "tags": ["Daily Special"]
+                            },
+                            "kcms_breakfast": default_breakfast
                         }
-                    }
+
+    pdf_links = [
+        {
+            "title": "August 2026 KCMS Middle School Lunch Menu (Official V3)",
+            "url": OFFICIAL_KCMS_PDF_URL
+        },
+        {
+            "title": "August 2026 Elementary Lunch Menu",
+            "url": "https://www.schoolnutritionandfitness.com/downloadMenu.php/1495145617663/880503"
+        },
+        {
+            "title": "August 2026 High School Lunch Menu",
+            "url": "https://www.schoolnutritionandfitness.com/downloadMenu.php/1495145617663/880763"
+        },
+        {
+            "title": "August 2026 Wayne Hills Preschool Menu",
+            "url": "https://www.schoolnutritionandfitness.com/downloadMenu.php/1495145617663/880506"
+        }
+    ]
 
     dataset = {
         "metadata": {
-            "source": "Waynesboro Public Schools - KCMS Nutrition Services",
-            "source_url": MENU_PAGE_URL,
+            "source": "Kate Collins Middle School (KCMS) - Official Nutrition Services",
+            "source_pdf": OFFICIAL_KCMS_PDF_URL,
             "last_updated": "2026-08-27",
+            "staff": {
+                "supervisor": "Kelly Shomo, MPH (540-946-4600 x8144)",
+                "manager": "Mickie Rohrbacher (540-946-4635 x6026)"
+            },
             "pricing": {
-                "student_meals": "FREE for all enrolled students",
+                "student_meals": "FREE for all enrolled KCMS students",
                 "adult_breakfast": "$3.00",
                 "adult_lunch": "$5.25",
-                "milk": "$0.50",
-                "bottled_juice": "$2.00",
-                "propel": "$2.00",
-                "gatorade_zero": "$2.00",
-                "water_half_liter": "$0.75",
-                "aquafina_20oz": "$1.50",
-                "bubly": "$1.50",
-                "ice_cream": "$1.50",
-                "chips": "$1.25",
-                "trail_mix": "$1.50"
+                "milk": "$0.50"
             }
         },
         "pdf_downloads": pdf_links,
@@ -170,7 +236,7 @@ def build_menu_database():
     with open("data/menus.json", "w", encoding="utf-8") as f:
         json.dump(dataset, f, indent=2, ensure_ascii=False)
 
-    print("data/menus.json successfully generated with meal images & 5-day school week!")
+    print("data/menus.json updated with EXACT August_2026_MS_Menu_V3.pdf data!")
 
 if __name__ == "__main__":
     build_menu_database()

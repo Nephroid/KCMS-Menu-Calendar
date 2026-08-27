@@ -1,5 +1,5 @@
 /**
- * KCMS (Kate Collins Middle School) - 5-Day Interactive Menu Calendar Engine
+ * KCMS (Kate Collins Middle School) - Official V3 Menu Calendar Engine
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
     for (let day = 1; day <= totalDaysInMonth; day++) {
       const dt = new Date(currentYear, currentMonth - 1, day);
       const weekday = dt.getDay(); // 0 = Sun, 1 = Mon, ..., 5 = Fri, 6 = Sat
-      if (weekday >= 1 && weekday <= 5) { // Only Mon to Fri
+      if (weekday >= 1 && weekday <= 5) {
         schoolDays.push({ day, dt, weekday: weekday - 1 }); // 0 = Mon, 4 = Fri
       }
     }
@@ -249,7 +249,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         cell.addEventListener('click', () => openModal(dt, dateKey, dayData));
       } else {
-        cellHtml += `<div class="weekend-notice">Menu Info Pending</div>`;
+        cellHtml += `<div class="weekend-notice">${dayData?.note || 'No School Served'}</div>`;
       }
 
       cell.innerHTML = cellHtml;
@@ -270,7 +270,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function renderPdfDownloads() {
     if (!menuData || !menuData.pdf_downloads) return;
 
-    pdfGrid.innerHTML = menuData.pdf_downloads.slice(0, 8).map(pdf => `
+    pdfGrid.innerHTML = menuData.pdf_downloads.map(pdf => `
       <a href="${pdf.url}" target="_blank" rel="noopener" class="pdf-card">
         <i class="fa-solid fa-file-pdf pdf-icon"></i>
         <div class="pdf-info">
@@ -321,11 +321,21 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
 
       <div class="modal-meal-section">
-        <div class="modal-meal-title"><i class="fa-solid fa-utensils" style="color:#F59E0B;"></i> Lunch Entrée</div>
+        <div class="modal-meal-title"><i class="fa-solid fa-utensils" style="color:#F59E0B;"></i> Main Lunch Entrée</div>
         <div class="modal-meal-main">${lunch ? lunch.main : 'Chef Special Entrée'}</div>
         <ul class="modal-sides-list">
           ${(lunch?.sides || ['Steamed Vegetables', 'Fresh Side Salad', 'Chilled Fruit', 'Choice of Milk']).map(s => `<li>${s}</li>`).join('')}
         </ul>
+        
+        ${lunch?.alts ? `
+          <div style="margin-top: 12px; padding-top: 10px; border-top: 1px rgba(255,255,255,0.1) solid;">
+            <span style="font-size: 0.8rem; color: #F59E0B; font-weight: 700;">DAILY ALTERNATIVE ENTRÉES:</span>
+            <div style="display: flex; gap: 6px; margin-top: 4px; flex-wrap: wrap;">
+              ${lunch.alts.map(alt => `<span class="badge badge-tag" style="background: rgba(255,255,255,0.1); color:#FFF;">${alt}</span>`).join('')}
+            </div>
+          </div>
+        ` : ''}
+
         <div class="tags-row" style="margin-top: 12px;">
           ${(lunch?.tags || ['Student Meal FREE']).map(t => `<span class="badge badge-tag">${t}</span>`).join('')}
         </div>
