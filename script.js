@@ -176,7 +176,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const cell = document.createElement('div');
       cell.className = `calendar-day ${isToday ? 'is-today' : ''} ${isPast && !isBeforeFirstDay ? 'past-day' : ''} ${isBeforeFirstDay ? 'before-school' : ''}`;
 
-      let statusBadgeText = '<i class="fa-solid fa-graduation-cap"></i> KCMS Day';
+      let statusBadgeText = '<i class="fa-solid fa-graduation-cap"></i> KCMS School Day';
       if (isBeforeFirstDay) {
         statusBadgeText = 'Summer Recess';
       } else if (isToday) {
@@ -211,10 +211,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         cellHtml += `<div class="meal-preview-container">`;
 
-        // Meal Image Preview for Lunch
+        // Meal Image Preview for Main Lunch Item (Cropped & Focused)
         if ((selectedMealFilter === 'all' || selectedMealFilter === 'lunch') && lunch && lunch.image) {
           cellHtml += `
-            <img src="${lunch.image}" alt="${lunch.main}" class="meal-img-preview" loading="lazy" />
+            <div class="meal-img-frame">
+              <img src="${lunch.image}" alt="${lunch.main}" class="meal-img-preview" loading="lazy" />
+            </div>
           `;
         }
 
@@ -296,9 +298,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let modalHtml = '';
 
-    // Hero Lunch Meal Image
+    // Hero Lunch Meal Image (Main Item Focus)
     if (lunch && lunch.image) {
-      modalHtml += `<img src="${lunch.image}" alt="${lunch.main}" class="modal-hero-img" />`;
+      modalHtml += `
+        <div class="modal-hero-frame">
+          <img src="${lunch.image}" alt="${lunch.main}" class="modal-hero-img" />
+        </div>
+      `;
     }
 
     modalHtml += `

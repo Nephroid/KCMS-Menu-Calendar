@@ -650,7 +650,7 @@ body {
   text-shadow: 0 0 8px rgba(245, 158, 11, 0.5);
 }
 
-/* Meal Dish Image & Content Preview */
+/* Meal Dish Image Frame & Focused Main Item Zoom */
 .meal-preview-container {
   display: flex;
   flex-direction: column;
@@ -658,18 +658,27 @@ body {
   flex-grow: 1;
 }
 
-.meal-img-preview {
+.meal-img-frame {
   width: 100%;
   height: 105px;
-  object-fit: cover;
   border-radius: var(--radius-sm);
+  overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.15);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.meal-img-preview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  transform: scale(1.25); /* Focused zoom directly onto main lunch item */
   transition: var(--transition-smooth);
 }
 
 .calendar-day:hover .meal-img-preview {
-  transform: scale(1.02);
+  transform: scale(1.35);
 }
 
 .meal-block {
@@ -919,7 +928,7 @@ body {
   font-size: 0.75rem;
 }
 
-/* Day Detail Popup Modal (Viewport-Scaled & Responsive) */
+/* Day Detail Popup Modal (Viewport-Scaled & Main Item Focus) */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -964,15 +973,23 @@ body {
   to { transform: scale(1); opacity: 1; }
 }
 
-.modal-hero-img {
+.modal-hero-frame {
   width: 100%;
-  max-height: 150px;
-  object-fit: cover;
+  max-height: 160px;
   border-radius: var(--radius-md);
-  margin-bottom: 12px;
+  overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: var(--shadow-lg);
+  margin-bottom: 12px;
   flex-shrink: 0;
+}
+
+.modal-hero-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  object-position: center 30%;
+  transform: scale(1.2); /* Focused zoom on main lunch dish */
 }
 
 .modal-close {
