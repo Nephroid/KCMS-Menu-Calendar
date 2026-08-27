@@ -1,5 +1,5 @@
 /**
- * KCMS (Kate Collins Middle School) - Official V3 Menu Calendar Engine
+ * KCMS (Kate Collins Middle School) - Dedicated V3 Menu Calendar Engine
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -7,14 +7,12 @@ document.addEventListener('DOMContentLoaded', () => {
   let menuData = null;
   let currentYear = 2026;
   let currentMonth = 8; // August 2026 default
-  let selectedSchool = 'middle'; // KCMS Middle default
   let selectedMealFilter = 'all';
   let searchQuery = '';
 
   // DOM Elements
   const calendarGrid = document.getElementById('calendarGrid');
   const currentMonthLabel = document.getElementById('currentMonthLabel');
-  const schoolSelector = document.getElementById('schoolSelector');
   const mealFilter = document.getElementById('mealFilter');
   const searchInput = document.getElementById('searchInput');
   const clearSearch = document.getElementById('clearSearch');
@@ -30,7 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalClose = document.getElementById('modalClose');
   const modalCloseBtn = document.getElementById('modalCloseBtn');
   const modalDate = document.getElementById('modalDate');
-  const modalSchoolName = document.getElementById('modalSchoolName');
   const modalBody = document.getElementById('modalBody');
 
   const monthNames = [
@@ -65,22 +62,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function setupEventListeners() {
-    // School Switcher Tabs
-    schoolSelector.addEventListener('click', (e) => {
-      const tab = e.target.closest('.school-tab');
-      if (!tab) return;
-      
-      document.querySelectorAll('.school-tab').forEach(t => {
-        t.classList.remove('active');
-        t.setAttribute('aria-selected', 'false');
-      });
-      
-      tab.classList.add('active');
-      tab.setAttribute('aria-selected', 'true');
-      selectedSchool = tab.dataset.school;
-      renderCalendar();
-    });
-
     // Meal Filter
     mealFilter.addEventListener('click', (e) => {
       const btn = e.target.closest('.segment-btn');
@@ -181,22 +162,26 @@ document.addEventListener('DOMContentLoaded', () => {
       const isToday = currentYear === 2026 && currentMonth === 8 && day === 27;
       const dayData = menuData && menuData.calendar ? menuData.calendar[dateKey] : null;
 
+      // Check if date is before 1st Day of School (Aug 12, 2026)
+      const isBeforeFirstDay = currentYear === 2026 && currentMonth === 8 && day < 12;
+
       const cell = document.createElement('div');
-      cell.className = `calendar-day ${isToday ? 'is-today' : ''}`;
+      cell.className = `calendar-day ${isToday ? 'is-today' : ''} ${isBeforeFirstDay ? 'before-school' : ''}`;
 
       let cellHtml = `
         <div class="day-header">
           <span class="day-number">${day}</span>
-          <span class="day-status"><i class="fa-solid fa-graduation-cap"></i> School Day</span>
+          <span class="day-status">
+            ${isBeforeFirstDay ? 'Pre-School' : '<i class="fa-solid fa-graduation-cap"></i> KCMS Day'}
+          </span>
         </div>
       `;
 
-      if (dayData && dayData.is_school_day) {
+      if (isBeforeFirstDay) {
+        cellHtml += `<div class="weekend-notice">Summer Recess<br>(1st Day: Aug 12)</div>`;
+      } else if (dayData && dayData.is_school_day) {
         let bfast = dayData.kcms_breakfast;
         let lunch = dayData.kcms_lunch;
-
-        if (selectedSchool === 'elementary') lunch = dayData.elementary_lunch || lunch;
-        if (selectedSchool === 'high') lunch = dayData.high_school_lunch || lunch;
 
         let matchesSearch = true;
         if (searchQuery) {
@@ -268,17 +253,20 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function renderPdfDownloads() {
-    if (!menuData || !menuData.pdf_downloads) return;
+    const officialPdf = {
+      title: "Official KCMS August 2026 Middle School Menu (V3 PDF)",
+      url: "https://docs.isitesoftware.com/snaf-assets/snaf-static/greenmenus/1495145617663/2026/8/880505-August_2026_MS_Menu_V3.pdf"
+    };
 
-    pdfGrid.innerHTML = menuData.pdf_downloads.map(pdf => `
-      <a href="${pdf.url}" target="_blank" rel="noopener" class="pdf-card">
+    pdfGrid.innerHTML = `
+      <a href="${officialPdf.url}" target="_blank" rel="noopener" class="pdf-card">
         <i class="fa-solid fa-file-pdf pdf-icon"></i>
         <div class="pdf-info">
-          <span class="pdf-title">${pdf.title}</span>
-          <span class="pdf-meta">Waynesboro & KCMS School Nutrition • Official PDF</span>
+          <span class="pdf-title">${officialPdf.title}</span>
+          <span class="pdf-meta">Kate Collins Middle School • Official School Nutrition PDF</span>
         </div>
       </a>
-    `).join('');
+    `;
   }
 
   function openModal(dt, dateKey, dayData) {
@@ -289,20 +277,10 @@ document.addEventListener('DOMContentLoaded', () => {
       day: 'numeric'
     });
 
-    const schoolNames = {
-      middle: 'Kate Collins Middle School (KCMS)',
-      elementary: 'Waynesboro Elementary Schools',
-      high: 'Waynesboro High School',
-      prek: 'Wayne Hills Preschool'
-    };
-
     modalDate.textContent = formattedDate;
-    modalSchoolName.textContent = schoolNames[selectedSchool] || schoolNames.middle;
 
     let bfast = dayData.kcms_breakfast;
     let lunch = dayData.kcms_lunch;
-    if (selectedSchool === 'elementary') lunch = dayData.elementary_lunch || lunch;
-    if (selectedSchool === 'high') lunch = dayData.high_school_lunch || lunch;
 
     let modalHtml = '';
 
@@ -313,7 +291,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     modalHtml += `
       <div class="modal-meal-section breakfast">
-        <div class="modal-meal-title"><i class="fa-solid fa-sun" style="color:#3B82F6;"></i> Breakfast Offering</div>
+        <div class="modal-meal-title"><i class="fa-solid fa-sun" style="color:#3B82F6;"></i> KCMS Breakfast Offering</div>
         <div class="modal-meal-main">${bfast ? bfast.main : 'Breakfast Sandwich & Fruit'}</div>
         <ul class="modal-sides-list">
           ${(bfast?.sides || ['Fresh Fruit Cup', '100% Fruit Juice', 'Choice of Milk']).map(s => `<li>${s}</li>`).join('')}
@@ -321,7 +299,7 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
 
       <div class="modal-meal-section">
-        <div class="modal-meal-title"><i class="fa-solid fa-utensils" style="color:#F59E0B;"></i> Main Lunch Entrée</div>
+        <div class="modal-meal-title"><i class="fa-solid fa-utensils" style="color:#F59E0B;"></i> KCMS Main Lunch Entrée</div>
         <div class="modal-meal-main">${lunch ? lunch.main : 'Chef Special Entrée'}</div>
         <ul class="modal-sides-list">
           ${(lunch?.sides || ['Steamed Vegetables', 'Fresh Side Salad', 'Chilled Fruit', 'Choice of Milk']).map(s => `<li>${s}</li>`).join('')}
@@ -329,7 +307,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         ${lunch?.alts ? `
           <div style="margin-top: 12px; padding-top: 10px; border-top: 1px rgba(255,255,255,0.1) solid;">
-            <span style="font-size: 0.8rem; color: #F59E0B; font-weight: 700;">DAILY ALTERNATIVE ENTRÉES:</span>
+            <span style="font-size: 0.8rem; color: #F59E0B; font-weight: 700;">KCMS DAILY ALTERNATIVE OPTIONS:</span>
             <div style="display: flex; gap: 6px; margin-top: 4px; flex-wrap: wrap;">
               ${lunch.alts.map(alt => `<span class="badge badge-tag" style="background: rgba(255,255,255,0.1); color:#FFF;">${alt}</span>`).join('')}
             </div>

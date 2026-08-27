@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KCMS - Kate Collins Middle School Interactive Menu Calendar</title>
-  <meta name="description" content="Official interactive Monday-to-Friday school menu calendar for Kate Collins Middle School (KCMS) & Waynesboro Public Schools with dish photos, nutritional details, and pricing.">
-  <meta name="keywords" content="KCMS menu, Kate Collins Middle School, Waynesboro school lunch, school meal calendar">
+  <title>KCMS - Kate Collins Middle School Menu Calendar</title>
+  <meta name="description" content="Official interactive menu calendar for Kate Collins Middle School (KCMS) with dish photos, nutritional details, daily alternative options, and pricing.">
+  <meta name="keywords" content="KCMS menu, Kate Collins Middle School, KCMS lunch calendar, Kate Collins school menu">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,41 +28,25 @@
     <header class="announcement-bar">
       <div class="announcement-content">
         <span class="badge badge-free"><i class="fa-solid fa-gift"></i> Student Meals FREE</span>
-        <p>All school meals are <strong>FREE</strong> for enrolled Waynesboro Public Schools & KCMS students!</p>
+        <p>All school meals are <strong>FREE</strong> for enrolled Kate Collins Middle School (KCMS) students!</p>
       </div>
-      <a href="#pdf-section" class="btn-sm btn-glass"><i class="fa-solid fa-file-pdf"></i> Download Official PDFs</a>
+      <a href="https://docs.isitesoftware.com/snaf-assets/snaf-static/greenmenus/1495145617663/2026/8/880505-August_2026_MS_Menu_V3.pdf" target="_blank" rel="noopener" class="btn-sm btn-glass"><i class="fa-solid fa-file-pdf"></i> Official KCMS PDF Menu</a>
     </header>
 
-    <!-- Main Navigation Header -->
+    <!-- Main Header (Dedicated 100% to KCMS) -->
     <nav class="main-header">
       <div class="brand">
         <div class="brand-icon">
-          <i class="fa-solid fa-graduation-cap"></i>
+          <i class="fa-solid fa-shield-halved"></i>
         </div>
         <div class="brand-text">
           <h1>KCMS Menu Calendar</h1>
-          <span class="sub-title">Kate Collins Middle School • Waynesboro Public Schools</span>
+          <span class="sub-title">Kate Collins Middle School • Official Nutrition Calendar</span>
         </div>
       </div>
 
-      <!-- School Selection Tabs -->
-      <div class="school-selector" id="schoolSelector" role="tablist">
-        <button class="school-tab active" data-school="middle" id="tab-middle" role="tab" aria-selected="true">
-          <i class="fa-solid fa-shield-halved"></i>
-          <span>KCMS Middle</span>
-        </button>
-        <button class="school-tab" data-school="elementary" id="tab-elementary" role="tab" aria-selected="false">
-          <i class="fa-solid fa-apple-whole"></i>
-          <span>Elementary</span>
-        </button>
-        <button class="school-tab" data-school="high" id="tab-high" role="tab" aria-selected="false">
-          <i class="fa-solid fa-school"></i>
-          <span>High School</span>
-        </button>
-        <button class="school-tab" data-school="prek" id="tab-prek" role="tab" aria-selected="false">
-          <i class="fa-solid fa-child"></i>
-          <span>Pre-K</span>
-        </button>
+      <div class="kcms-badge-pill">
+        <i class="fa-solid fa-graduation-cap"></i> 1st Day of School: Aug 12, 2026
       </div>
     </nav>
 
@@ -91,15 +75,14 @@
         <!-- Search Bar -->
         <div class="search-box">
           <i class="fa-solid fa-magnifying-glass search-icon"></i>
-          <input type="text" id="searchInput" placeholder="Search menu (e.g. Tacos, Pizza...)" aria-label="Search menu items">
+          <input type="text" id="searchInput" placeholder="Search KCMS menu (e.g. Tacos, Dumplings...)" aria-label="Search KCMS menu items">
           <button id="clearSearch" class="clear-icon hidden" aria-label="Clear search">&times;</button>
         </div>
       </div>
     </section>
 
-    <!-- Main 5-Day School Calendar Container -->
+    <!-- Main 5-Day Monday-Friday Calendar -->
     <main class="calendar-wrapper">
-      <!-- 5-Day Monday to Friday Header -->
       <div class="weekday-header">
         <div>Monday</div>
         <div>Tuesday</div>
@@ -113,28 +96,28 @@
       </div>
     </main>
 
-    <!-- Official PDF Downloads Section -->
+    <!-- Official KCMS PDF Section -->
     <section class="pdf-section" id="pdf-section">
       <div class="section-header">
         <i class="fa-solid fa-cloud-arrow-down"></i>
-        <h3>Official KCMS Downloadable PDF Menus</h3>
+        <h3>Official KCMS Menu Downloads</h3>
         <p>Directly synced from Waynesboro School Nutrition Portal</p>
       </div>
       <div class="pdf-grid" id="pdfGrid">
-        <!-- Rendered by script.js -->
+        <!-- Injected by script.js -->
       </div>
     </section>
 
-    <!-- Pricing & A La Carte Quick Info -->
+    <!-- Pricing & KCMS Info Section -->
     <section class="info-section">
       <div class="info-card">
         <div class="card-header">
           <i class="fa-solid fa-tags"></i>
-          <h3>Meal & A La Carte Pricing</h3>
+          <h3>KCMS Meal & A La Carte Pricing</h3>
         </div>
         <div class="price-grid">
           <div class="price-item highlight">
-            <span class="price-title">Student Meals</span>
+            <span class="price-title">KCMS Student Meals</span>
             <span class="price-value free">FREE</span>
           </div>
           <div class="price-item">
@@ -149,62 +132,50 @@
             <span class="price-title">Milk (Half Pint)</span>
             <span class="price-value">$0.50</span>
           </div>
-          <div class="price-item">
-            <span class="price-title">Bottled Juice / Propel</span>
-            <span class="price-value">$2.00</span>
-          </div>
-          <div class="price-item">
-            <span class="price-title">Ice Cream</span>
-            <span class="price-value">$1.50</span>
-          </div>
-          <div class="price-item">
-            <span class="price-title">Chips / Trail Mix</span>
-            <span class="price-value">$1.25 – $1.50</span>
-          </div>
         </div>
       </div>
 
       <div class="info-card">
         <div class="card-header">
           <i class="fa-solid fa-circle-info"></i>
-          <h3>KCMS School Nutrition Notice</h3>
+          <h3>KCMS Nutrition Contact Info</h3>
         </div>
         <p class="notice-text">
-          Meals served at Kate Collins Middle School meet state and federal USDA Dietary Guidelines. 
-          <em>Due to vendor supply availability, daily menu offerings may occasionally vary.</em>
-          If you have dietary questions, contact the School Nutrition office at <strong>540-946-4600 x8144</strong>.
+          <strong>School Nutrition Supervisor:</strong> Kelly Shomo, MPH (540-946-4600 x8144)<br>
+          <strong>KCMS Cafeteria Manager:</strong> Mickie Rohrbacher (540-946-4635 x6026)<br>
+          <em>Harvest of the Month: Tomatoes (Local Partners: 4P Foods & Waynesboro Education Farm)</em>
         </p>
         <div class="district-address">
           <i class="fa-solid fa-location-dot"></i>
-          <span>Kate Collins Middle School • Waynesboro Public Schools, VA</span>
+          <span>Kate Collins Middle School (KCMS) • Waynesboro, VA</span>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
     <footer class="main-footer">
-      <p>&copy; 2026 Kate Collins Middle School (KCMS) • Powered by <a href="https://www.schoolnutritionandfitness.com/index.php?sid=1495145617663&page=menus" target="_blank" rel="noopener">Official KCMS Portal</a></p>
+      <p>&copy; 2026 Kate Collins Middle School (KCMS) • Powered by <a href="https://docs.isitesoftware.com/snaf-assets/snaf-static/greenmenus/1495145617663/2026/8/880505-August_2026_MS_Menu_V3.pdf" target="_blank" rel="noopener">Official KCMS V3 PDF Portal</a></p>
       <p class="usda-note">USDA is an equal opportunity provider, employer, and lender.</p>
     </footer>
   </div>
 
-  <!-- Day Detail Modal with Hero Dish Photo -->
+  <!-- Day Detail Modal -->
   <div class="modal-overlay hidden" id="dayModal" role="dialog" aria-modal="true" aria-labelledby="modalDate">
     <div class="modal-card">
       <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
       <div class="modal-header">
-        <span class="badge badge-date" id="modalBadge">School Day</span>
-        <h2 id="modalDate">Monday, August 17, 2026</h2>
+        <span class="badge badge-date" id="modalBadge">KCMS School Day</span>
+        <h2 id="modalDate">Wednesday, August 12, 2026</h2>
         <span class="modal-school-name" id="modalSchoolName">Kate Collins Middle School (KCMS)</span>
       </div>
 
       <div class="modal-body" id="modalBody">
-        <!-- Content injected dynamically by script.js -->
+        <!-- Injected by script.js -->
       </div>
 
       <div class="modal-footer">
         <button class="btn-secondary" id="modalCloseBtn">Close</button>
-        <a href="#pdf-section" class="btn-primary" id="modalPdfBtn"><i class="fa-solid fa-file-pdf"></i> Download PDF Menu</a>
+        <a href="https://docs.isitesoftware.com/snaf-assets/snaf-static/greenmenus/1495145617663/2026/8/880505-August_2026_MS_Menu_V3.pdf" target="_blank" rel="noopener" class="btn-primary" id="modalPdfBtn"><i class="fa-solid fa-file-pdf"></i> Official KCMS PDF</a>
       </div>
     </div>
   </div>
