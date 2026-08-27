@@ -894,7 +894,7 @@ body {
   font-size: 0.75rem;
 }
 
-/* Day Detail Popup Modal */
+/* Day Detail Popup Modal (Viewport-Scaled & Responsive) */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -907,7 +907,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 16px;
   opacity: 1;
   transition: opacity 0.25s ease;
 }
@@ -924,9 +924,13 @@ body {
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8), var(--shadow-glow);
   border-radius: var(--radius-lg);
   width: 100%;
-  max-width: 600px;
-  padding: 28px;
+  max-width: 540px;
+  max-height: 85vh; /* Scaled to fit comfortably on any desktop/tablet screen */
+  display: flex;
+  flex-direction: column;
+  padding: 20px 24px;
   position: relative;
+  overflow: hidden;
   animation: modalPop 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -937,25 +941,26 @@ body {
 
 .modal-hero-img {
   width: 100%;
-  height: 220px;
+  max-height: 150px; /* Compact height so modal fits perfectly */
   object-fit: cover;
   border-radius: var(--radius-md);
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: var(--shadow-lg);
+  flex-shrink: 0;
 }
 
 .modal-close {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 16px;
+  right: 16px;
   background: rgba(255, 255, 255, 0.1);
   border: none;
   color: var(--text-muted);
-  width: 36px;
-  height: 36px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -969,30 +974,56 @@ body {
   color: #000;
 }
 
+.modal-header {
+  flex-shrink: 0;
+}
+
 .modal-header h2 {
   font-family: var(--font-display);
-  font-size: 1.45rem;
+  font-size: 1.3rem;
   color: #FFF;
-  margin-top: 8px;
+  margin-top: 6px;
 }
 
 .modal-school-name {
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   color: var(--kcms-gold-light);
   font-weight: 700;
 }
 
+/* Scrollable Modal Content Body with Thin Custom Scrollbar */
 .modal-body {
-  margin: 18px 0;
+  margin: 14px 0;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
+  overflow-y: auto;
+  padding-right: 6px;
+  flex-grow: 1;
+}
+
+.modal-body::-webkit-scrollbar {
+  width: 6px;
+}
+
+.modal-body::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+  background: rgba(245, 158, 11, 0.4);
+  border-radius: 4px;
+}
+
+.modal-body::-webkit-scrollbar-thumb:hover {
+  background: var(--kcms-gold);
 }
 
 .modal-meal-section {
   background: rgba(0, 0, 0, 0.3);
   border-radius: var(--radius-md);
-  padding: 16px;
+  padding: 14px;
   border-left: 4px solid var(--kcms-gold);
 }
 
@@ -1002,19 +1033,19 @@ body {
 
 .modal-meal-title {
   font-weight: 800;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: var(--kcms-gold-light);
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .modal-meal-main {
-  font-size: 1.1rem;
+  font-size: 1.02rem;
   font-weight: 800;
   color: #FFF;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .modal-sides-list {
@@ -1022,7 +1053,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  font-size: 0.88rem;
+  font-size: 0.85rem;
   color: var(--text-muted);
 }
 
@@ -1037,8 +1068,9 @@ body {
   display: flex;
   justify-content: flex-end;
   gap: 12px;
-  padding-top: 16px;
+  padding-top: 14px;
   border-top: var(--glass-border);
+  flex-shrink: 0;
 }
 
 /* Responsive Rules */
@@ -1076,5 +1108,14 @@ body {
 
   .calendar-day {
     min-height: auto;
+  }
+
+  .modal-card {
+    max-height: 90vh;
+    padding: 16px;
+  }
+
+  .modal-hero-img {
+    max-height: 120px;
   }
 }
