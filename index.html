@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KCMS - Kate Collins Middle School Menu Calendar</title>
-  <meta name="description" content="Official interactive menu calendar for Kate Collins Middle School (KCMS) with dish photos, nutritional details, daily alternative options, and pricing.">
-  <meta name="keywords" content="KCMS menu, Kate Collins Middle School, KCMS lunch calendar, Kate Collins school menu">
+  <meta name="description" content="Official interactive menu calendar for Kate Collins Middle School (KCMS) featuring August Harvest of the Month (Fresh Tomatoes), dish photos, and daily alternative options.">
+  <meta name="keywords" content="KCMS menu, Kate Collins Middle School, KCMS lunch calendar, Harvest of the month tomatoes">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,6 +50,45 @@
       </div>
     </nav>
 
+    <!-- Harvest of the Month Banner (Prominently Featured at Top) -->
+    <section class="harvest-banner">
+      <div class="harvest-card">
+        <div class="harvest-image-wrapper">
+          <!-- Stylized High-Definition Harvest Tomato Graphic -->
+          <svg class="harvest-svg-art" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="54" r="40" fill="#EF4444" />
+            <circle cx="36" cy="42" r="12" fill="#F87171" opacity="0.6" />
+            <!-- Tomato Stem & Calyx -->
+            <path d="M50 18 Q45 28 32 20 Q44 30 50 32 Q56 30 68 20 Q55 28 50 18 Z" fill="#15803D" />
+            <path d="M50 18 Q50 8 46 4 Q48 14 50 18 Z" fill="#166534" />
+            <path d="M50 32 Q35 34 26 38 Q40 38 50 32 Z" fill="#166534" />
+            <path d="M50 32 Q65 34 74 38 Q60 38 50 32 Z" fill="#166534" />
+          </svg>
+          <span class="harvest-badge">VIRGINIA FRESH</span>
+        </div>
+
+        <div class="harvest-content">
+          <div class="harvest-header-row">
+            <span class="badge badge-tag" style="background: rgba(239, 68, 68, 0.2); color: #FCA5A5; border-color: rgba(239, 68, 68, 0.4);">
+              <i class="fa-solid fa-seedling"></i> HARVEST OF THE MONTH
+            </span>
+            <span class="harvest-month">August 2026</span>
+          </div>
+
+          <h2 class="harvest-title">Fresh Local Tomatoes 🍅</h2>
+          <p class="harvest-desc">
+            Sourced locally from Virginia farms! Rich in Lycopene, Vitamin C, and Potassium.
+            Served fresh daily in KCMS garden salads, entrees, and side selections.
+          </p>
+
+          <div class="harvest-partners">
+            <i class="fa-solid fa-handshake-angle"></i>
+            <span>Local Partners: <strong>4P Foods</strong> & <strong>The Waynesboro Education Farm</strong></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Interactive Control Toolbar -->
     <section class="toolbar-card">
       <div class="toolbar-left">
@@ -75,7 +114,7 @@
         <!-- Search Bar -->
         <div class="search-box">
           <i class="fa-solid fa-magnifying-glass search-icon"></i>
-          <input type="text" id="searchInput" placeholder="Search KCMS menu (e.g. Tacos, Dumplings...)" aria-label="Search KCMS menu items">
+          <input type="text" id="searchInput" placeholder="Search KCMS menu (e.g. Tacos, Pizza...)" aria-label="Search KCMS menu items">
           <button id="clearSearch" class="clear-icon hidden" aria-label="Clear search">&times;</button>
         </div>
       </div>
@@ -96,11 +135,11 @@
       </div>
     </main>
 
-    <!-- Official KCMS PDF Section -->
+    <!-- Official KCMS PDF Downloads Section -->
     <section class="pdf-section" id="pdf-section">
       <div class="section-header">
         <i class="fa-solid fa-cloud-arrow-down"></i>
-        <h3>Official KCMS Menu Downloads</h3>
+        <h3>Official KCMS Downloadable PDF Menus</h3>
         <p>Directly synced from Waynesboro School Nutrition Portal</p>
       </div>
       <div class="pdf-grid" id="pdfGrid">
@@ -154,7 +193,7 @@
 
     <!-- Footer -->
     <footer class="main-footer">
-      <p>&copy; 2026 Kate Collins Middle School (KCMS) • Powered by <a href="https://docs.isitesoftware.com/snaf-assets/snaf-static/greenmenus/1495145617663/2026/8/880505-August_2026_MS_Menu_V3.pdf" target="_blank" rel="noopener">Official KCMS V3 PDF Portal</a></p>
+      <p>&copy; 2026 Kate Collins Middle School (KCMS) • Powered by <a href="https://docs.isitesoftware.com/snaf-assets/snaf-static/greenmenus/1495145617663/2026/8/880505-August_2026_MS_Menu_V3.pdf" target="_blank" rel="noopener">Official KCMS Portal</a></p>
       <p class="usda-note">USDA is an equal opportunity provider, employer, and lender.</p>
     </footer>
   </div>
