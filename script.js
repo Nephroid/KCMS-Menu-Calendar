@@ -1,13 +1,13 @@
 /**
- * KCMS & Waynesboro Public Schools - Interactive Menu Calendar Engine
+ * KCMS (Kate Collins Middle School) - 5-Day Interactive Menu Calendar Engine
  */
 
 document.addEventListener('DOMContentLoaded', () => {
   // App State
   let menuData = null;
   let currentYear = 2026;
-  let currentMonth = 8; // August
-  let selectedSchool = 'middle'; // KCMS Middle School default
+  let currentMonth = 8; // August 2026 default
+  let selectedSchool = 'middle'; // KCMS Middle default
   let selectedMealFilter = 'all';
   let searchQuery = '';
 
@@ -38,10 +38,10 @@ document.addEventListener('DOMContentLoaded', () => {
     "July", "August", "September", "October", "November", "December"
   ];
 
-  // Fetch Menu JSON
+  // Fetch Menu JSON Dataset
   fetch('data/menus.json')
     .then(response => {
-      if (!response.ok) throw new Error('Failed to load menu data');
+      if (!response.ok) throw new Error('Failed to load menu dataset');
       return response.json();
     })
     .then(data => {
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
       renderCalendar();
     });
 
-    // Meal Filter Segmented Control
+    // Meal Filter
     mealFilter.addEventListener('click', (e) => {
       const btn = e.target.closest('.segment-btn');
       if (!btn) return;
@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
       renderCalendar();
     });
 
-    // Modal Close handlers
+    // Modal Close
     modalClose.addEventListener('click', closeModal);
     modalCloseBtn.addEventListener('click', closeModal);
     dayModal.addEventListener('click', (e) => {
@@ -149,46 +149,49 @@ document.addEventListener('DOMContentLoaded', () => {
     currentMonthLabel.textContent = `${monthNames[currentMonth - 1]} ${currentYear}`;
     calendarGrid.innerHTML = '';
 
-    const firstDayIndex = new Date(currentYear, currentMonth - 1, 1).getDay(); // 0 = Sun
-    // Convert to 0 = Mon, 6 = Sun
-    const adjustedFirstDay = (firstDayIndex + 6) % 7;
     const totalDaysInMonth = new Date(currentYear, currentMonth, 0).getDate();
 
-    // Previous month padding cells
-    const prevMonthDays = new Date(currentYear, currentMonth - 1, 0).getDate();
-    for (let i = adjustedFirstDay - 1; i >= 0; i--) {
-      const dayNum = prevMonthDays - i;
+    // Collect all weekday dates (Monday - Friday) for current month
+    let schoolDays = [];
+    for (let day = 1; day <= totalDaysInMonth; day++) {
+      const dt = new Date(currentYear, currentMonth - 1, day);
+      const weekday = dt.getDay(); // 0 = Sun, 1 = Mon, ..., 5 = Fri, 6 = Sat
+      if (weekday >= 1 && weekday <= 5) { // Only Mon to Fri
+        schoolDays.push({ day, dt, weekday: weekday - 1 }); // 0 = Mon, 4 = Fri
+      }
+    }
+
+    if (schoolDays.length === 0) return;
+
+    // Calculate padding offset for first week (0 = Monday, 4 = Friday)
+    const firstWeekday = schoolDays[0].weekday;
+    for (let i = 0; i < firstWeekday; i++) {
       const cell = document.createElement('div');
       cell.className = 'calendar-day other-month';
-      cell.innerHTML = `<div class="day-header"><span class="day-number">${dayNum}</span></div>`;
+      cell.innerHTML = `<div class="day-header"><span class="day-number">--</span></div>`;
       calendarGrid.appendChild(cell);
     }
 
-    // Current month cells
-    for (let day = 1; day <= totalDaysInMonth; day++) {
+    // Render 5-Day School Calendar Cells
+    schoolDays.forEach(({ day, dt }) => {
       const monthStr = currentMonth.toString().padStart(2, '0');
       const dayStr = day.toString().padStart(2, '0');
       const dateKey = `${currentYear}-${monthStr}-${dayStr}`;
 
-      const dt = new Date(currentYear, currentMonth - 1, day);
-      const isWeekend = dt.getDay() === 0 || dt.getDay() === 6;
       const isToday = currentYear === 2026 && currentMonth === 8 && day === 27;
-
       const dayData = menuData && menuData.calendar ? menuData.calendar[dateKey] : null;
 
       const cell = document.createElement('div');
-      cell.className = `calendar-day ${isWeekend ? 'weekend' : ''} ${isToday ? 'is-today' : ''}`;
-      
+      cell.className = `calendar-day ${isToday ? 'is-today' : ''}`;
+
       let cellHtml = `
         <div class="day-header">
           <span class="day-number">${day}</span>
-          <span class="day-status">${isWeekend ? 'Weekend' : 'School Day'}</span>
+          <span class="day-status"><i class="fa-solid fa-graduation-cap"></i> School Day</span>
         </div>
       `;
 
-      if (isWeekend) {
-        cellHtml += `<div class="weekend-notice">No Meals Served</div>`;
-      } else if (dayData && dayData.is_school_day) {
+      if (dayData && dayData.is_school_day) {
         let bfast = dayData.kcms_breakfast;
         let lunch = dayData.kcms_lunch;
 
@@ -203,12 +206,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         if (!matchesSearch) {
-          cell.style.opacity = '0.25';
+          cell.style.opacity = '0.2';
         }
 
         cellHtml += `<div class="meal-preview-container">`;
 
-        // Breakfast preview
+        // Meal Image Preview for Lunch
+        if ((selectedMealFilter === 'all' || selectedMealFilter === 'lunch') && lunch && lunch.image) {
+          cellHtml += `
+            <img src="${lunch.image}" alt="${lunch.main}" class="meal-img-preview" loading="lazy" />
+          `;
+        }
+
+        // Breakfast block preview
         if ((selectedMealFilter === 'all' || selectedMealFilter === 'breakfast') && bfast) {
           cellHtml += `
             <div class="meal-block breakfast-block">
@@ -218,7 +228,7 @@ document.addEventListener('DOMContentLoaded', () => {
           `;
         }
 
-        // Lunch preview
+        // Lunch block preview
         if ((selectedMealFilter === 'all' || selectedMealFilter === 'lunch') && lunch) {
           cellHtml += `
             <div class="meal-block">
@@ -233,7 +243,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         cellHtml += `</div>
           <div class="cell-footer">
-            <span class="cell-action-hint">Click details <i class="fa-solid fa-arrow-right"></i></span>
+            <span class="cell-action-hint">View Dish <i class="fa-solid fa-angle-right"></i></span>
           </div>
         `;
 
@@ -244,15 +254,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
       cell.innerHTML = cellHtml;
       calendarGrid.appendChild(cell);
-    }
+    });
 
-    // Next month padding cells
-    const totalRendered = adjustedFirstDay + totalDaysInMonth;
-    const remainingCells = (7 - (totalRendered % 7)) % 7;
-    for (let i = 1; i <= remainingCells; i++) {
+    // End padding to complete row
+    const totalRendered = firstWeekday + schoolDays.length;
+    const remaining = (5 - (totalRendered % 5)) % 5;
+    for (let i = 0; i < remaining; i++) {
       const cell = document.createElement('div');
       cell.className = 'calendar-day other-month';
-      cell.innerHTML = `<div class="day-header"><span class="day-number">${i}</span></div>`;
+      cell.innerHTML = `<div class="day-header"><span class="day-number">--</span></div>`;
       calendarGrid.appendChild(cell);
     }
   }
@@ -265,7 +275,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <i class="fa-solid fa-file-pdf pdf-icon"></i>
         <div class="pdf-info">
           <span class="pdf-title">${pdf.title}</span>
-          <span class="pdf-meta">Waynesboro School Nutrition • PDF Download</span>
+          <span class="pdf-meta">Waynesboro & KCMS School Nutrition • Official PDF</span>
         </div>
       </a>
     `).join('');
@@ -294,17 +304,24 @@ document.addEventListener('DOMContentLoaded', () => {
     if (selectedSchool === 'elementary') lunch = dayData.elementary_lunch || lunch;
     if (selectedSchool === 'high') lunch = dayData.high_school_lunch || lunch;
 
-    modalBody.innerHTML = `
+    let modalHtml = '';
+
+    // Hero Lunch Meal Image
+    if (lunch && lunch.image) {
+      modalHtml += `<img src="${lunch.image}" alt="${lunch.main}" class="modal-hero-img" />`;
+    }
+
+    modalHtml += `
       <div class="modal-meal-section breakfast">
-        <div class="modal-meal-title"><i class="fa-solid fa-sun" style="color:#F59E0B;"></i> Breakfast Offering</div>
+        <div class="modal-meal-title"><i class="fa-solid fa-sun" style="color:#3B82F6;"></i> Breakfast Offering</div>
         <div class="modal-meal-main">${bfast ? bfast.main : 'Breakfast Sandwich & Fruit'}</div>
         <ul class="modal-sides-list">
-          ${(bfast?.sides || ['Fresh Fruit Cup', '100% Fruit Juice', 'Choice of Low-Fat Milk']).map(s => `<li>${s}</li>`).join('')}
+          ${(bfast?.sides || ['Fresh Fruit Cup', '100% Fruit Juice', 'Choice of Milk']).map(s => `<li>${s}</li>`).join('')}
         </ul>
       </div>
 
       <div class="modal-meal-section">
-        <div class="modal-meal-title"><i class="fa-solid fa-utensils" style="color:#10B981;"></i> Lunch Entrée</div>
+        <div class="modal-meal-title"><i class="fa-solid fa-utensils" style="color:#F59E0B;"></i> Lunch Entrée</div>
         <div class="modal-meal-main">${lunch ? lunch.main : 'Chef Special Entrée'}</div>
         <ul class="modal-sides-list">
           ${(lunch?.sides || ['Steamed Vegetables', 'Fresh Side Salad', 'Chilled Fruit', 'Choice of Milk']).map(s => `<li>${s}</li>`).join('')}
@@ -315,6 +332,7 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
     `;
 
+    modalBody.innerHTML = modalHtml;
     dayModal.classList.remove('hidden');
   }
 

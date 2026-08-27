@@ -1,46 +1,46 @@
 /* ==========================================================================
-   KCMS & Waynesboro Menu Calendar - Design System & Modern CSS
+   KCMS (Kate Collins Middle School) - Official Royal Navy & Gold Theme
    ========================================================================== */
 
 :root {
-  /* Color Palette */
-  --bg-dark: #090E1A;
-  --bg-card: rgba(18, 26, 47, 0.75);
-  --bg-card-hover: rgba(28, 39, 68, 0.85);
-  --bg-card-solid: #121A2F;
-  --border-color: rgba(255, 255, 255, 0.08);
-  --border-glow: rgba(16, 185, 129, 0.3);
+  /* KCMS Official Colors */
+  --kcms-navy: #00008B;
+  --kcms-navy-dark: #060D20;
+  --kcms-navy-card: #0B1938;
+  --kcms-navy-card-hover: #12244C;
+  --kcms-royal-blue: #1D4ED8;
+  --kcms-royal-blue-light: #3B82F6;
+  
+  /* KCMS Gold & Accent Colors */
+  --kcms-gold: #F59E0B;
+  --kcms-gold-light: #FBBF24;
+  --kcms-gold-glow: rgba(245, 158, 11, 0.3);
+  --kcms-emerald: #10B981;
+  --kcms-rose: #F43F5E;
 
-  /* Primary & Accent Colors */
-  --primary-emerald: #10B981;
-  --primary-emerald-dark: #059669;
-  --accent-teal: #14B8A6;
-  --accent-indigo: #6366F1;
-  --accent-amber: #F59E0B;
-  --accent-rose: #F43F5E;
+  /* UI Tokens */
+  --border-color: rgba(255, 255, 255, 0.1);
+  --border-glow: rgba(245, 158, 11, 0.4);
+  --glass-bg: rgba(11, 25, 56, 0.85);
+  --glass-border: 1px solid rgba(255, 255, 255, 0.12);
 
-  /* Text Colors */
+  /* Typography */
+  --font-display: 'Outfit', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
   --text-main: #F8FAFC;
   --text-muted: #94A3B8;
   --text-dim: #64748B;
 
-  /* Fonts */
-  --font-display: 'Outfit', sans-serif;
-  --font-body: 'Plus Jakarta Sans', sans-serif;
-
-  /* Shadows & Glass */
-  --glass-bg: rgba(15, 23, 42, 0.65);
-  --glass-border: 1px solid rgba(255, 255, 255, 0.1);
-  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
-  --shadow-glow: 0 0 25px rgba(16, 185, 129, 0.15);
-  
+  /* Layout */
   --radius-lg: 18px;
   --radius-md: 12px;
   --radius-sm: 8px;
+  --shadow-lg: 0 20px 30px -10px rgba(0, 0, 0, 0.6);
+  --shadow-glow: 0 0 30px rgba(0, 0, 139, 0.4);
   --transition-smooth: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Reset & Base Styles */
+/* Reset & Global Styles */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -48,13 +48,12 @@
 }
 
 body {
-  background-color: var(--bg-dark);
+  background-color: var(--kcms-navy-dark);
   color: var(--text-main);
   font-family: var(--font-body);
   line-height: 1.5;
   min-height: 100vh;
   overflow-x: hidden;
-  position: relative;
 }
 
 .sr-only {
@@ -68,22 +67,22 @@ body {
   border: 0;
 }
 
-/* Dynamic Background Glow Elements */
+/* Background KCMS Royal Glow Effects */
 .bg-glow {
   position: fixed;
   border-radius: 50%;
-  filter: blur(120px);
+  filter: blur(130px);
   z-index: 0;
   pointer-events: none;
-  opacity: 0.35;
+  opacity: 0.4;
 }
 
 .bg-glow-1 {
-  top: -100px;
+  top: -120px;
   left: -100px;
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, var(--primary-emerald), transparent 70%);
+  width: 550px;
+  height: 550px;
+  background: radial-gradient(circle, var(--kcms-navy), transparent 70%);
 }
 
 .bg-glow-2 {
@@ -91,12 +90,12 @@ body {
   right: -100px;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, var(--accent-indigo), transparent 70%);
+  background: radial-gradient(circle, var(--kcms-gold), transparent 70%);
 }
 
 /* Container */
 .app-container {
-  max-width: 1320px;
+  max-width: 1380px;
   margin: 0 auto;
   padding: 20px 24px 60px;
   position: relative;
@@ -105,9 +104,9 @@ body {
 
 /* Announcement Top Bar */
 .announcement-bar {
-  background: linear-gradient(90deg, rgba(16, 185, 129, 0.15), rgba(99, 102, 241, 0.15));
+  background: linear-gradient(90deg, rgba(0, 0, 139, 0.4), rgba(245, 158, 11, 0.25));
   border: var(--glass-border);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
   border-radius: var(--radius-md);
   padding: 12px 20px;
   display: flex;
@@ -143,22 +142,22 @@ body {
 }
 
 .badge-free {
-  background: rgba(16, 185, 129, 0.2);
+  background: rgba(16, 185, 129, 0.25);
   color: #34D399;
   border: 1px solid rgba(16, 185, 129, 0.4);
 }
 
 .badge-tag {
-  background: rgba(99, 102, 241, 0.2);
-  color: #A5B4FC;
-  border: 1px solid rgba(99, 102, 241, 0.3);
+  background: rgba(245, 158, 11, 0.2);
+  color: var(--kcms-gold-light);
+  border: 1px solid rgba(245, 158, 11, 0.4);
   font-size: 0.7rem;
 }
 
 .badge-date {
-  background: rgba(245, 158, 11, 0.2);
-  color: #FBBF24;
-  border: 1px solid rgba(245, 158, 11, 0.3);
+  background: rgba(29, 78, 216, 0.3);
+  color: #93C5FD;
+  border: 1px solid rgba(29, 78, 216, 0.4);
 }
 
 /* Main Navigation Header */
@@ -178,42 +177,43 @@ body {
 }
 
 .brand-icon {
-  width: 52px;
-  height: 52px;
-  background: linear-gradient(135deg, var(--primary-emerald), var(--accent-teal));
-  border-radius:var(--radius-md);
+  width: 54px;
+  height: 54px;
+  background: linear-gradient(135deg, var(--kcms-navy), var(--kcms-royal-blue));
+  border: 2px solid var(--kcms-gold);
+  border-radius: var(--radius-md);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
-  color: #FFF;
+  font-size: 1.6rem;
+  color: var(--kcms-gold-light);
   box-shadow: var(--shadow-glow);
 }
 
 .brand-text h1 {
   font-family: var(--font-display);
-  font-size: 1.75rem;
+  font-size: 1.85rem;
   font-weight: 800;
   letter-spacing: -0.02em;
-  background: linear-gradient(135deg, #FFFFFF, #CBD5E1);
+  background: linear-gradient(135deg, #FFFFFF, var(--kcms-gold-light));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .brand-text .sub-title {
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   color: var(--text-muted);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 /* School Selector Tabs */
 .school-selector {
   display: flex;
-  background: var(--bg-card-solid);
+  background: var(--kcms-navy-card);
   padding: 6px;
   border-radius: var(--radius-lg);
   border: var(--glass-border);
-  gap: 4px;
+  gap: 6px;
   flex-wrap: wrap;
 }
 
@@ -224,7 +224,7 @@ body {
   padding: 10px 18px;
   border-radius: var(--radius-md);
   font-family: var(--font-display);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.88rem;
   cursor: pointer;
   display: flex;
@@ -234,21 +234,22 @@ body {
 }
 
 .school-tab:hover {
-  color: var(--text-main);
-  background: rgba(255, 255, 255, 0.05);
+  color: #FFF;
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .school-tab.active {
-  background: linear-gradient(135deg, var(--primary-emerald), var(--primary-emerald-dark));
+  background: linear-gradient(135deg, var(--kcms-navy), var(--kcms-royal-blue));
   color: #FFFFFF;
-  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+  border: 1px solid var(--kcms-gold);
+  box-shadow: 0 4px 14px rgba(0, 0, 139, 0.4);
 }
 
 /* Toolbar Card */
 .toolbar-card {
-  background: var(--bg-card);
+  background: var(--glass-bg);
   border: var(--glass-border);
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(14px);
   border-radius: var(--radius-lg);
   padding: 16px 24px;
   display: flex;
@@ -274,8 +275,9 @@ body {
 
 .month-nav h2 {
   font-family: var(--font-display);
-  font-size: 1.4rem;
-  font-weight: 700;
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: var(--kcms-gold-light);
   min-width: 170px;
   text-align: center;
 }
@@ -285,7 +287,7 @@ body {
   width: 40px;
   height: 40px;
   border-radius: var(--radius-md);
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.06);
   border: var(--glass-border);
   color: var(--text-main);
   cursor: pointer;
@@ -296,8 +298,8 @@ body {
 }
 
 .btn-icon:hover {
-  background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.15);
+  border-color: var(--kcms-gold);
 }
 
 .btn-secondary {
@@ -316,16 +318,16 @@ body {
 }
 
 .btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.18);
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--primary-emerald), var(--primary-emerald-dark));
+  background: linear-gradient(135deg, var(--kcms-royal-blue), var(--kcms-navy));
   color: #FFF;
-  border: none;
+  border: 1px solid var(--kcms-gold);
   padding: 10px 20px;
   border-radius: var(--radius-md);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.88rem;
   cursor: pointer;
   display: inline-flex;
@@ -336,8 +338,8 @@ body {
 }
 
 .btn-primary:hover {
-  filter: brightness(1.1);
-  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.4);
+  filter: brightness(1.15);
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.3);
 }
 
 .btn-glass {
@@ -353,13 +355,14 @@ body {
 }
 
 .btn-glass:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.25);
+  border-color: var(--kcms-gold);
 }
 
-/* Segmented Meal Filter Control */
+/* Segmented Meal Filter */
 .segmented-control {
   display: flex;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.35);
   padding: 4px;
   border-radius: var(--radius-md);
   border: var(--glass-border);
@@ -372,14 +375,14 @@ body {
   padding: 6px 14px;
   border-radius: var(--radius-sm);
   font-size: 0.82rem;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
   transition: var(--transition-smooth);
 }
 
 .segment-btn.active {
-  background: rgba(255, 255, 255, 0.12);
-  color: var(--text-main);
+  background: var(--kcms-royal-blue);
+  color: #FFF;
 }
 
 /* Search Box */
@@ -397,7 +400,7 @@ body {
 }
 
 .search-box input {
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.3);
   border: var(--glass-border);
   border-radius: var(--radius-md);
   padding: 8px 36px 8px 36px;
@@ -410,8 +413,8 @@ body {
 
 .search-box input:focus {
   outline: none;
-  border-color: var(--primary-emerald);
-  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+  border-color: var(--kcms-gold);
+  box-shadow: 0 0 0 3px var(--kcms-gold-glow);
   width: 270px;
 }
 
@@ -429,11 +432,11 @@ body {
   display: none;
 }
 
-/* Calendar Layout Grid */
+/* 5-Day Monday to Friday School Calendar Layout */
 .calendar-wrapper {
-  background: var(--bg-card);
+  background: var(--glass-bg);
   border: var(--glass-border);
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(14px);
   border-radius: var(--radius-lg);
   overflow: hidden;
   margin-bottom: 32px;
@@ -442,38 +445,33 @@ body {
 
 .weekday-header {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  background: rgba(0, 0, 0, 0.4);
-  border-bottom: var(--glass-border);
+  grid-template-columns: repeat(5, 1fr); /* 5-Day Grid (Mon - Fri) */
+  background: linear-gradient(90deg, var(--kcms-navy), var(--kcms-navy-card));
+  border-bottom: 2px solid var(--kcms-gold);
   text-align: center;
   font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 0.85rem;
-  color: var(--text-muted);
+  font-weight: 800;
+  font-size: 0.92rem;
+  color: var(--kcms-gold-light);
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
 
 .weekday-header div {
-  padding: 14px 8px;
-}
-
-.weekday-header .weekend-col {
-  color: var(--text-dim);
-  background: rgba(0, 0, 0, 0.15);
+  padding: 16px 8px;
 }
 
 .calendar-grid {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 1px;
-  background: var(--border-color);
+  grid-template-columns: repeat(5, 1fr); /* 5-Day Grid (Mon - Fri) */
+  gap: 2px;
+  background: rgba(255, 255, 255, 0.06);
 }
 
-/* Calendar Day Card */
+/* 5-Day Calendar Card */
 .calendar-day {
-  background: var(--bg-card-solid);
-  min-height: 145px;
+  background: var(--kcms-navy-card);
+  min-height: 230px;
   padding: 12px;
   display: flex;
   flex-direction: column;
@@ -484,35 +482,32 @@ body {
 }
 
 .calendar-day:hover {
-  background: var(--bg-card-hover);
+  background: var(--kcms-navy-card-hover);
   z-index: 2;
-  box-shadow: inset 0 0 0 1px var(--primary-emerald);
+  box-shadow: inset 0 0 0 2px var(--kcms-gold);
+  transform: translateY(-2px);
 }
 
 .calendar-day.other-month {
-  opacity: 0.35;
-  background: rgba(10, 15, 26, 0.5);
+  opacity: 0.3;
+  background: rgba(5, 10, 22, 0.6);
   cursor: default;
 }
 
-.calendar-day.weekend {
-  background: rgba(13, 19, 34, 0.6);
-  opacity: 0.6;
-}
-
 .calendar-day.is-today {
-  box-shadow: inset 0 0 0 2px var(--primary-emerald);
+  box-shadow: inset 0 0 0 2px var(--kcms-gold);
 }
 
 .calendar-day.is-today .day-number {
-  background: var(--primary-emerald);
-  color: #FFF;
+  background: var(--kcms-gold);
+  color: #000;
   border-radius: 50%;
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 800;
 }
 
 .day-header {
@@ -524,50 +519,64 @@ body {
 
 .day-number {
   font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 0.95rem;
-  color: var(--text-main);
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: #FFF;
 }
 
 .day-status {
-  font-size: 0.68rem;
-  color: var(--text-dim);
-  font-weight: 600;
+  font-size: 0.7rem;
+  color: var(--kcms-gold-light);
+  font-weight: 700;
 }
 
-/* Meals Content inside Day Cell */
+/* Meal Dish Image & Content Preview */
 .meal-preview-container {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
   flex-grow: 1;
 }
 
+.meal-img-preview {
+  width: 100%;
+  height: 105px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: var(--transition-smooth);
+}
+
+.calendar-day:hover .meal-img-preview {
+  transform: scale(1.02);
+}
+
 .meal-block {
-  background: rgba(255, 255, 255, 0.03);
-  border-left: 3px solid var(--primary-emerald);
+  background: rgba(0, 0, 0, 0.25);
+  border-left: 3px solid var(--kcms-gold);
   padding: 6px 8px;
   border-radius: 4px;
 }
 
 .meal-block.breakfast-block {
-  border-left-color: var(--accent-amber);
+  border-left-color: var(--kcms-royal-blue-light);
 }
 
 .meal-label {
   font-size: 0.65rem;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
-  color: var(--text-muted);
+  color: var(--kcms-gold-light);
   display: flex;
   align-items: center;
   gap: 4px;
 }
 
 .meal-main-title {
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: var(--text-main);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #FFF;
   line-height: 1.25;
   margin-top: 2px;
 
@@ -584,24 +593,16 @@ body {
   flex-wrap: wrap;
 }
 
-.weekend-notice {
-  font-size: 0.75rem;
-  color: var(--text-dim);
-  text-align: center;
-  margin: auto 0;
-  font-style: italic;
-}
-
 .cell-footer {
-  margin-top: 6px;
+  margin-top: 8px;
   text-align: right;
 }
 
 .cell-action-hint {
-  font-size: 0.68rem;
-  color: var(--primary-emerald);
-  font-weight: 600;
-  opacity: 0;
+  font-size: 0.7rem;
+  color: var(--kcms-gold-light);
+  font-weight: 700;
+  opacity: 0.7;
   transition: var(--transition-smooth);
 }
 
@@ -611,9 +612,9 @@ body {
 
 /* PDF Section */
 .pdf-section {
-  background: var(--bg-card);
+  background: var(--glass-bg);
   border: var(--glass-border);
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(14px);
   border-radius: var(--radius-lg);
   padding: 24px;
   margin-bottom: 32px;
@@ -628,13 +629,13 @@ body {
 
 .section-header i {
   font-size: 1.4rem;
-  color: var(--primary-emerald);
+  color: var(--kcms-gold);
 }
 
 .section-header h3 {
   font-family: var(--font-display);
-  font-size: 1.25rem;
-  font-weight: 700;
+  font-size: 1.3rem;
+  font-weight: 800;
 }
 
 .section-header p {
@@ -650,7 +651,7 @@ body {
 }
 
 .pdf-card {
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(0, 0, 0, 0.25);
   border: var(--glass-border);
   border-radius: var(--radius-md);
   padding: 12px 16px;
@@ -663,14 +664,14 @@ body {
 }
 
 .pdf-card:hover {
-  background: rgba(16, 185, 129, 0.1);
-  border-color: var(--border-glow);
+  background: rgba(29, 78, 216, 0.2);
+  border-color: var(--kcms-gold);
   transform: translateY(-2px);
 }
 
 .pdf-icon {
   font-size: 1.5rem;
-  color: var(--accent-rose);
+  color: var(--kcms-rose);
 }
 
 .pdf-info {
@@ -680,7 +681,7 @@ body {
 
 .pdf-title {
   font-size: 0.85rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .pdf-meta {
@@ -697,9 +698,9 @@ body {
 }
 
 .info-card {
-  background: var(--bg-card);
+  background: var(--glass-bg);
   border: var(--glass-border);
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(14px);
   border-radius: var(--radius-lg);
   padding: 24px;
 }
@@ -709,13 +710,13 @@ body {
   align-items: center;
   gap: 10px;
   margin-bottom: 16px;
-  color: var(--primary-emerald);
+  color: var(--kcms-gold);
 }
 
 .card-header h3 {
   font-family: var(--font-display);
-  font-size: 1.15rem;
-  font-weight: 700;
+  font-size: 1.2rem;
+  font-weight: 800;
   color: var(--text-main);
 }
 
@@ -726,7 +727,7 @@ body {
 }
 
 .price-item {
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.3);
   border: var(--glass-border);
   border-radius: var(--radius-sm);
   padding: 8px 12px;
@@ -737,8 +738,8 @@ body {
 
 .price-item.highlight {
   grid-column: span 2;
-  background: rgba(16, 185, 129, 0.1);
-  border-color: var(--border-glow);
+  background: rgba(0, 0, 139, 0.3);
+  border-color: var(--kcms-gold);
 }
 
 .price-title {
@@ -748,8 +749,8 @@ body {
 
 .price-value {
   font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 0.9rem;
+  font-weight: 800;
+  font-size: 0.95rem;
 }
 
 .price-value.free {
@@ -768,7 +769,7 @@ body {
   align-items: center;
   gap: 8px;
   font-size: 0.82rem;
-  color: var(--text-dim);
+  color: var(--kcms-gold-light);
 }
 
 /* Footer */
@@ -781,7 +782,7 @@ body {
 }
 
 .main-footer a {
-  color: var(--primary-emerald);
+  color: var(--kcms-gold-light);
   text-decoration: none;
 }
 
@@ -790,15 +791,15 @@ body {
   font-size: 0.75rem;
 }
 
-/* Modal Overlay */
+/* Day Detail Popup Modal */
 .modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(5, 8, 16, 0.8);
-  backdrop-filter: blur(12px);
+  background: rgba(4, 9, 23, 0.85);
+  backdrop-filter: blur(14px);
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -815,12 +816,12 @@ body {
 }
 
 .modal-card {
-  background: var(--bg-card-solid);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7), var(--shadow-glow);
+  background: var(--kcms-navy-card);
+  border: 2px solid var(--kcms-gold);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8), var(--shadow-glow);
   border-radius: var(--radius-lg);
   width: 100%;
-  max-width: 580px;
+  max-width: 600px;
   padding: 28px;
   position: relative;
   animation: modalPop 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -831,11 +832,21 @@ body {
   to { transform: scale(1); opacity: 1; }
 }
 
+.modal-hero-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  margin-bottom: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: var(--shadow-lg);
+}
+
 .modal-close {
   position: absolute;
   top: 20px;
   right: 20px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.1);
   border: none;
   color: var(--text-muted);
   width: 36px;
@@ -847,47 +858,49 @@ body {
   align-items: center;
   justify-content: center;
   transition: var(--transition-smooth);
+  z-index: 10;
 }
 
 .modal-close:hover {
-  background: rgba(255, 255, 255, 0.2);
-  color: var(--text-main);
+  background: var(--kcms-gold);
+  color: #000;
 }
 
 .modal-header h2 {
   font-family: var(--font-display);
-  font-size: 1.4rem;
+  font-size: 1.45rem;
+  color: #FFF;
   margin-top: 8px;
 }
 
 .modal-school-name {
   font-size: 0.85rem;
-  color: var(--primary-emerald);
-  font-weight: 600;
+  color: var(--kcms-gold-light);
+  font-weight: 700;
 }
 
 .modal-body {
-  margin: 20px 0;
+  margin: 18px 0;
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
 .modal-meal-section {
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.3);
   border-radius: var(--radius-md);
   padding: 16px;
-  border-left: 4px solid var(--primary-emerald);
+  border-left: 4px solid var(--kcms-gold);
 }
 
 .modal-meal-section.breakfast {
-  border-left-color: var(--accent-amber);
+  border-left-color: var(--kcms-royal-blue-light);
 }
 
 .modal-meal-title {
-  font-weight: 700;
+  font-weight: 800;
   font-size: 0.95rem;
-  color: var(--text-main);
+  color: var(--kcms-gold-light);
   display: flex;
   align-items: center;
   gap: 8px;
@@ -895,8 +908,8 @@ body {
 }
 
 .modal-meal-main {
-  font-size: 1.05rem;
-  font-weight: 700;
+  font-size: 1.1rem;
+  font-weight: 800;
   color: #FFF;
   margin-bottom: 8px;
 }
@@ -906,20 +919,15 @@ body {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   color: var(--text-muted);
-}
-
-.modal-sides-list li {
-  display: flex;
-  align-items: center;
-  gap: 6px;
 }
 
 .modal-sides-list li::before {
   content: "•";
-  color: var(--primary-emerald);
+  color: var(--kcms-gold);
   font-weight: bold;
+  margin-right: 6px;
 }
 
 .modal-footer {
@@ -930,8 +938,12 @@ body {
   border-top: var(--glass-border);
 }
 
-/* Responsive Media Queries */
-@media (max-width: 992px) {
+/* Responsive Rules */
+@media (max-width: 1024px) {
+  .calendar-grid, .weekday-header {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
   .info-section {
     grid-template-columns: 1fr;
   }
@@ -942,31 +954,8 @@ body {
     padding: 12px 14px 40px;
   }
 
-  .main-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .school-selector {
-    width: 100%;
-    overflow-x: auto;
-  }
-
-  .toolbar-card {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .search-box input {
-    width: 100%;
-  }
-
-  .search-box input:focus {
-    width: 100%;
-  }
-
   .calendar-grid {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr); /* Mobile stack */
   }
 
   .weekday-header {

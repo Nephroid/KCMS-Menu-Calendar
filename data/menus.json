@@ -140,28 +140,21 @@
     }
   },
   "calendar": {
-    "2026-08-01": {
-      "is_school_day": false,
-      "note": "Weekend - No School Served"
-    },
-    "2026-08-02": {
-      "is_school_day": false,
-      "note": "Weekend - No School Served"
-    },
     "2026-08-03": {
       "is_school_day": true,
       "date": "2026-08-03",
       "day_name": "Monday",
       "kcms_lunch": {
-        "main": "Classic Bacon Cheeseburger on Brioche",
+        "main": "Cheesy Pepperoni Pizza Slice",
+        "image": "assets/images/pepperoni_pizza.jpg",
         "sides": [
-          "Baked Potato Wedges",
-          "Fresh Baby Carrots w/ Ranch",
-          "Juicy Orange Wedges"
+          "Fresh Garden Salad",
+          "Sweet Corn Niblets",
+          "Fresh Crisp Apple"
         ],
         "tags": [
-          "Hearty",
-          "Protein"
+          "Student Favorite",
+          "Whole Grain"
         ]
       },
       "kcms_breakfast": {
@@ -176,28 +169,30 @@
         ]
       },
       "elementary_lunch": {
-        "main": "Classic Bacon Cheeseburger on Brioche",
+        "main": "Cheesy Cheese Pizza Slice",
+        "image": "assets/images/pepperoni_pizza.jpg",
         "sides": [
-          "Baked Potato Wedges",
-          "Fresh Baby Carrots w/ Ranch",
-          "Juicy Orange Wedges"
+          "Fresh Garden Salad",
+          "Sweet Corn Niblets",
+          "Fresh Crisp Apple"
         ],
         "tags": [
           "Kid Friendly"
         ]
       },
       "high_school_lunch": {
-        "main": "Classic Bacon Cheeseburger on Brioche (Special Combo)",
+        "main": "Cheesy Pepperoni Pizza Slice (Combo)",
+        "image": "assets/images/pepperoni_pizza.jpg",
         "sides": [
-          "Baked Potato Wedges",
-          "Fresh Baby Carrots w/ Ranch",
-          "Juicy Orange Wedges",
-          "Side Salad Bar"
+          "Fresh Garden Salad",
+          "Sweet Corn Niblets",
+          "Fresh Crisp Apple",
+          "Salad Bar"
         ],
         "tags": [
-          "Hearty",
-          "Protein",
-          "Sub Line Available"
+          "Student Favorite",
+          "Whole Grain",
+          "Sub Line"
         ]
       }
     },
@@ -206,22 +201,23 @@
       "date": "2026-08-04",
       "day_name": "Tuesday",
       "kcms_lunch": {
-        "main": "Italian Pasta Bake w/ Garlic Breadstick",
+        "main": "Loaded Beef Tacos w/ Queso",
+        "image": "assets/images/beef_tacos.jpg",
         "sides": [
-          "Steamed Broccoli Florets",
-          "Caesar Side Salad",
-          "Mixed Fruit Cup"
+          "Fiesta Black Beans",
+          "Salsa & Tortilla Chips",
+          "Pineapple Tidbits"
         ],
         "tags": [
-          "Vegetarian Option",
-          "Italian"
+          "Tex-Mex Special",
+          "Gluten-Friendly"
         ]
       },
       "kcms_breakfast": {
         "main": "Whole Grain French Toast Sticks",
         "sides": [
-          "Warm Syrup",
-          "Fresh Blueberry Cup",
+          "Warm Maple Syrup",
+          "Fresh Blueberries",
           "Choice of Milk"
         ],
         "tags": [
@@ -229,28 +225,30 @@
         ]
       },
       "elementary_lunch": {
-        "main": "Italian Pasta Bake w/ Garlic Breadstick",
+        "main": "Loaded Beef Tacos w/ Queso",
+        "image": "assets/images/beef_tacos.jpg",
         "sides": [
-          "Steamed Broccoli Florets",
-          "Caesar Side Salad",
-          "Mixed Fruit Cup"
+          "Fiesta Black Beans",
+          "Salsa & Tortilla Chips",
+          "Pineapple Tidbits"
         ],
         "tags": [
           "Kid Friendly"
         ]
       },
       "high_school_lunch": {
-        "main": "Italian Pasta Bake w/ Garlic Breadstick (Special Combo)",
+        "main": "Loaded Beef Tacos w/ Queso (Combo)",
+        "image": "assets/images/beef_tacos.jpg",
         "sides": [
-          "Steamed Broccoli Florets",
-          "Caesar Side Salad",
-          "Mixed Fruit Cup",
-          "Side Salad Bar"
+          "Fiesta Black Beans",
+          "Salsa & Tortilla Chips",
+          "Pineapple Tidbits",
+          "Salad Bar"
         ],
         "tags": [
-          "Vegetarian Option",
-          "Italian",
-          "Sub Line Available"
+          "Tex-Mex Special",
+          "Gluten-Friendly",
+          "Sub Line"
         ]
       }
     },
@@ -259,18 +257,20 @@
       "date": "2026-08-05",
       "day_name": "Wednesday",
       "kcms_lunch": {
-        "main": "BBQ Pulled Pork Sandwich",
+        "main": "Classic Bacon Cheeseburger on Brioche",
+        "image": "assets/images/bacon_cheeseburger.jpg",
         "sides": [
-          "Southern Coleslaw",
-          "Baked Beans",
-          "Sliced Watermelon"
+          "Baked Potato Wedges",
+          "Fresh Baby Carrots w/ Ranch",
+          "Juicy Orange Wedges"
         ],
         "tags": [
-          "BBQ Special"
+          "Hearty",
+          "Chef Selection"
         ]
       },
       "kcms_breakfast": {
-        "main": "Breakfast Burrito w/ Salsa",
+        "main": "Breakfast Burrito w/ Fresh Salsa",
         "sides": [
           "Chilled Fruit Cocktail",
           "100% Orange Juice",
@@ -281,27 +281,30 @@
         ]
       },
       "elementary_lunch": {
-        "main": "BBQ Pulled Pork Sandwich",
+        "main": "Classic Bacon Cheeseburger on Brioche",
+        "image": "assets/images/bacon_cheeseburger.jpg",
         "sides": [
-          "Southern Coleslaw",
-          "Baked Beans",
-          "Sliced Watermelon"
+          "Baked Potato Wedges",
+          "Fresh Baby Carrots w/ Ranch",
+          "Juicy Orange Wedges"
         ],
         "tags": [
           "Kid Friendly"
         ]
       },
       "high_school_lunch": {
-        "main": "BBQ Pulled Pork Sandwich (Special Combo)",
+        "main": "Classic Bacon Cheeseburger on Brioche (Combo)",
+        "image": "assets/images/bacon_cheeseburger.jpg",
         "sides": [
-          "Southern Coleslaw",
-          "Baked Beans",
-          "Sliced Watermelon",
-          "Side Salad Bar"
+          "Baked Potato Wedges",
+          "Fresh Baby Carrots w/ Ranch",
+          "Juicy Orange Wedges",
+          "Salad Bar"
         ],
         "tags": [
-          "BBQ Special",
-          "Sub Line Available"
+          "Hearty",
+          "Chef Selection",
+          "Sub Line"
         ]
       }
     },
@@ -310,14 +313,16 @@
       "date": "2026-08-06",
       "day_name": "Thursday",
       "kcms_lunch": {
-        "main": "Crispy Beef Nachos Supreme",
+        "main": "Italian Pasta Bake w/ Garlic Breadstick",
+        "image": "assets/images/italian_pasta.jpg",
         "sides": [
-          "Refried Beans",
-          "Shredded Lettuce & Tomato",
-          "Chilled Applesauce"
+          "Steamed Broccoli Florets",
+          "Caesar Side Salad",
+          "Mixed Fruit Cup"
         ],
         "tags": [
-          "Fiesta Friday"
+          "Vegetarian Option",
+          "Italian"
         ]
       },
       "kcms_breakfast": {
@@ -332,27 +337,30 @@
         ]
       },
       "elementary_lunch": {
-        "main": "Crispy Beef Nachos Supreme",
+        "main": "Italian Pasta Bake w/ Garlic Breadstick",
+        "image": "assets/images/italian_pasta.jpg",
         "sides": [
-          "Refried Beans",
-          "Shredded Lettuce & Tomato",
-          "Chilled Applesauce"
+          "Steamed Broccoli Florets",
+          "Caesar Side Salad",
+          "Mixed Fruit Cup"
         ],
         "tags": [
           "Kid Friendly"
         ]
       },
       "high_school_lunch": {
-        "main": "Crispy Beef Nachos Supreme (Special Combo)",
+        "main": "Italian Pasta Bake w/ Garlic Breadstick (Combo)",
+        "image": "assets/images/italian_pasta.jpg",
         "sides": [
-          "Refried Beans",
-          "Shredded Lettuce & Tomato",
-          "Chilled Applesauce",
-          "Side Salad Bar"
+          "Steamed Broccoli Florets",
+          "Caesar Side Salad",
+          "Mixed Fruit Cup",
+          "Salad Bar"
         ],
         "tags": [
-          "Fiesta Friday",
-          "Sub Line Available"
+          "Vegetarian Option",
+          "Italian",
+          "Sub Line"
         ]
       }
     },
@@ -361,14 +369,16 @@
       "date": "2026-08-07",
       "day_name": "Friday",
       "kcms_lunch": {
-        "main": "Homestyle Chicken & Waffles",
+        "main": "Crispy Chicken Tenders & Warm Roll",
+        "image": "assets/images/chicken_tenders.jpg",
         "sides": [
-          "Savory Potato Tots",
-          "Maple Syrup Dip",
-          "Fresh Banana"
+          "Crinkle Cut Fries",
+          "Steamed Green Beans",
+          "Chilled Peach Slices"
         ],
         "tags": [
-          "Breakfast for Lunch"
+          "Popular",
+          "High Protein"
         ]
       },
       "kcms_breakfast": {
@@ -376,63 +386,59 @@
         "sides": [
           "Fresh Fruit Cup",
           "100% Apple Juice",
-          "Choice of Cold Milk"
+          "Choice of Milk"
         ],
         "tags": [
           "Warm & Sweet"
         ]
       },
       "elementary_lunch": {
-        "main": "Homestyle Chicken & Waffles",
+        "main": "Crispy Chicken Tenders & Warm Roll",
+        "image": "assets/images/chicken_tenders.jpg",
         "sides": [
-          "Savory Potato Tots",
-          "Maple Syrup Dip",
-          "Fresh Banana"
+          "Crinkle Cut Fries",
+          "Steamed Green Beans",
+          "Chilled Peach Slices"
         ],
         "tags": [
           "Kid Friendly"
         ]
       },
       "high_school_lunch": {
-        "main": "Homestyle Chicken & Waffles (Special Combo)",
+        "main": "Crispy Chicken Tenders & Warm Roll (Combo)",
+        "image": "assets/images/chicken_tenders.jpg",
         "sides": [
-          "Savory Potato Tots",
-          "Maple Syrup Dip",
-          "Fresh Banana",
-          "Side Salad Bar"
+          "Crinkle Cut Fries",
+          "Steamed Green Beans",
+          "Chilled Peach Slices",
+          "Salad Bar"
         ],
         "tags": [
-          "Breakfast for Lunch",
-          "Sub Line Available"
+          "Popular",
+          "High Protein",
+          "Sub Line"
         ]
       }
-    },
-    "2026-08-08": {
-      "is_school_day": false,
-      "note": "Weekend - No School Served"
-    },
-    "2026-08-09": {
-      "is_school_day": false,
-      "note": "Weekend - No School Served"
     },
     "2026-08-10": {
       "is_school_day": true,
       "date": "2026-08-10",
       "day_name": "Monday",
       "kcms_lunch": {
-        "main": "Loaded Beef Tacos w/ Queso",
+        "main": "Classic Bacon Cheeseburger on Brioche",
+        "image": "assets/images/bacon_cheeseburger.jpg",
         "sides": [
-          "Fiesta Black Beans",
-          "Salsa & Tortilla Chips",
-          "Pineapple Tidbits"
+          "Baked Potato Wedges",
+          "Fresh Baby Carrots w/ Ranch",
+          "Juicy Orange Wedges"
         ],
         "tags": [
-          "Tex-Mex",
-          "Gluten-Friendly Option"
+          "Hearty",
+          "Chef Selection"
         ]
       },
       "kcms_breakfast": {
-        "main": "Breakfast Burrito w/ Salsa",
+        "main": "Breakfast Burrito w/ Fresh Salsa",
         "sides": [
           "Chilled Fruit Cocktail",
           "100% Orange Juice",
@@ -443,28 +449,30 @@
         ]
       },
       "elementary_lunch": {
-        "main": "Loaded Beef Tacos w/ Queso",
+        "main": "Classic Bacon Cheeseburger on Brioche",
+        "image": "assets/images/bacon_cheeseburger.jpg",
         "sides": [
-          "Fiesta Black Beans",
-          "Salsa & Tortilla Chips",
-          "Pineapple Tidbits"
+          "Baked Potato Wedges",
+          "Fresh Baby Carrots w/ Ranch",
+          "Juicy Orange Wedges"
         ],
         "tags": [
           "Kid Friendly"
         ]
       },
       "high_school_lunch": {
-        "main": "Loaded Beef Tacos w/ Queso (Special Combo)",
+        "main": "Classic Bacon Cheeseburger on Brioche (Combo)",
+        "image": "assets/images/bacon_cheeseburger.jpg",
         "sides": [
-          "Fiesta Black Beans",
-          "Salsa & Tortilla Chips",
-          "Pineapple Tidbits",
-          "Side Salad Bar"
+          "Baked Potato Wedges",
+          "Fresh Baby Carrots w/ Ranch",
+          "Juicy Orange Wedges",
+          "Salad Bar"
         ],
         "tags": [
-          "Tex-Mex",
-          "Gluten-Friendly Option",
-          "Sub Line Available"
+          "Hearty",
+          "Chef Selection",
+          "Sub Line"
         ]
       }
     },
@@ -473,15 +481,16 @@
       "date": "2026-08-11",
       "day_name": "Tuesday",
       "kcms_lunch": {
-        "main": "Classic Bacon Cheeseburger on Brioche",
+        "main": "Italian Pasta Bake w/ Garlic Breadstick",
+        "image": "assets/images/italian_pasta.jpg",
         "sides": [
-          "Baked Potato Wedges",
-          "Fresh Baby Carrots w/ Ranch",
-          "Juicy Orange Wedges"
+          "Steamed Broccoli Florets",
+          "Caesar Side Salad",
+          "Mixed Fruit Cup"
         ],
         "tags": [
-          "Hearty",
-          "Protein"
+          "Vegetarian Option",
+          "Italian"
         ]
       },
       "kcms_breakfast": {
@@ -496,28 +505,30 @@
         ]
       },
       "elementary_lunch": {
-        "main": "Classic Bacon Cheeseburger on Brioche",
+        "main": "Italian Pasta Bake w/ Garlic Breadstick",
+        "image": "assets/images/italian_pasta.jpg",
         "sides": [
-          "Baked Potato Wedges",
-          "Fresh Baby Carrots w/ Ranch",
-          "Juicy Orange Wedges"
+          "Steamed Broccoli Florets",
+          "Caesar Side Salad",
+          "Mixed Fruit Cup"
         ],
         "tags": [
           "Kid Friendly"
         ]
       },
       "high_school_lunch": {
-        "main": "Classic Bacon Cheeseburger on Brioche (Special Combo)",
+        "main": "Italian Pasta Bake w/ Garlic Breadstick (Combo)",
+        "image": "assets/images/italian_pasta.jpg",
         "sides": [
-          "Baked Potato Wedges",
-          "Fresh Baby Carrots w/ Ranch",
-          "Juicy Orange Wedges",
-          "Side Salad Bar"
+          "Steamed Broccoli Florets",
+          "Caesar Side Salad",
+          "Mixed Fruit Cup",
+          "Salad Bar"
         ],
         "tags": [
-          "Hearty",
-          "Protein",
-          "Sub Line Available"
+          "Vegetarian Option",
+          "Italian",
+          "Sub Line"
         ]
       }
     },
@@ -526,15 +537,16 @@
       "date": "2026-08-12",
       "day_name": "Wednesday",
       "kcms_lunch": {
-        "main": "Italian Pasta Bake w/ Garlic Breadstick",
+        "main": "Crispy Chicken Tenders & Warm Roll",
+        "image": "assets/images/chicken_tenders.jpg",
         "sides": [
-          "Steamed Broccoli Florets",
-          "Caesar Side Salad",
-          "Mixed Fruit Cup"
+          "Crinkle Cut Fries",
+          "Steamed Green Beans",
+          "Chilled Peach Slices"
         ],
         "tags": [
-          "Vegetarian Option",
-          "Italian"
+          "Popular",
+          "High Protein"
         ]
       },
       "kcms_breakfast": {
@@ -542,35 +554,37 @@
         "sides": [
           "Fresh Fruit Cup",
           "100% Apple Juice",
-          "Choice of Cold Milk"
+          "Choice of Milk"
         ],
         "tags": [
           "Warm & Sweet"
         ]
       },
       "elementary_lunch": {
-        "main": "Italian Pasta Bake w/ Garlic Breadstick",
+        "main": "Crispy Chicken Tenders & Warm Roll",
+        "image": "assets/images/chicken_tenders.jpg",
         "sides": [
-          "Steamed Broccoli Florets",
-          "Caesar Side Salad",
-          "Mixed Fruit Cup"
+          "Crinkle Cut Fries",
+          "Steamed Green Beans",
+          "Chilled Peach Slices"
         ],
         "tags": [
           "Kid Friendly"
         ]
       },
       "high_school_lunch": {
-        "main": "Italian Pasta Bake w/ Garlic Breadstick (Special Combo)",
+        "main": "Crispy Chicken Tenders & Warm Roll (Combo)",
+        "image": "assets/images/chicken_tenders.jpg",
         "sides": [
-          "Steamed Broccoli Florets",
-          "Caesar Side Salad",
-          "Mixed Fruit Cup",
-          "Side Salad Bar"
+          "Crinkle Cut Fries",
+          "Steamed Green Beans",
+          "Chilled Peach Slices",
+          "Salad Bar"
         ],
         "tags": [
-          "Vegetarian Option",
-          "Italian",
-          "Sub Line Available"
+          "Popular",
+          "High Protein",
+          "Sub Line"
         ]
       }
     },
@@ -579,14 +593,16 @@
       "date": "2026-08-13",
       "day_name": "Thursday",
       "kcms_lunch": {
-        "main": "BBQ Pulled Pork Sandwich",
+        "main": "Cheesy Pepperoni Pizza Slice",
+        "image": "assets/images/pepperoni_pizza.jpg",
         "sides": [
-          "Southern Coleslaw",
-          "Baked Beans",
-          "Sliced Watermelon"
+          "Fresh Garden Salad",
+          "Sweet Corn Niblets",
+          "Fresh Crisp Apple"
         ],
         "tags": [
-          "BBQ Special"
+          "Student Favorite",
+          "Whole Grain"
         ]
       },
       "kcms_breakfast": {
@@ -601,27 +617,30 @@
         ]
       },
       "elementary_lunch": {
-        "main": "BBQ Pulled Pork Sandwich",
+        "main": "Cheesy Cheese Pizza Slice",
+        "image": "assets/images/pepperoni_pizza.jpg",
         "sides": [
-          "Southern Coleslaw",
-          "Baked Beans",
-          "Sliced Watermelon"
+          "Fresh Garden Salad",
+          "Sweet Corn Niblets",
+          "Fresh Crisp Apple"
         ],
         "tags": [
           "Kid Friendly"
         ]
       },
       "high_school_lunch": {
-        "main": "BBQ Pulled Pork Sandwich (Special Combo)",
+        "main": "Cheesy Pepperoni Pizza Slice (Combo)",
+        "image": "assets/images/pepperoni_pizza.jpg",
         "sides": [
-          "Southern Coleslaw",
-          "Baked Beans",
-          "Sliced Watermelon",
-          "Side Salad Bar"
+          "Fresh Garden Salad",
+          "Sweet Corn Niblets",
+          "Fresh Crisp Apple",
+          "Salad Bar"
         ],
         "tags": [
-          "BBQ Special",
-          "Sub Line Available"
+          "Student Favorite",
+          "Whole Grain",
+          "Sub Line"
         ]
       }
     },
@@ -630,21 +649,23 @@
       "date": "2026-08-14",
       "day_name": "Friday",
       "kcms_lunch": {
-        "main": "Crispy Beef Nachos Supreme",
+        "main": "Loaded Beef Tacos w/ Queso",
+        "image": "assets/images/beef_tacos.jpg",
         "sides": [
-          "Refried Beans",
-          "Shredded Lettuce & Tomato",
-          "Chilled Applesauce"
+          "Fiesta Black Beans",
+          "Salsa & Tortilla Chips",
+          "Pineapple Tidbits"
         ],
         "tags": [
-          "Fiesta Friday"
+          "Tex-Mex Special",
+          "Gluten-Friendly"
         ]
       },
       "kcms_breakfast": {
         "main": "Whole Grain French Toast Sticks",
         "sides": [
-          "Warm Syrup",
-          "Fresh Blueberry Cup",
+          "Warm Maple Syrup",
+          "Fresh Blueberries",
           "Choice of Milk"
         ],
         "tags": [
@@ -652,52 +673,48 @@
         ]
       },
       "elementary_lunch": {
-        "main": "Crispy Beef Nachos Supreme",
+        "main": "Loaded Beef Tacos w/ Queso",
+        "image": "assets/images/beef_tacos.jpg",
         "sides": [
-          "Refried Beans",
-          "Shredded Lettuce & Tomato",
-          "Chilled Applesauce"
+          "Fiesta Black Beans",
+          "Salsa & Tortilla Chips",
+          "Pineapple Tidbits"
         ],
         "tags": [
           "Kid Friendly"
         ]
       },
       "high_school_lunch": {
-        "main": "Crispy Beef Nachos Supreme (Special Combo)",
+        "main": "Loaded Beef Tacos w/ Queso (Combo)",
+        "image": "assets/images/beef_tacos.jpg",
         "sides": [
-          "Refried Beans",
-          "Shredded Lettuce & Tomato",
-          "Chilled Applesauce",
-          "Side Salad Bar"
+          "Fiesta Black Beans",
+          "Salsa & Tortilla Chips",
+          "Pineapple Tidbits",
+          "Salad Bar"
         ],
         "tags": [
-          "Fiesta Friday",
-          "Sub Line Available"
+          "Tex-Mex Special",
+          "Gluten-Friendly",
+          "Sub Line"
         ]
       }
-    },
-    "2026-08-15": {
-      "is_school_day": false,
-      "note": "Weekend - No School Served"
-    },
-    "2026-08-16": {
-      "is_school_day": false,
-      "note": "Weekend - No School Served"
     },
     "2026-08-17": {
       "is_school_day": true,
       "date": "2026-08-17",
       "day_name": "Monday",
       "kcms_lunch": {
-        "main": "Cheesy Pepperoni Pizza Slice",
+        "main": "Crispy Chicken Tenders & Warm Roll",
+        "image": "assets/images/chicken_tenders.jpg",
         "sides": [
-          "Fresh Garden Salad",
-          "Sweet Corn Niblets",
-          "Fresh Apple Crisp"
+          "Crinkle Cut Fries",
+          "Steamed Green Beans",
+          "Chilled Peach Slices"
         ],
         "tags": [
-          "Student Favorite",
-          "Whole Grain"
+          "Popular",
+          "High Protein"
         ]
       },
       "kcms_breakfast": {
@@ -705,35 +722,37 @@
         "sides": [
           "Fresh Fruit Cup",
           "100% Apple Juice",
-          "Choice of Cold Milk"
+          "Choice of Milk"
         ],
         "tags": [
           "Warm & Sweet"
         ]
       },
       "elementary_lunch": {
-        "main": "Cheesy Cheese Pizza Slice",
+        "main": "Crispy Chicken Tenders & Warm Roll",
+        "image": "assets/images/chicken_tenders.jpg",
         "sides": [
-          "Fresh Garden Salad",
-          "Sweet Corn Niblets",
-          "Fresh Apple Crisp"
+          "Crinkle Cut Fries",
+          "Steamed Green Beans",
+          "Chilled Peach Slices"
         ],
         "tags": [
           "Kid Friendly"
         ]
       },
       "high_school_lunch": {
-        "main": "Cheesy Pepperoni Pizza Slice (Special Combo)",
+        "main": "Crispy Chicken Tenders & Warm Roll (Combo)",
+        "image": "assets/images/chicken_tenders.jpg",
         "sides": [
-          "Fresh Garden Salad",
-          "Sweet Corn Niblets",
-          "Fresh Apple Crisp",
-          "Side Salad Bar"
+          "Crinkle Cut Fries",
+          "Steamed Green Beans",
+          "Chilled Peach Slices",
+          "Salad Bar"
         ],
         "tags": [
-          "Student Favorite",
-          "Whole Grain",
-          "Sub Line Available"
+          "Popular",
+          "High Protein",
+          "Sub Line"
         ]
       }
     },
@@ -742,15 +761,16 @@
       "date": "2026-08-18",
       "day_name": "Tuesday",
       "kcms_lunch": {
-        "main": "Loaded Beef Tacos w/ Queso",
+        "main": "Cheesy Pepperoni Pizza Slice",
+        "image": "assets/images/pepperoni_pizza.jpg",
         "sides": [
-          "Fiesta Black Beans",
-          "Salsa & Tortilla Chips",
-          "Pineapple Tidbits"
+          "Fresh Garden Salad",
+          "Sweet Corn Niblets",
+          "Fresh Crisp Apple"
         ],
         "tags": [
-          "Tex-Mex",
-          "Gluten-Friendly Option"
+          "Student Favorite",
+          "Whole Grain"
         ]
       },
       "kcms_breakfast": {
@@ -765,28 +785,30 @@
         ]
       },
       "elementary_lunch": {
-        "main": "Loaded Beef Tacos w/ Queso",
+        "main": "Cheesy Cheese Pizza Slice",
+        "image": "assets/images/pepperoni_pizza.jpg",
         "sides": [
-          "Fiesta Black Beans",
-          "Salsa & Tortilla Chips",
-          "Pineapple Tidbits"
+          "Fresh Garden Salad",
+          "Sweet Corn Niblets",
+          "Fresh Crisp Apple"
         ],
         "tags": [
           "Kid Friendly"
         ]
       },
       "high_school_lunch": {
-        "main": "Loaded Beef Tacos w/ Queso (Special Combo)",
+        "main": "Cheesy Pepperoni Pizza Slice (Combo)",
+        "image": "assets/images/pepperoni_pizza.jpg",
         "sides": [
-          "Fiesta Black Beans",
-          "Salsa & Tortilla Chips",
-          "Pineapple Tidbits",
-          "Side Salad Bar"
+          "Fresh Garden Salad",
+          "Sweet Corn Niblets",
+          "Fresh Crisp Apple",
+          "Salad Bar"
         ],
         "tags": [
-          "Tex-Mex",
-          "Gluten-Friendly Option",
-          "Sub Line Available"
+          "Student Favorite",
+          "Whole Grain",
+          "Sub Line"
         ]
       }
     },
@@ -795,22 +817,23 @@
       "date": "2026-08-19",
       "day_name": "Wednesday",
       "kcms_lunch": {
-        "main": "Classic Bacon Cheeseburger on Brioche",
+        "main": "Loaded Beef Tacos w/ Queso",
+        "image": "assets/images/beef_tacos.jpg",
         "sides": [
-          "Baked Potato Wedges",
-          "Fresh Baby Carrots w/ Ranch",
-          "Juicy Orange Wedges"
+          "Fiesta Black Beans",
+          "Salsa & Tortilla Chips",
+          "Pineapple Tidbits"
         ],
         "tags": [
-          "Hearty",
-          "Protein"
+          "Tex-Mex Special",
+          "Gluten-Friendly"
         ]
       },
       "kcms_breakfast": {
         "main": "Whole Grain French Toast Sticks",
         "sides": [
-          "Warm Syrup",
-          "Fresh Blueberry Cup",
+          "Warm Maple Syrup",
+          "Fresh Blueberries",
           "Choice of Milk"
         ],
         "tags": [
@@ -818,28 +841,30 @@
         ]
       },
       "elementary_lunch": {
-        "main": "Classic Bacon Cheeseburger on Brioche",
+        "main": "Loaded Beef Tacos w/ Queso",
+        "image": "assets/images/beef_tacos.jpg",
         "sides": [
-          "Baked Potato Wedges",
-          "Fresh Baby Carrots w/ Ranch",
-          "Juicy Orange Wedges"
+          "Fiesta Black Beans",
+          "Salsa & Tortilla Chips",
+          "Pineapple Tidbits"
         ],
         "tags": [
           "Kid Friendly"
         ]
       },
       "high_school_lunch": {
-        "main": "Classic Bacon Cheeseburger on Brioche (Special Combo)",
+        "main": "Loaded Beef Tacos w/ Queso (Combo)",
+        "image": "assets/images/beef_tacos.jpg",
         "sides": [
-          "Baked Potato Wedges",
-          "Fresh Baby Carrots w/ Ranch",
-          "Juicy Orange Wedges",
-          "Side Salad Bar"
+          "Fiesta Black Beans",
+          "Salsa & Tortilla Chips",
+          "Pineapple Tidbits",
+          "Salad Bar"
         ],
         "tags": [
-          "Hearty",
-          "Protein",
-          "Sub Line Available"
+          "Tex-Mex Special",
+          "Gluten-Friendly",
+          "Sub Line"
         ]
       }
     },
@@ -848,19 +873,20 @@
       "date": "2026-08-20",
       "day_name": "Thursday",
       "kcms_lunch": {
-        "main": "Italian Pasta Bake w/ Garlic Breadstick",
+        "main": "Classic Bacon Cheeseburger on Brioche",
+        "image": "assets/images/bacon_cheeseburger.jpg",
         "sides": [
-          "Steamed Broccoli Florets",
-          "Caesar Side Salad",
-          "Mixed Fruit Cup"
+          "Baked Potato Wedges",
+          "Fresh Baby Carrots w/ Ranch",
+          "Juicy Orange Wedges"
         ],
         "tags": [
-          "Vegetarian Option",
-          "Italian"
+          "Hearty",
+          "Chef Selection"
         ]
       },
       "kcms_breakfast": {
-        "main": "Breakfast Burrito w/ Salsa",
+        "main": "Breakfast Burrito w/ Fresh Salsa",
         "sides": [
           "Chilled Fruit Cocktail",
           "100% Orange Juice",
@@ -871,28 +897,30 @@
         ]
       },
       "elementary_lunch": {
-        "main": "Italian Pasta Bake w/ Garlic Breadstick",
+        "main": "Classic Bacon Cheeseburger on Brioche",
+        "image": "assets/images/bacon_cheeseburger.jpg",
         "sides": [
-          "Steamed Broccoli Florets",
-          "Caesar Side Salad",
-          "Mixed Fruit Cup"
+          "Baked Potato Wedges",
+          "Fresh Baby Carrots w/ Ranch",
+          "Juicy Orange Wedges"
         ],
         "tags": [
           "Kid Friendly"
         ]
       },
       "high_school_lunch": {
-        "main": "Italian Pasta Bake w/ Garlic Breadstick (Special Combo)",
+        "main": "Classic Bacon Cheeseburger on Brioche (Combo)",
+        "image": "assets/images/bacon_cheeseburger.jpg",
         "sides": [
-          "Steamed Broccoli Florets",
-          "Caesar Side Salad",
-          "Mixed Fruit Cup",
-          "Side Salad Bar"
+          "Baked Potato Wedges",
+          "Fresh Baby Carrots w/ Ranch",
+          "Juicy Orange Wedges",
+          "Salad Bar"
         ],
         "tags": [
-          "Vegetarian Option",
-          "Italian",
-          "Sub Line Available"
+          "Hearty",
+          "Chef Selection",
+          "Sub Line"
         ]
       }
     },
@@ -901,14 +929,16 @@
       "date": "2026-08-21",
       "day_name": "Friday",
       "kcms_lunch": {
-        "main": "BBQ Pulled Pork Sandwich",
+        "main": "Italian Pasta Bake w/ Garlic Breadstick",
+        "image": "assets/images/italian_pasta.jpg",
         "sides": [
-          "Southern Coleslaw",
-          "Baked Beans",
-          "Sliced Watermelon"
+          "Steamed Broccoli Florets",
+          "Caesar Side Salad",
+          "Mixed Fruit Cup"
         ],
         "tags": [
-          "BBQ Special"
+          "Vegetarian Option",
+          "Italian"
         ]
       },
       "kcms_breakfast": {
@@ -923,59 +953,55 @@
         ]
       },
       "elementary_lunch": {
-        "main": "BBQ Pulled Pork Sandwich",
+        "main": "Italian Pasta Bake w/ Garlic Breadstick",
+        "image": "assets/images/italian_pasta.jpg",
         "sides": [
-          "Southern Coleslaw",
-          "Baked Beans",
-          "Sliced Watermelon"
+          "Steamed Broccoli Florets",
+          "Caesar Side Salad",
+          "Mixed Fruit Cup"
         ],
         "tags": [
           "Kid Friendly"
         ]
       },
       "high_school_lunch": {
-        "main": "BBQ Pulled Pork Sandwich (Special Combo)",
+        "main": "Italian Pasta Bake w/ Garlic Breadstick (Combo)",
+        "image": "assets/images/italian_pasta.jpg",
         "sides": [
-          "Southern Coleslaw",
-          "Baked Beans",
-          "Sliced Watermelon",
-          "Side Salad Bar"
+          "Steamed Broccoli Florets",
+          "Caesar Side Salad",
+          "Mixed Fruit Cup",
+          "Salad Bar"
         ],
         "tags": [
-          "BBQ Special",
-          "Sub Line Available"
+          "Vegetarian Option",
+          "Italian",
+          "Sub Line"
         ]
       }
-    },
-    "2026-08-22": {
-      "is_school_day": false,
-      "note": "Weekend - No School Served"
-    },
-    "2026-08-23": {
-      "is_school_day": false,
-      "note": "Weekend - No School Served"
     },
     "2026-08-24": {
       "is_school_day": true,
       "date": "2026-08-24",
       "day_name": "Monday",
       "kcms_lunch": {
-        "main": "Crispy Chicken Tenders & Warm Roll",
+        "main": "Loaded Beef Tacos w/ Queso",
+        "image": "assets/images/beef_tacos.jpg",
         "sides": [
-          "Crinkle Cut Fries",
-          "Steamed Green Beans",
-          "Chilled Peach Slices"
+          "Fiesta Black Beans",
+          "Salsa & Tortilla Chips",
+          "Pineapple Tidbits"
         ],
         "tags": [
-          "Popular",
-          "Protein"
+          "Tex-Mex Special",
+          "Gluten-Friendly"
         ]
       },
       "kcms_breakfast": {
         "main": "Whole Grain French Toast Sticks",
         "sides": [
-          "Warm Syrup",
-          "Fresh Blueberry Cup",
+          "Warm Maple Syrup",
+          "Fresh Blueberries",
           "Choice of Milk"
         ],
         "tags": [
@@ -983,28 +1009,30 @@
         ]
       },
       "elementary_lunch": {
-        "main": "Crispy Chicken Tenders & Warm Roll",
+        "main": "Loaded Beef Tacos w/ Queso",
+        "image": "assets/images/beef_tacos.jpg",
         "sides": [
-          "Crinkle Cut Fries",
-          "Steamed Green Beans",
-          "Chilled Peach Slices"
+          "Fiesta Black Beans",
+          "Salsa & Tortilla Chips",
+          "Pineapple Tidbits"
         ],
         "tags": [
           "Kid Friendly"
         ]
       },
       "high_school_lunch": {
-        "main": "Crispy Chicken Tenders & Warm Roll (Special Combo)",
+        "main": "Loaded Beef Tacos w/ Queso (Combo)",
+        "image": "assets/images/beef_tacos.jpg",
         "sides": [
-          "Crinkle Cut Fries",
-          "Steamed Green Beans",
-          "Chilled Peach Slices",
-          "Side Salad Bar"
+          "Fiesta Black Beans",
+          "Salsa & Tortilla Chips",
+          "Pineapple Tidbits",
+          "Salad Bar"
         ],
         "tags": [
-          "Popular",
-          "Protein",
-          "Sub Line Available"
+          "Tex-Mex Special",
+          "Gluten-Friendly",
+          "Sub Line"
         ]
       }
     },
@@ -1013,19 +1041,20 @@
       "date": "2026-08-25",
       "day_name": "Tuesday",
       "kcms_lunch": {
-        "main": "Cheesy Pepperoni Pizza Slice",
+        "main": "Classic Bacon Cheeseburger on Brioche",
+        "image": "assets/images/bacon_cheeseburger.jpg",
         "sides": [
-          "Fresh Garden Salad",
-          "Sweet Corn Niblets",
-          "Fresh Apple Crisp"
+          "Baked Potato Wedges",
+          "Fresh Baby Carrots w/ Ranch",
+          "Juicy Orange Wedges"
         ],
         "tags": [
-          "Student Favorite",
-          "Whole Grain"
+          "Hearty",
+          "Chef Selection"
         ]
       },
       "kcms_breakfast": {
-        "main": "Breakfast Burrito w/ Salsa",
+        "main": "Breakfast Burrito w/ Fresh Salsa",
         "sides": [
           "Chilled Fruit Cocktail",
           "100% Orange Juice",
@@ -1036,28 +1065,30 @@
         ]
       },
       "elementary_lunch": {
-        "main": "Cheesy Cheese Pizza Slice",
+        "main": "Classic Bacon Cheeseburger on Brioche",
+        "image": "assets/images/bacon_cheeseburger.jpg",
         "sides": [
-          "Fresh Garden Salad",
-          "Sweet Corn Niblets",
-          "Fresh Apple Crisp"
+          "Baked Potato Wedges",
+          "Fresh Baby Carrots w/ Ranch",
+          "Juicy Orange Wedges"
         ],
         "tags": [
           "Kid Friendly"
         ]
       },
       "high_school_lunch": {
-        "main": "Cheesy Pepperoni Pizza Slice (Special Combo)",
+        "main": "Classic Bacon Cheeseburger on Brioche (Combo)",
+        "image": "assets/images/bacon_cheeseburger.jpg",
         "sides": [
-          "Fresh Garden Salad",
-          "Sweet Corn Niblets",
-          "Fresh Apple Crisp",
-          "Side Salad Bar"
+          "Baked Potato Wedges",
+          "Fresh Baby Carrots w/ Ranch",
+          "Juicy Orange Wedges",
+          "Salad Bar"
         ],
         "tags": [
-          "Student Favorite",
-          "Whole Grain",
-          "Sub Line Available"
+          "Hearty",
+          "Chef Selection",
+          "Sub Line"
         ]
       }
     },
@@ -1066,15 +1097,16 @@
       "date": "2026-08-26",
       "day_name": "Wednesday",
       "kcms_lunch": {
-        "main": "Loaded Beef Tacos w/ Queso",
+        "main": "Italian Pasta Bake w/ Garlic Breadstick",
+        "image": "assets/images/italian_pasta.jpg",
         "sides": [
-          "Fiesta Black Beans",
-          "Salsa & Tortilla Chips",
-          "Pineapple Tidbits"
+          "Steamed Broccoli Florets",
+          "Caesar Side Salad",
+          "Mixed Fruit Cup"
         ],
         "tags": [
-          "Tex-Mex",
-          "Gluten-Friendly Option"
+          "Vegetarian Option",
+          "Italian"
         ]
       },
       "kcms_breakfast": {
@@ -1089,28 +1121,30 @@
         ]
       },
       "elementary_lunch": {
-        "main": "Loaded Beef Tacos w/ Queso",
+        "main": "Italian Pasta Bake w/ Garlic Breadstick",
+        "image": "assets/images/italian_pasta.jpg",
         "sides": [
-          "Fiesta Black Beans",
-          "Salsa & Tortilla Chips",
-          "Pineapple Tidbits"
+          "Steamed Broccoli Florets",
+          "Caesar Side Salad",
+          "Mixed Fruit Cup"
         ],
         "tags": [
           "Kid Friendly"
         ]
       },
       "high_school_lunch": {
-        "main": "Loaded Beef Tacos w/ Queso (Special Combo)",
+        "main": "Italian Pasta Bake w/ Garlic Breadstick (Combo)",
+        "image": "assets/images/italian_pasta.jpg",
         "sides": [
-          "Fiesta Black Beans",
-          "Salsa & Tortilla Chips",
-          "Pineapple Tidbits",
-          "Side Salad Bar"
+          "Steamed Broccoli Florets",
+          "Caesar Side Salad",
+          "Mixed Fruit Cup",
+          "Salad Bar"
         ],
         "tags": [
-          "Tex-Mex",
-          "Gluten-Friendly Option",
-          "Sub Line Available"
+          "Vegetarian Option",
+          "Italian",
+          "Sub Line"
         ]
       }
     },
@@ -1119,15 +1153,16 @@
       "date": "2026-08-27",
       "day_name": "Thursday",
       "kcms_lunch": {
-        "main": "Classic Bacon Cheeseburger on Brioche",
+        "main": "Crispy Chicken Tenders & Warm Roll",
+        "image": "assets/images/chicken_tenders.jpg",
         "sides": [
-          "Baked Potato Wedges",
-          "Fresh Baby Carrots w/ Ranch",
-          "Juicy Orange Wedges"
+          "Crinkle Cut Fries",
+          "Steamed Green Beans",
+          "Chilled Peach Slices"
         ],
         "tags": [
-          "Hearty",
-          "Protein"
+          "Popular",
+          "High Protein"
         ]
       },
       "kcms_breakfast": {
@@ -1135,35 +1170,37 @@
         "sides": [
           "Fresh Fruit Cup",
           "100% Apple Juice",
-          "Choice of Cold Milk"
+          "Choice of Milk"
         ],
         "tags": [
           "Warm & Sweet"
         ]
       },
       "elementary_lunch": {
-        "main": "Classic Bacon Cheeseburger on Brioche",
+        "main": "Crispy Chicken Tenders & Warm Roll",
+        "image": "assets/images/chicken_tenders.jpg",
         "sides": [
-          "Baked Potato Wedges",
-          "Fresh Baby Carrots w/ Ranch",
-          "Juicy Orange Wedges"
+          "Crinkle Cut Fries",
+          "Steamed Green Beans",
+          "Chilled Peach Slices"
         ],
         "tags": [
           "Kid Friendly"
         ]
       },
       "high_school_lunch": {
-        "main": "Classic Bacon Cheeseburger on Brioche (Special Combo)",
+        "main": "Crispy Chicken Tenders & Warm Roll (Combo)",
+        "image": "assets/images/chicken_tenders.jpg",
         "sides": [
-          "Baked Potato Wedges",
-          "Fresh Baby Carrots w/ Ranch",
-          "Juicy Orange Wedges",
-          "Side Salad Bar"
+          "Crinkle Cut Fries",
+          "Steamed Green Beans",
+          "Chilled Peach Slices",
+          "Salad Bar"
         ],
         "tags": [
-          "Hearty",
-          "Protein",
-          "Sub Line Available"
+          "Popular",
+          "High Protein",
+          "Sub Line"
         ]
       }
     },
@@ -1172,15 +1209,16 @@
       "date": "2026-08-28",
       "day_name": "Friday",
       "kcms_lunch": {
-        "main": "Italian Pasta Bake w/ Garlic Breadstick",
+        "main": "Cheesy Pepperoni Pizza Slice",
+        "image": "assets/images/pepperoni_pizza.jpg",
         "sides": [
-          "Steamed Broccoli Florets",
-          "Caesar Side Salad",
-          "Mixed Fruit Cup"
+          "Fresh Garden Salad",
+          "Sweet Corn Niblets",
+          "Fresh Crisp Apple"
         ],
         "tags": [
-          "Vegetarian Option",
-          "Italian"
+          "Student Favorite",
+          "Whole Grain"
         ]
       },
       "kcms_breakfast": {
@@ -1195,52 +1233,48 @@
         ]
       },
       "elementary_lunch": {
-        "main": "Italian Pasta Bake w/ Garlic Breadstick",
+        "main": "Cheesy Cheese Pizza Slice",
+        "image": "assets/images/pepperoni_pizza.jpg",
         "sides": [
-          "Steamed Broccoli Florets",
-          "Caesar Side Salad",
-          "Mixed Fruit Cup"
+          "Fresh Garden Salad",
+          "Sweet Corn Niblets",
+          "Fresh Crisp Apple"
         ],
         "tags": [
           "Kid Friendly"
         ]
       },
       "high_school_lunch": {
-        "main": "Italian Pasta Bake w/ Garlic Breadstick (Special Combo)",
+        "main": "Cheesy Pepperoni Pizza Slice (Combo)",
+        "image": "assets/images/pepperoni_pizza.jpg",
         "sides": [
-          "Steamed Broccoli Florets",
-          "Caesar Side Salad",
-          "Mixed Fruit Cup",
-          "Side Salad Bar"
+          "Fresh Garden Salad",
+          "Sweet Corn Niblets",
+          "Fresh Crisp Apple",
+          "Salad Bar"
         ],
         "tags": [
-          "Vegetarian Option",
-          "Italian",
-          "Sub Line Available"
+          "Student Favorite",
+          "Whole Grain",
+          "Sub Line"
         ]
       }
-    },
-    "2026-08-29": {
-      "is_school_day": false,
-      "note": "Weekend - No School Served"
-    },
-    "2026-08-30": {
-      "is_school_day": false,
-      "note": "Weekend - No School Served"
     },
     "2026-08-31": {
       "is_school_day": true,
       "date": "2026-08-31",
       "day_name": "Monday",
       "kcms_lunch": {
-        "main": "Homestyle Chicken & Waffles",
+        "main": "Italian Pasta Bake w/ Garlic Breadstick",
+        "image": "assets/images/italian_pasta.jpg",
         "sides": [
-          "Savory Potato Tots",
-          "Maple Syrup Dip",
-          "Fresh Banana"
+          "Steamed Broccoli Florets",
+          "Caesar Side Salad",
+          "Mixed Fruit Cup"
         ],
         "tags": [
-          "Breakfast for Lunch"
+          "Vegetarian Option",
+          "Italian"
         ]
       },
       "kcms_breakfast": {
@@ -1255,27 +1289,30 @@
         ]
       },
       "elementary_lunch": {
-        "main": "Homestyle Chicken & Waffles",
+        "main": "Italian Pasta Bake w/ Garlic Breadstick",
+        "image": "assets/images/italian_pasta.jpg",
         "sides": [
-          "Savory Potato Tots",
-          "Maple Syrup Dip",
-          "Fresh Banana"
+          "Steamed Broccoli Florets",
+          "Caesar Side Salad",
+          "Mixed Fruit Cup"
         ],
         "tags": [
           "Kid Friendly"
         ]
       },
       "high_school_lunch": {
-        "main": "Homestyle Chicken & Waffles (Special Combo)",
+        "main": "Italian Pasta Bake w/ Garlic Breadstick (Combo)",
+        "image": "assets/images/italian_pasta.jpg",
         "sides": [
-          "Savory Potato Tots",
-          "Maple Syrup Dip",
-          "Fresh Banana",
-          "Side Salad Bar"
+          "Steamed Broccoli Florets",
+          "Caesar Side Salad",
+          "Mixed Fruit Cup",
+          "Salad Bar"
         ],
         "tags": [
-          "Breakfast for Lunch",
-          "Sub Line Available"
+          "Vegetarian Option",
+          "Italian",
+          "Sub Line"
         ]
       }
     },
@@ -1284,15 +1321,16 @@
       "date": "2026-09-01",
       "day_name": "Tuesday",
       "kcms_lunch": {
-        "main": "Loaded Beef Tacos w/ Queso",
+        "main": "Crispy Chicken Tenders & Warm Roll",
+        "image": "assets/images/chicken_tenders.jpg",
         "sides": [
-          "Fiesta Black Beans",
-          "Salsa & Tortilla Chips",
-          "Pineapple Tidbits"
+          "Crinkle Cut Fries",
+          "Steamed Green Beans",
+          "Chilled Peach Slices"
         ],
         "tags": [
-          "Tex-Mex",
-          "Gluten-Friendly Option"
+          "Popular",
+          "High Protein"
         ]
       },
       "kcms_breakfast": {
@@ -1300,35 +1338,37 @@
         "sides": [
           "Fresh Fruit Cup",
           "100% Apple Juice",
-          "Choice of Cold Milk"
+          "Choice of Milk"
         ],
         "tags": [
           "Warm & Sweet"
         ]
       },
       "elementary_lunch": {
-        "main": "Loaded Beef Tacos w/ Queso",
+        "main": "Crispy Chicken Tenders & Warm Roll",
+        "image": "assets/images/chicken_tenders.jpg",
         "sides": [
-          "Fiesta Black Beans",
-          "Salsa & Tortilla Chips",
-          "Pineapple Tidbits"
+          "Crinkle Cut Fries",
+          "Steamed Green Beans",
+          "Chilled Peach Slices"
         ],
         "tags": [
           "Kid Friendly"
         ]
       },
       "high_school_lunch": {
-        "main": "Loaded Beef Tacos w/ Queso (Special Combo)",
+        "main": "Crispy Chicken Tenders & Warm Roll (Combo)",
+        "image": "assets/images/chicken_tenders.jpg",
         "sides": [
-          "Fiesta Black Beans",
-          "Salsa & Tortilla Chips",
-          "Pineapple Tidbits",
-          "Side Salad Bar"
+          "Crinkle Cut Fries",
+          "Steamed Green Beans",
+          "Chilled Peach Slices",
+          "Salad Bar"
         ],
         "tags": [
-          "Tex-Mex",
-          "Gluten-Friendly Option",
-          "Sub Line Available"
+          "Popular",
+          "High Protein",
+          "Sub Line"
         ]
       }
     },
@@ -1337,15 +1377,16 @@
       "date": "2026-09-02",
       "day_name": "Wednesday",
       "kcms_lunch": {
-        "main": "Classic Bacon Cheeseburger on Brioche",
+        "main": "Cheesy Pepperoni Pizza Slice",
+        "image": "assets/images/pepperoni_pizza.jpg",
         "sides": [
-          "Baked Potato Wedges",
-          "Fresh Baby Carrots w/ Ranch",
-          "Juicy Orange Wedges"
+          "Fresh Garden Salad",
+          "Sweet Corn Niblets",
+          "Fresh Crisp Apple"
         ],
         "tags": [
-          "Hearty",
-          "Protein"
+          "Student Favorite",
+          "Whole Grain"
         ]
       },
       "kcms_breakfast": {
@@ -1360,28 +1401,30 @@
         ]
       },
       "elementary_lunch": {
-        "main": "Classic Bacon Cheeseburger on Brioche",
+        "main": "Cheesy Cheese Pizza Slice",
+        "image": "assets/images/pepperoni_pizza.jpg",
         "sides": [
-          "Baked Potato Wedges",
-          "Fresh Baby Carrots w/ Ranch",
-          "Juicy Orange Wedges"
+          "Fresh Garden Salad",
+          "Sweet Corn Niblets",
+          "Fresh Crisp Apple"
         ],
         "tags": [
           "Kid Friendly"
         ]
       },
       "high_school_lunch": {
-        "main": "Classic Bacon Cheeseburger on Brioche (Special Combo)",
+        "main": "Cheesy Pepperoni Pizza Slice (Combo)",
+        "image": "assets/images/pepperoni_pizza.jpg",
         "sides": [
-          "Baked Potato Wedges",
-          "Fresh Baby Carrots w/ Ranch",
-          "Juicy Orange Wedges",
-          "Side Salad Bar"
+          "Fresh Garden Salad",
+          "Sweet Corn Niblets",
+          "Fresh Crisp Apple",
+          "Salad Bar"
         ],
         "tags": [
-          "Hearty",
-          "Protein",
-          "Sub Line Available"
+          "Student Favorite",
+          "Whole Grain",
+          "Sub Line"
         ]
       }
     },
@@ -1390,22 +1433,23 @@
       "date": "2026-09-03",
       "day_name": "Thursday",
       "kcms_lunch": {
-        "main": "Italian Pasta Bake w/ Garlic Breadstick",
+        "main": "Loaded Beef Tacos w/ Queso",
+        "image": "assets/images/beef_tacos.jpg",
         "sides": [
-          "Steamed Broccoli Florets",
-          "Caesar Side Salad",
-          "Mixed Fruit Cup"
+          "Fiesta Black Beans",
+          "Salsa & Tortilla Chips",
+          "Pineapple Tidbits"
         ],
         "tags": [
-          "Vegetarian Option",
-          "Italian"
+          "Tex-Mex Special",
+          "Gluten-Friendly"
         ]
       },
       "kcms_breakfast": {
         "main": "Whole Grain French Toast Sticks",
         "sides": [
-          "Warm Syrup",
-          "Fresh Blueberry Cup",
+          "Warm Maple Syrup",
+          "Fresh Blueberries",
           "Choice of Milk"
         ],
         "tags": [
@@ -1413,28 +1457,30 @@
         ]
       },
       "elementary_lunch": {
-        "main": "Italian Pasta Bake w/ Garlic Breadstick",
+        "main": "Loaded Beef Tacos w/ Queso",
+        "image": "assets/images/beef_tacos.jpg",
         "sides": [
-          "Steamed Broccoli Florets",
-          "Caesar Side Salad",
-          "Mixed Fruit Cup"
+          "Fiesta Black Beans",
+          "Salsa & Tortilla Chips",
+          "Pineapple Tidbits"
         ],
         "tags": [
           "Kid Friendly"
         ]
       },
       "high_school_lunch": {
-        "main": "Italian Pasta Bake w/ Garlic Breadstick (Special Combo)",
+        "main": "Loaded Beef Tacos w/ Queso (Combo)",
+        "image": "assets/images/beef_tacos.jpg",
         "sides": [
-          "Steamed Broccoli Florets",
-          "Caesar Side Salad",
-          "Mixed Fruit Cup",
-          "Side Salad Bar"
+          "Fiesta Black Beans",
+          "Salsa & Tortilla Chips",
+          "Pineapple Tidbits",
+          "Salad Bar"
         ],
         "tags": [
-          "Vegetarian Option",
-          "Italian",
-          "Sub Line Available"
+          "Tex-Mex Special",
+          "Gluten-Friendly",
+          "Sub Line"
         ]
       }
     },
@@ -1443,18 +1489,20 @@
       "date": "2026-09-04",
       "day_name": "Friday",
       "kcms_lunch": {
-        "main": "BBQ Pulled Pork Sandwich",
+        "main": "Classic Bacon Cheeseburger on Brioche",
+        "image": "assets/images/bacon_cheeseburger.jpg",
         "sides": [
-          "Southern Coleslaw",
-          "Baked Beans",
-          "Sliced Watermelon"
+          "Baked Potato Wedges",
+          "Fresh Baby Carrots w/ Ranch",
+          "Juicy Orange Wedges"
         ],
         "tags": [
-          "BBQ Special"
+          "Hearty",
+          "Chef Selection"
         ]
       },
       "kcms_breakfast": {
-        "main": "Breakfast Burrito w/ Salsa",
+        "main": "Breakfast Burrito w/ Fresh Salsa",
         "sides": [
           "Chilled Fruit Cocktail",
           "100% Orange Juice",
@@ -1465,52 +1513,48 @@
         ]
       },
       "elementary_lunch": {
-        "main": "BBQ Pulled Pork Sandwich",
+        "main": "Classic Bacon Cheeseburger on Brioche",
+        "image": "assets/images/bacon_cheeseburger.jpg",
         "sides": [
-          "Southern Coleslaw",
-          "Baked Beans",
-          "Sliced Watermelon"
+          "Baked Potato Wedges",
+          "Fresh Baby Carrots w/ Ranch",
+          "Juicy Orange Wedges"
         ],
         "tags": [
           "Kid Friendly"
         ]
       },
       "high_school_lunch": {
-        "main": "BBQ Pulled Pork Sandwich (Special Combo)",
+        "main": "Classic Bacon Cheeseburger on Brioche (Combo)",
+        "image": "assets/images/bacon_cheeseburger.jpg",
         "sides": [
-          "Southern Coleslaw",
-          "Baked Beans",
-          "Sliced Watermelon",
-          "Side Salad Bar"
+          "Baked Potato Wedges",
+          "Fresh Baby Carrots w/ Ranch",
+          "Juicy Orange Wedges",
+          "Salad Bar"
         ],
         "tags": [
-          "BBQ Special",
-          "Sub Line Available"
+          "Hearty",
+          "Chef Selection",
+          "Sub Line"
         ]
       }
-    },
-    "2026-09-05": {
-      "is_school_day": false,
-      "note": "Weekend - No School Served"
-    },
-    "2026-09-06": {
-      "is_school_day": false,
-      "note": "Weekend - No School Served"
     },
     "2026-09-07": {
       "is_school_day": true,
       "date": "2026-09-07",
       "day_name": "Monday",
       "kcms_lunch": {
-        "main": "Crispy Chicken Tenders & Warm Roll",
+        "main": "Cheesy Pepperoni Pizza Slice",
+        "image": "assets/images/pepperoni_pizza.jpg",
         "sides": [
-          "Crinkle Cut Fries",
-          "Steamed Green Beans",
-          "Chilled Peach Slices"
+          "Fresh Garden Salad",
+          "Sweet Corn Niblets",
+          "Fresh Crisp Apple"
         ],
         "tags": [
-          "Popular",
-          "Protein"
+          "Student Favorite",
+          "Whole Grain"
         ]
       },
       "kcms_breakfast": {
@@ -1525,28 +1569,30 @@
         ]
       },
       "elementary_lunch": {
-        "main": "Crispy Chicken Tenders & Warm Roll",
+        "main": "Cheesy Cheese Pizza Slice",
+        "image": "assets/images/pepperoni_pizza.jpg",
         "sides": [
-          "Crinkle Cut Fries",
-          "Steamed Green Beans",
-          "Chilled Peach Slices"
+          "Fresh Garden Salad",
+          "Sweet Corn Niblets",
+          "Fresh Crisp Apple"
         ],
         "tags": [
           "Kid Friendly"
         ]
       },
       "high_school_lunch": {
-        "main": "Crispy Chicken Tenders & Warm Roll (Special Combo)",
+        "main": "Cheesy Pepperoni Pizza Slice (Combo)",
+        "image": "assets/images/pepperoni_pizza.jpg",
         "sides": [
-          "Crinkle Cut Fries",
-          "Steamed Green Beans",
-          "Chilled Peach Slices",
-          "Side Salad Bar"
+          "Fresh Garden Salad",
+          "Sweet Corn Niblets",
+          "Fresh Crisp Apple",
+          "Salad Bar"
         ],
         "tags": [
-          "Popular",
-          "Protein",
-          "Sub Line Available"
+          "Student Favorite",
+          "Whole Grain",
+          "Sub Line"
         ]
       }
     },
@@ -1555,22 +1601,23 @@
       "date": "2026-09-08",
       "day_name": "Tuesday",
       "kcms_lunch": {
-        "main": "Cheesy Pepperoni Pizza Slice",
+        "main": "Loaded Beef Tacos w/ Queso",
+        "image": "assets/images/beef_tacos.jpg",
         "sides": [
-          "Fresh Garden Salad",
-          "Sweet Corn Niblets",
-          "Fresh Apple Crisp"
+          "Fiesta Black Beans",
+          "Salsa & Tortilla Chips",
+          "Pineapple Tidbits"
         ],
         "tags": [
-          "Student Favorite",
-          "Whole Grain"
+          "Tex-Mex Special",
+          "Gluten-Friendly"
         ]
       },
       "kcms_breakfast": {
         "main": "Whole Grain French Toast Sticks",
         "sides": [
-          "Warm Syrup",
-          "Fresh Blueberry Cup",
+          "Warm Maple Syrup",
+          "Fresh Blueberries",
           "Choice of Milk"
         ],
         "tags": [
@@ -1578,28 +1625,30 @@
         ]
       },
       "elementary_lunch": {
-        "main": "Cheesy Cheese Pizza Slice",
+        "main": "Loaded Beef Tacos w/ Queso",
+        "image": "assets/images/beef_tacos.jpg",
         "sides": [
-          "Fresh Garden Salad",
-          "Sweet Corn Niblets",
-          "Fresh Apple Crisp"
+          "Fiesta Black Beans",
+          "Salsa & Tortilla Chips",
+          "Pineapple Tidbits"
         ],
         "tags": [
           "Kid Friendly"
         ]
       },
       "high_school_lunch": {
-        "main": "Cheesy Pepperoni Pizza Slice (Special Combo)",
+        "main": "Loaded Beef Tacos w/ Queso (Combo)",
+        "image": "assets/images/beef_tacos.jpg",
         "sides": [
-          "Fresh Garden Salad",
-          "Sweet Corn Niblets",
-          "Fresh Apple Crisp",
-          "Side Salad Bar"
+          "Fiesta Black Beans",
+          "Salsa & Tortilla Chips",
+          "Pineapple Tidbits",
+          "Salad Bar"
         ],
         "tags": [
-          "Student Favorite",
-          "Whole Grain",
-          "Sub Line Available"
+          "Tex-Mex Special",
+          "Gluten-Friendly",
+          "Sub Line"
         ]
       }
     },
@@ -1608,19 +1657,20 @@
       "date": "2026-09-09",
       "day_name": "Wednesday",
       "kcms_lunch": {
-        "main": "Loaded Beef Tacos w/ Queso",
+        "main": "Classic Bacon Cheeseburger on Brioche",
+        "image": "assets/images/bacon_cheeseburger.jpg",
         "sides": [
-          "Fiesta Black Beans",
-          "Salsa & Tortilla Chips",
-          "Pineapple Tidbits"
+          "Baked Potato Wedges",
+          "Fresh Baby Carrots w/ Ranch",
+          "Juicy Orange Wedges"
         ],
         "tags": [
-          "Tex-Mex",
-          "Gluten-Friendly Option"
+          "Hearty",
+          "Chef Selection"
         ]
       },
       "kcms_breakfast": {
-        "main": "Breakfast Burrito w/ Salsa",
+        "main": "Breakfast Burrito w/ Fresh Salsa",
         "sides": [
           "Chilled Fruit Cocktail",
           "100% Orange Juice",
@@ -1631,28 +1681,30 @@
         ]
       },
       "elementary_lunch": {
-        "main": "Loaded Beef Tacos w/ Queso",
+        "main": "Classic Bacon Cheeseburger on Brioche",
+        "image": "assets/images/bacon_cheeseburger.jpg",
         "sides": [
-          "Fiesta Black Beans",
-          "Salsa & Tortilla Chips",
-          "Pineapple Tidbits"
+          "Baked Potato Wedges",
+          "Fresh Baby Carrots w/ Ranch",
+          "Juicy Orange Wedges"
         ],
         "tags": [
           "Kid Friendly"
         ]
       },
       "high_school_lunch": {
-        "main": "Loaded Beef Tacos w/ Queso (Special Combo)",
+        "main": "Classic Bacon Cheeseburger on Brioche (Combo)",
+        "image": "assets/images/bacon_cheeseburger.jpg",
         "sides": [
-          "Fiesta Black Beans",
-          "Salsa & Tortilla Chips",
-          "Pineapple Tidbits",
-          "Side Salad Bar"
+          "Baked Potato Wedges",
+          "Fresh Baby Carrots w/ Ranch",
+          "Juicy Orange Wedges",
+          "Salad Bar"
         ],
         "tags": [
-          "Tex-Mex",
-          "Gluten-Friendly Option",
-          "Sub Line Available"
+          "Hearty",
+          "Chef Selection",
+          "Sub Line"
         ]
       }
     },
@@ -1661,60 +1713,8 @@
       "date": "2026-09-10",
       "day_name": "Thursday",
       "kcms_lunch": {
-        "main": "Classic Bacon Cheeseburger on Brioche",
-        "sides": [
-          "Baked Potato Wedges",
-          "Fresh Baby Carrots w/ Ranch",
-          "Juicy Orange Wedges"
-        ],
-        "tags": [
-          "Hearty",
-          "Protein"
-        ]
-      },
-      "kcms_breakfast": {
-        "main": "Assorted Cereal Bowl & Grahams",
-        "sides": [
-          "Fresh Sliced Apples",
-          "Fruit Juice",
-          "Choice of Milk"
-        ],
-        "tags": [
-          "Quick & Light"
-        ]
-      },
-      "elementary_lunch": {
-        "main": "Classic Bacon Cheeseburger on Brioche",
-        "sides": [
-          "Baked Potato Wedges",
-          "Fresh Baby Carrots w/ Ranch",
-          "Juicy Orange Wedges"
-        ],
-        "tags": [
-          "Kid Friendly"
-        ]
-      },
-      "high_school_lunch": {
-        "main": "Classic Bacon Cheeseburger on Brioche (Special Combo)",
-        "sides": [
-          "Baked Potato Wedges",
-          "Fresh Baby Carrots w/ Ranch",
-          "Juicy Orange Wedges",
-          "Side Salad Bar"
-        ],
-        "tags": [
-          "Hearty",
-          "Protein",
-          "Sub Line Available"
-        ]
-      }
-    },
-    "2026-09-11": {
-      "is_school_day": true,
-      "date": "2026-09-11",
-      "day_name": "Friday",
-      "kcms_lunch": {
         "main": "Italian Pasta Bake w/ Garlic Breadstick",
+        "image": "assets/images/italian_pasta.jpg",
         "sides": [
           "Steamed Broccoli Florets",
           "Caesar Side Salad",
@@ -1726,18 +1726,19 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Mini Cinnamon Glazed Donuts",
+        "main": "Assorted Cereal Bowl & Grahams",
         "sides": [
-          "Fresh Fruit Cup",
-          "100% Apple Juice",
-          "Choice of Cold Milk"
+          "Fresh Sliced Apples",
+          "Fruit Juice",
+          "Choice of Milk"
         ],
         "tags": [
-          "Warm & Sweet"
+          "Quick & Light"
         ]
       },
       "elementary_lunch": {
         "main": "Italian Pasta Bake w/ Garlic Breadstick",
+        "image": "assets/images/italian_pasta.jpg",
         "sides": [
           "Steamed Broccoli Florets",
           "Caesar Side Salad",
@@ -1748,45 +1749,96 @@
         ]
       },
       "high_school_lunch": {
-        "main": "Italian Pasta Bake w/ Garlic Breadstick (Special Combo)",
+        "main": "Italian Pasta Bake w/ Garlic Breadstick (Combo)",
+        "image": "assets/images/italian_pasta.jpg",
         "sides": [
           "Steamed Broccoli Florets",
           "Caesar Side Salad",
           "Mixed Fruit Cup",
-          "Side Salad Bar"
+          "Salad Bar"
         ],
         "tags": [
           "Vegetarian Option",
           "Italian",
-          "Sub Line Available"
+          "Sub Line"
         ]
       }
     },
-    "2026-09-12": {
-      "is_school_day": false,
-      "note": "Weekend - No School Served"
-    },
-    "2026-09-13": {
-      "is_school_day": false,
-      "note": "Weekend - No School Served"
+    "2026-09-11": {
+      "is_school_day": true,
+      "date": "2026-09-11",
+      "day_name": "Friday",
+      "kcms_lunch": {
+        "main": "Crispy Chicken Tenders & Warm Roll",
+        "image": "assets/images/chicken_tenders.jpg",
+        "sides": [
+          "Crinkle Cut Fries",
+          "Steamed Green Beans",
+          "Chilled Peach Slices"
+        ],
+        "tags": [
+          "Popular",
+          "High Protein"
+        ]
+      },
+      "kcms_breakfast": {
+        "main": "Warm Mini Cinnamon Glazed Donuts",
+        "sides": [
+          "Fresh Fruit Cup",
+          "100% Apple Juice",
+          "Choice of Milk"
+        ],
+        "tags": [
+          "Warm & Sweet"
+        ]
+      },
+      "elementary_lunch": {
+        "main": "Crispy Chicken Tenders & Warm Roll",
+        "image": "assets/images/chicken_tenders.jpg",
+        "sides": [
+          "Crinkle Cut Fries",
+          "Steamed Green Beans",
+          "Chilled Peach Slices"
+        ],
+        "tags": [
+          "Kid Friendly"
+        ]
+      },
+      "high_school_lunch": {
+        "main": "Crispy Chicken Tenders & Warm Roll (Combo)",
+        "image": "assets/images/chicken_tenders.jpg",
+        "sides": [
+          "Crinkle Cut Fries",
+          "Steamed Green Beans",
+          "Chilled Peach Slices",
+          "Salad Bar"
+        ],
+        "tags": [
+          "Popular",
+          "High Protein",
+          "Sub Line"
+        ]
+      }
     },
     "2026-09-14": {
       "is_school_day": true,
       "date": "2026-09-14",
       "day_name": "Monday",
       "kcms_lunch": {
-        "main": "Homestyle Chicken & Waffles",
+        "main": "Classic Bacon Cheeseburger on Brioche",
+        "image": "assets/images/bacon_cheeseburger.jpg",
         "sides": [
-          "Savory Potato Tots",
-          "Maple Syrup Dip",
-          "Fresh Banana"
+          "Baked Potato Wedges",
+          "Fresh Baby Carrots w/ Ranch",
+          "Juicy Orange Wedges"
         ],
         "tags": [
-          "Breakfast for Lunch"
+          "Hearty",
+          "Chef Selection"
         ]
       },
       "kcms_breakfast": {
-        "main": "Breakfast Burrito w/ Salsa",
+        "main": "Breakfast Burrito w/ Fresh Salsa",
         "sides": [
           "Chilled Fruit Cocktail",
           "100% Orange Juice",
@@ -1797,27 +1849,30 @@
         ]
       },
       "elementary_lunch": {
-        "main": "Homestyle Chicken & Waffles",
+        "main": "Classic Bacon Cheeseburger on Brioche",
+        "image": "assets/images/bacon_cheeseburger.jpg",
         "sides": [
-          "Savory Potato Tots",
-          "Maple Syrup Dip",
-          "Fresh Banana"
+          "Baked Potato Wedges",
+          "Fresh Baby Carrots w/ Ranch",
+          "Juicy Orange Wedges"
         ],
         "tags": [
           "Kid Friendly"
         ]
       },
       "high_school_lunch": {
-        "main": "Homestyle Chicken & Waffles (Special Combo)",
+        "main": "Classic Bacon Cheeseburger on Brioche (Combo)",
+        "image": "assets/images/bacon_cheeseburger.jpg",
         "sides": [
-          "Savory Potato Tots",
-          "Maple Syrup Dip",
-          "Fresh Banana",
-          "Side Salad Bar"
+          "Baked Potato Wedges",
+          "Fresh Baby Carrots w/ Ranch",
+          "Juicy Orange Wedges",
+          "Salad Bar"
         ],
         "tags": [
-          "Breakfast for Lunch",
-          "Sub Line Available"
+          "Hearty",
+          "Chef Selection",
+          "Sub Line"
         ]
       }
     },
@@ -1826,15 +1881,16 @@
       "date": "2026-09-15",
       "day_name": "Tuesday",
       "kcms_lunch": {
-        "main": "Crispy Chicken Tenders & Warm Roll",
+        "main": "Italian Pasta Bake w/ Garlic Breadstick",
+        "image": "assets/images/italian_pasta.jpg",
         "sides": [
-          "Crinkle Cut Fries",
-          "Steamed Green Beans",
-          "Chilled Peach Slices"
+          "Steamed Broccoli Florets",
+          "Caesar Side Salad",
+          "Mixed Fruit Cup"
         ],
         "tags": [
-          "Popular",
-          "Protein"
+          "Vegetarian Option",
+          "Italian"
         ]
       },
       "kcms_breakfast": {
@@ -1849,28 +1905,30 @@
         ]
       },
       "elementary_lunch": {
-        "main": "Crispy Chicken Tenders & Warm Roll",
+        "main": "Italian Pasta Bake w/ Garlic Breadstick",
+        "image": "assets/images/italian_pasta.jpg",
         "sides": [
-          "Crinkle Cut Fries",
-          "Steamed Green Beans",
-          "Chilled Peach Slices"
+          "Steamed Broccoli Florets",
+          "Caesar Side Salad",
+          "Mixed Fruit Cup"
         ],
         "tags": [
           "Kid Friendly"
         ]
       },
       "high_school_lunch": {
-        "main": "Crispy Chicken Tenders & Warm Roll (Special Combo)",
+        "main": "Italian Pasta Bake w/ Garlic Breadstick (Combo)",
+        "image": "assets/images/italian_pasta.jpg",
         "sides": [
-          "Crinkle Cut Fries",
-          "Steamed Green Beans",
-          "Chilled Peach Slices",
-          "Side Salad Bar"
+          "Steamed Broccoli Florets",
+          "Caesar Side Salad",
+          "Mixed Fruit Cup",
+          "Salad Bar"
         ],
         "tags": [
-          "Popular",
-          "Protein",
-          "Sub Line Available"
+          "Vegetarian Option",
+          "Italian",
+          "Sub Line"
         ]
       }
     },
@@ -1879,15 +1937,16 @@
       "date": "2026-09-16",
       "day_name": "Wednesday",
       "kcms_lunch": {
-        "main": "Cheesy Pepperoni Pizza Slice",
+        "main": "Crispy Chicken Tenders & Warm Roll",
+        "image": "assets/images/chicken_tenders.jpg",
         "sides": [
-          "Fresh Garden Salad",
-          "Sweet Corn Niblets",
-          "Fresh Apple Crisp"
+          "Crinkle Cut Fries",
+          "Steamed Green Beans",
+          "Chilled Peach Slices"
         ],
         "tags": [
-          "Student Favorite",
-          "Whole Grain"
+          "Popular",
+          "High Protein"
         ]
       },
       "kcms_breakfast": {
@@ -1895,35 +1954,37 @@
         "sides": [
           "Fresh Fruit Cup",
           "100% Apple Juice",
-          "Choice of Cold Milk"
+          "Choice of Milk"
         ],
         "tags": [
           "Warm & Sweet"
         ]
       },
       "elementary_lunch": {
-        "main": "Cheesy Cheese Pizza Slice",
+        "main": "Crispy Chicken Tenders & Warm Roll",
+        "image": "assets/images/chicken_tenders.jpg",
         "sides": [
-          "Fresh Garden Salad",
-          "Sweet Corn Niblets",
-          "Fresh Apple Crisp"
+          "Crinkle Cut Fries",
+          "Steamed Green Beans",
+          "Chilled Peach Slices"
         ],
         "tags": [
           "Kid Friendly"
         ]
       },
       "high_school_lunch": {
-        "main": "Cheesy Pepperoni Pizza Slice (Special Combo)",
+        "main": "Crispy Chicken Tenders & Warm Roll (Combo)",
+        "image": "assets/images/chicken_tenders.jpg",
         "sides": [
-          "Fresh Garden Salad",
-          "Sweet Corn Niblets",
-          "Fresh Apple Crisp",
-          "Side Salad Bar"
+          "Crinkle Cut Fries",
+          "Steamed Green Beans",
+          "Chilled Peach Slices",
+          "Salad Bar"
         ],
         "tags": [
-          "Student Favorite",
-          "Whole Grain",
-          "Sub Line Available"
+          "Popular",
+          "High Protein",
+          "Sub Line"
         ]
       }
     },
@@ -1932,15 +1993,16 @@
       "date": "2026-09-17",
       "day_name": "Thursday",
       "kcms_lunch": {
-        "main": "Loaded Beef Tacos w/ Queso",
+        "main": "Cheesy Pepperoni Pizza Slice",
+        "image": "assets/images/pepperoni_pizza.jpg",
         "sides": [
-          "Fiesta Black Beans",
-          "Salsa & Tortilla Chips",
-          "Pineapple Tidbits"
+          "Fresh Garden Salad",
+          "Sweet Corn Niblets",
+          "Fresh Crisp Apple"
         ],
         "tags": [
-          "Tex-Mex",
-          "Gluten-Friendly Option"
+          "Student Favorite",
+          "Whole Grain"
         ]
       },
       "kcms_breakfast": {
@@ -1955,28 +2017,30 @@
         ]
       },
       "elementary_lunch": {
-        "main": "Loaded Beef Tacos w/ Queso",
+        "main": "Cheesy Cheese Pizza Slice",
+        "image": "assets/images/pepperoni_pizza.jpg",
         "sides": [
-          "Fiesta Black Beans",
-          "Salsa & Tortilla Chips",
-          "Pineapple Tidbits"
+          "Fresh Garden Salad",
+          "Sweet Corn Niblets",
+          "Fresh Crisp Apple"
         ],
         "tags": [
           "Kid Friendly"
         ]
       },
       "high_school_lunch": {
-        "main": "Loaded Beef Tacos w/ Queso (Special Combo)",
+        "main": "Cheesy Pepperoni Pizza Slice (Combo)",
+        "image": "assets/images/pepperoni_pizza.jpg",
         "sides": [
-          "Fiesta Black Beans",
-          "Salsa & Tortilla Chips",
-          "Pineapple Tidbits",
-          "Side Salad Bar"
+          "Fresh Garden Salad",
+          "Sweet Corn Niblets",
+          "Fresh Crisp Apple",
+          "Salad Bar"
         ],
         "tags": [
-          "Tex-Mex",
-          "Gluten-Friendly Option",
-          "Sub Line Available"
+          "Student Favorite",
+          "Whole Grain",
+          "Sub Line"
         ]
       }
     },
@@ -1985,22 +2049,23 @@
       "date": "2026-09-18",
       "day_name": "Friday",
       "kcms_lunch": {
-        "main": "Classic Bacon Cheeseburger on Brioche",
+        "main": "Loaded Beef Tacos w/ Queso",
+        "image": "assets/images/beef_tacos.jpg",
         "sides": [
-          "Baked Potato Wedges",
-          "Fresh Baby Carrots w/ Ranch",
-          "Juicy Orange Wedges"
+          "Fiesta Black Beans",
+          "Salsa & Tortilla Chips",
+          "Pineapple Tidbits"
         ],
         "tags": [
-          "Hearty",
-          "Protein"
+          "Tex-Mex Special",
+          "Gluten-Friendly"
         ]
       },
       "kcms_breakfast": {
         "main": "Whole Grain French Toast Sticks",
         "sides": [
-          "Warm Syrup",
-          "Fresh Blueberry Cup",
+          "Warm Maple Syrup",
+          "Fresh Blueberries",
           "Choice of Milk"
         ],
         "tags": [
@@ -2008,52 +2073,48 @@
         ]
       },
       "elementary_lunch": {
-        "main": "Classic Bacon Cheeseburger on Brioche",
+        "main": "Loaded Beef Tacos w/ Queso",
+        "image": "assets/images/beef_tacos.jpg",
         "sides": [
-          "Baked Potato Wedges",
-          "Fresh Baby Carrots w/ Ranch",
-          "Juicy Orange Wedges"
+          "Fiesta Black Beans",
+          "Salsa & Tortilla Chips",
+          "Pineapple Tidbits"
         ],
         "tags": [
           "Kid Friendly"
         ]
       },
       "high_school_lunch": {
-        "main": "Classic Bacon Cheeseburger on Brioche (Special Combo)",
+        "main": "Loaded Beef Tacos w/ Queso (Combo)",
+        "image": "assets/images/beef_tacos.jpg",
         "sides": [
-          "Baked Potato Wedges",
-          "Fresh Baby Carrots w/ Ranch",
-          "Juicy Orange Wedges",
-          "Side Salad Bar"
+          "Fiesta Black Beans",
+          "Salsa & Tortilla Chips",
+          "Pineapple Tidbits",
+          "Salad Bar"
         ],
         "tags": [
-          "Hearty",
-          "Protein",
-          "Sub Line Available"
+          "Tex-Mex Special",
+          "Gluten-Friendly",
+          "Sub Line"
         ]
       }
-    },
-    "2026-09-19": {
-      "is_school_day": false,
-      "note": "Weekend - No School Served"
-    },
-    "2026-09-20": {
-      "is_school_day": false,
-      "note": "Weekend - No School Served"
     },
     "2026-09-21": {
       "is_school_day": true,
       "date": "2026-09-21",
       "day_name": "Monday",
       "kcms_lunch": {
-        "main": "Crispy Beef Nachos Supreme",
+        "main": "Crispy Chicken Tenders & Warm Roll",
+        "image": "assets/images/chicken_tenders.jpg",
         "sides": [
-          "Refried Beans",
-          "Shredded Lettuce & Tomato",
-          "Chilled Applesauce"
+          "Crinkle Cut Fries",
+          "Steamed Green Beans",
+          "Chilled Peach Slices"
         ],
         "tags": [
-          "Fiesta Friday"
+          "Popular",
+          "High Protein"
         ]
       },
       "kcms_breakfast": {
@@ -2061,34 +2122,37 @@
         "sides": [
           "Fresh Fruit Cup",
           "100% Apple Juice",
-          "Choice of Cold Milk"
+          "Choice of Milk"
         ],
         "tags": [
           "Warm & Sweet"
         ]
       },
       "elementary_lunch": {
-        "main": "Crispy Beef Nachos Supreme",
+        "main": "Crispy Chicken Tenders & Warm Roll",
+        "image": "assets/images/chicken_tenders.jpg",
         "sides": [
-          "Refried Beans",
-          "Shredded Lettuce & Tomato",
-          "Chilled Applesauce"
+          "Crinkle Cut Fries",
+          "Steamed Green Beans",
+          "Chilled Peach Slices"
         ],
         "tags": [
           "Kid Friendly"
         ]
       },
       "high_school_lunch": {
-        "main": "Crispy Beef Nachos Supreme (Special Combo)",
+        "main": "Crispy Chicken Tenders & Warm Roll (Combo)",
+        "image": "assets/images/chicken_tenders.jpg",
         "sides": [
-          "Refried Beans",
-          "Shredded Lettuce & Tomato",
-          "Chilled Applesauce",
-          "Side Salad Bar"
+          "Crinkle Cut Fries",
+          "Steamed Green Beans",
+          "Chilled Peach Slices",
+          "Salad Bar"
         ],
         "tags": [
-          "Fiesta Friday",
-          "Sub Line Available"
+          "Popular",
+          "High Protein",
+          "Sub Line"
         ]
       }
     },
@@ -2097,14 +2161,16 @@
       "date": "2026-09-22",
       "day_name": "Tuesday",
       "kcms_lunch": {
-        "main": "Homestyle Chicken & Waffles",
+        "main": "Cheesy Pepperoni Pizza Slice",
+        "image": "assets/images/pepperoni_pizza.jpg",
         "sides": [
-          "Savory Potato Tots",
-          "Maple Syrup Dip",
-          "Fresh Banana"
+          "Fresh Garden Salad",
+          "Sweet Corn Niblets",
+          "Fresh Crisp Apple"
         ],
         "tags": [
-          "Breakfast for Lunch"
+          "Student Favorite",
+          "Whole Grain"
         ]
       },
       "kcms_breakfast": {
@@ -2119,27 +2185,30 @@
         ]
       },
       "elementary_lunch": {
-        "main": "Homestyle Chicken & Waffles",
+        "main": "Cheesy Cheese Pizza Slice",
+        "image": "assets/images/pepperoni_pizza.jpg",
         "sides": [
-          "Savory Potato Tots",
-          "Maple Syrup Dip",
-          "Fresh Banana"
+          "Fresh Garden Salad",
+          "Sweet Corn Niblets",
+          "Fresh Crisp Apple"
         ],
         "tags": [
           "Kid Friendly"
         ]
       },
       "high_school_lunch": {
-        "main": "Homestyle Chicken & Waffles (Special Combo)",
+        "main": "Cheesy Pepperoni Pizza Slice (Combo)",
+        "image": "assets/images/pepperoni_pizza.jpg",
         "sides": [
-          "Savory Potato Tots",
-          "Maple Syrup Dip",
-          "Fresh Banana",
-          "Side Salad Bar"
+          "Fresh Garden Salad",
+          "Sweet Corn Niblets",
+          "Fresh Crisp Apple",
+          "Salad Bar"
         ],
         "tags": [
-          "Breakfast for Lunch",
-          "Sub Line Available"
+          "Student Favorite",
+          "Whole Grain",
+          "Sub Line"
         ]
       }
     },
@@ -2148,22 +2217,23 @@
       "date": "2026-09-23",
       "day_name": "Wednesday",
       "kcms_lunch": {
-        "main": "Crispy Chicken Tenders & Warm Roll",
+        "main": "Loaded Beef Tacos w/ Queso",
+        "image": "assets/images/beef_tacos.jpg",
         "sides": [
-          "Crinkle Cut Fries",
-          "Steamed Green Beans",
-          "Chilled Peach Slices"
+          "Fiesta Black Beans",
+          "Salsa & Tortilla Chips",
+          "Pineapple Tidbits"
         ],
         "tags": [
-          "Popular",
-          "Protein"
+          "Tex-Mex Special",
+          "Gluten-Friendly"
         ]
       },
       "kcms_breakfast": {
         "main": "Whole Grain French Toast Sticks",
         "sides": [
-          "Warm Syrup",
-          "Fresh Blueberry Cup",
+          "Warm Maple Syrup",
+          "Fresh Blueberries",
           "Choice of Milk"
         ],
         "tags": [
@@ -2171,28 +2241,30 @@
         ]
       },
       "elementary_lunch": {
-        "main": "Crispy Chicken Tenders & Warm Roll",
+        "main": "Loaded Beef Tacos w/ Queso",
+        "image": "assets/images/beef_tacos.jpg",
         "sides": [
-          "Crinkle Cut Fries",
-          "Steamed Green Beans",
-          "Chilled Peach Slices"
+          "Fiesta Black Beans",
+          "Salsa & Tortilla Chips",
+          "Pineapple Tidbits"
         ],
         "tags": [
           "Kid Friendly"
         ]
       },
       "high_school_lunch": {
-        "main": "Crispy Chicken Tenders & Warm Roll (Special Combo)",
+        "main": "Loaded Beef Tacos w/ Queso (Combo)",
+        "image": "assets/images/beef_tacos.jpg",
         "sides": [
-          "Crinkle Cut Fries",
-          "Steamed Green Beans",
-          "Chilled Peach Slices",
-          "Side Salad Bar"
+          "Fiesta Black Beans",
+          "Salsa & Tortilla Chips",
+          "Pineapple Tidbits",
+          "Salad Bar"
         ],
         "tags": [
-          "Popular",
-          "Protein",
-          "Sub Line Available"
+          "Tex-Mex Special",
+          "Gluten-Friendly",
+          "Sub Line"
         ]
       }
     },
@@ -2201,19 +2273,20 @@
       "date": "2026-09-24",
       "day_name": "Thursday",
       "kcms_lunch": {
-        "main": "Cheesy Pepperoni Pizza Slice",
+        "main": "Classic Bacon Cheeseburger on Brioche",
+        "image": "assets/images/bacon_cheeseburger.jpg",
         "sides": [
-          "Fresh Garden Salad",
-          "Sweet Corn Niblets",
-          "Fresh Apple Crisp"
+          "Baked Potato Wedges",
+          "Fresh Baby Carrots w/ Ranch",
+          "Juicy Orange Wedges"
         ],
         "tags": [
-          "Student Favorite",
-          "Whole Grain"
+          "Hearty",
+          "Chef Selection"
         ]
       },
       "kcms_breakfast": {
-        "main": "Breakfast Burrito w/ Salsa",
+        "main": "Breakfast Burrito w/ Fresh Salsa",
         "sides": [
           "Chilled Fruit Cocktail",
           "100% Orange Juice",
@@ -2224,28 +2297,30 @@
         ]
       },
       "elementary_lunch": {
-        "main": "Cheesy Cheese Pizza Slice",
+        "main": "Classic Bacon Cheeseburger on Brioche",
+        "image": "assets/images/bacon_cheeseburger.jpg",
         "sides": [
-          "Fresh Garden Salad",
-          "Sweet Corn Niblets",
-          "Fresh Apple Crisp"
+          "Baked Potato Wedges",
+          "Fresh Baby Carrots w/ Ranch",
+          "Juicy Orange Wedges"
         ],
         "tags": [
           "Kid Friendly"
         ]
       },
       "high_school_lunch": {
-        "main": "Cheesy Pepperoni Pizza Slice (Special Combo)",
+        "main": "Classic Bacon Cheeseburger on Brioche (Combo)",
+        "image": "assets/images/bacon_cheeseburger.jpg",
         "sides": [
-          "Fresh Garden Salad",
-          "Sweet Corn Niblets",
-          "Fresh Apple Crisp",
-          "Side Salad Bar"
+          "Baked Potato Wedges",
+          "Fresh Baby Carrots w/ Ranch",
+          "Juicy Orange Wedges",
+          "Salad Bar"
         ],
         "tags": [
-          "Student Favorite",
-          "Whole Grain",
-          "Sub Line Available"
+          "Hearty",
+          "Chef Selection",
+          "Sub Line"
         ]
       }
     },
@@ -2254,15 +2329,16 @@
       "date": "2026-09-25",
       "day_name": "Friday",
       "kcms_lunch": {
-        "main": "Loaded Beef Tacos w/ Queso",
+        "main": "Italian Pasta Bake w/ Garlic Breadstick",
+        "image": "assets/images/italian_pasta.jpg",
         "sides": [
-          "Fiesta Black Beans",
-          "Salsa & Tortilla Chips",
-          "Pineapple Tidbits"
+          "Steamed Broccoli Florets",
+          "Caesar Side Salad",
+          "Mixed Fruit Cup"
         ],
         "tags": [
-          "Tex-Mex",
-          "Gluten-Friendly Option"
+          "Vegetarian Option",
+          "Italian"
         ]
       },
       "kcms_breakfast": {
@@ -2277,7 +2353,64 @@
         ]
       },
       "elementary_lunch": {
+        "main": "Italian Pasta Bake w/ Garlic Breadstick",
+        "image": "assets/images/italian_pasta.jpg",
+        "sides": [
+          "Steamed Broccoli Florets",
+          "Caesar Side Salad",
+          "Mixed Fruit Cup"
+        ],
+        "tags": [
+          "Kid Friendly"
+        ]
+      },
+      "high_school_lunch": {
+        "main": "Italian Pasta Bake w/ Garlic Breadstick (Combo)",
+        "image": "assets/images/italian_pasta.jpg",
+        "sides": [
+          "Steamed Broccoli Florets",
+          "Caesar Side Salad",
+          "Mixed Fruit Cup",
+          "Salad Bar"
+        ],
+        "tags": [
+          "Vegetarian Option",
+          "Italian",
+          "Sub Line"
+        ]
+      }
+    },
+    "2026-09-28": {
+      "is_school_day": true,
+      "date": "2026-09-28",
+      "day_name": "Monday",
+      "kcms_lunch": {
         "main": "Loaded Beef Tacos w/ Queso",
+        "image": "assets/images/beef_tacos.jpg",
+        "sides": [
+          "Fiesta Black Beans",
+          "Salsa & Tortilla Chips",
+          "Pineapple Tidbits"
+        ],
+        "tags": [
+          "Tex-Mex Special",
+          "Gluten-Friendly"
+        ]
+      },
+      "kcms_breakfast": {
+        "main": "Whole Grain French Toast Sticks",
+        "sides": [
+          "Warm Maple Syrup",
+          "Fresh Blueberries",
+          "Choice of Milk"
+        ],
+        "tags": [
+          "Whole Grain"
+        ]
+      },
+      "elementary_lunch": {
+        "main": "Loaded Beef Tacos w/ Queso",
+        "image": "assets/images/beef_tacos.jpg",
         "sides": [
           "Fiesta Black Beans",
           "Salsa & Tortilla Chips",
@@ -2288,76 +2421,18 @@
         ]
       },
       "high_school_lunch": {
-        "main": "Loaded Beef Tacos w/ Queso (Special Combo)",
+        "main": "Loaded Beef Tacos w/ Queso (Combo)",
+        "image": "assets/images/beef_tacos.jpg",
         "sides": [
           "Fiesta Black Beans",
           "Salsa & Tortilla Chips",
           "Pineapple Tidbits",
-          "Side Salad Bar"
+          "Salad Bar"
         ],
         "tags": [
-          "Tex-Mex",
-          "Gluten-Friendly Option",
-          "Sub Line Available"
-        ]
-      }
-    },
-    "2026-09-26": {
-      "is_school_day": false,
-      "note": "Weekend - No School Served"
-    },
-    "2026-09-27": {
-      "is_school_day": false,
-      "note": "Weekend - No School Served"
-    },
-    "2026-09-28": {
-      "is_school_day": true,
-      "date": "2026-09-28",
-      "day_name": "Monday",
-      "kcms_lunch": {
-        "main": "BBQ Pulled Pork Sandwich",
-        "sides": [
-          "Southern Coleslaw",
-          "Baked Beans",
-          "Sliced Watermelon"
-        ],
-        "tags": [
-          "BBQ Special"
-        ]
-      },
-      "kcms_breakfast": {
-        "main": "Whole Grain French Toast Sticks",
-        "sides": [
-          "Warm Syrup",
-          "Fresh Blueberry Cup",
-          "Choice of Milk"
-        ],
-        "tags": [
-          "Whole Grain"
-        ]
-      },
-      "elementary_lunch": {
-        "main": "BBQ Pulled Pork Sandwich",
-        "sides": [
-          "Southern Coleslaw",
-          "Baked Beans",
-          "Sliced Watermelon"
-        ],
-        "tags": [
-          "Kid Friendly"
-        ]
-      },
-      "high_school_lunch": {
-        "main": "BBQ Pulled Pork Sandwich (Special Combo)",
-        "sides": [
-          "Southern Coleslaw",
-          "Baked Beans",
-          "Sliced Watermelon",
-          "Side Salad Bar"
-        ],
-        "tags": [
-          "BBQ Special",
-          "Sub Line Available"
+          "Tex-Mex Special",
+          "Gluten-Friendly",
+          "Sub Line"
         ]
       }
     },
@@ -2366,18 +2441,20 @@
       "date": "2026-09-29",
       "day_name": "Tuesday",
       "kcms_lunch": {
-        "main": "Crispy Beef Nachos Supreme",
+        "main": "Classic Bacon Cheeseburger on Brioche",
+        "image": "assets/images/bacon_cheeseburger.jpg",
         "sides": [
-          "Refried Beans",
-          "Shredded Lettuce & Tomato",
-          "Chilled Applesauce"
+          "Baked Potato Wedges",
+          "Fresh Baby Carrots w/ Ranch",
+          "Juicy Orange Wedges"
         ],
         "tags": [
-          "Fiesta Friday"
+          "Hearty",
+          "Chef Selection"
         ]
       },
       "kcms_breakfast": {
-        "main": "Breakfast Burrito w/ Salsa",
+        "main": "Breakfast Burrito w/ Fresh Salsa",
         "sides": [
           "Chilled Fruit Cocktail",
           "100% Orange Juice",
@@ -2388,27 +2465,30 @@
         ]
       },
       "elementary_lunch": {
-        "main": "Crispy Beef Nachos Supreme",
+        "main": "Classic Bacon Cheeseburger on Brioche",
+        "image": "assets/images/bacon_cheeseburger.jpg",
         "sides": [
-          "Refried Beans",
-          "Shredded Lettuce & Tomato",
-          "Chilled Applesauce"
+          "Baked Potato Wedges",
+          "Fresh Baby Carrots w/ Ranch",
+          "Juicy Orange Wedges"
         ],
         "tags": [
           "Kid Friendly"
         ]
       },
       "high_school_lunch": {
-        "main": "Crispy Beef Nachos Supreme (Special Combo)",
+        "main": "Classic Bacon Cheeseburger on Brioche (Combo)",
+        "image": "assets/images/bacon_cheeseburger.jpg",
         "sides": [
-          "Refried Beans",
-          "Shredded Lettuce & Tomato",
-          "Chilled Applesauce",
-          "Side Salad Bar"
+          "Baked Potato Wedges",
+          "Fresh Baby Carrots w/ Ranch",
+          "Juicy Orange Wedges",
+          "Salad Bar"
         ],
         "tags": [
-          "Fiesta Friday",
-          "Sub Line Available"
+          "Hearty",
+          "Chef Selection",
+          "Sub Line"
         ]
       }
     },
@@ -2417,14 +2497,16 @@
       "date": "2026-09-30",
       "day_name": "Wednesday",
       "kcms_lunch": {
-        "main": "Homestyle Chicken & Waffles",
+        "main": "Italian Pasta Bake w/ Garlic Breadstick",
+        "image": "assets/images/italian_pasta.jpg",
         "sides": [
-          "Savory Potato Tots",
-          "Maple Syrup Dip",
-          "Fresh Banana"
+          "Steamed Broccoli Florets",
+          "Caesar Side Salad",
+          "Mixed Fruit Cup"
         ],
         "tags": [
-          "Breakfast for Lunch"
+          "Vegetarian Option",
+          "Italian"
         ]
       },
       "kcms_breakfast": {
@@ -2439,27 +2521,30 @@
         ]
       },
       "elementary_lunch": {
-        "main": "Homestyle Chicken & Waffles",
+        "main": "Italian Pasta Bake w/ Garlic Breadstick",
+        "image": "assets/images/italian_pasta.jpg",
         "sides": [
-          "Savory Potato Tots",
-          "Maple Syrup Dip",
-          "Fresh Banana"
+          "Steamed Broccoli Florets",
+          "Caesar Side Salad",
+          "Mixed Fruit Cup"
         ],
         "tags": [
           "Kid Friendly"
         ]
       },
       "high_school_lunch": {
-        "main": "Homestyle Chicken & Waffles (Special Combo)",
+        "main": "Italian Pasta Bake w/ Garlic Breadstick (Combo)",
+        "image": "assets/images/italian_pasta.jpg",
         "sides": [
-          "Savory Potato Tots",
-          "Maple Syrup Dip",
-          "Fresh Banana",
-          "Side Salad Bar"
+          "Steamed Broccoli Florets",
+          "Caesar Side Salad",
+          "Mixed Fruit Cup",
+          "Salad Bar"
         ],
         "tags": [
-          "Breakfast for Lunch",
-          "Sub Line Available"
+          "Vegetarian Option",
+          "Italian",
+          "Sub Line"
         ]
       }
     }

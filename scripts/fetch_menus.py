@@ -63,26 +63,47 @@ def build_menu_database():
     }
 
     kcms_lunch_rotation = [
-        {"main": "Crispy Chicken Tenders & Warm Roll", "sides": ["Crinkle Cut Fries", "Steamed Green Beans", "Chilled Peach Slices"], "tags": ["Popular", "Protein"]},
-        {"main": "Cheesy Pepperoni Pizza Slice", "sides": ["Fresh Garden Salad", "Sweet Corn Niblets", "Fresh Apple Crisp"], "tags": ["Student Favorite", "Whole Grain"]},
-        {"main": "Loaded Beef Tacos w/ Queso", "sides": ["Fiesta Black Beans", "Salsa & Tortilla Chips", "Pineapple Tidbits"], "tags": ["Tex-Mex", "Gluten-Friendly Option"]},
-        {"main": "Classic Bacon Cheeseburger on Brioche", "sides": ["Baked Potato Wedges", "Fresh Baby Carrots w/ Ranch", "Juicy Orange Wedges"], "tags": ["Hearty", "Protein"]},
-        {"main": "Italian Pasta Bake w/ Garlic Breadstick", "sides": ["Steamed Broccoli Florets", "Caesar Side Salad", "Mixed Fruit Cup"], "tags": ["Vegetarian Option", "Italian"]},
-        {"main": "BBQ Pulled Pork Sandwich", "sides": ["Southern Coleslaw", "Baked Beans", "Sliced Watermelon"], "tags": ["BBQ Special"]},
-        {"main": "Crispy Beef Nachos Supreme", "sides": ["Refried Beans", "Shredded Lettuce & Tomato", "Chilled Applesauce"], "tags": ["Fiesta Friday"]},
-        {"main": "Homestyle Chicken & Waffles", "sides": ["Savory Potato Tots", "Maple Syrup Dip", "Fresh Banana"], "tags": ["Breakfast for Lunch"]}
+        {
+            "main": "Crispy Chicken Tenders & Warm Roll",
+            "image": "assets/images/chicken_tenders.jpg",
+            "sides": ["Crinkle Cut Fries", "Steamed Green Beans", "Chilled Peach Slices"],
+            "tags": ["Popular", "High Protein"]
+        },
+        {
+            "main": "Cheesy Pepperoni Pizza Slice",
+            "image": "assets/images/pepperoni_pizza.jpg",
+            "sides": ["Fresh Garden Salad", "Sweet Corn Niblets", "Fresh Crisp Apple"],
+            "tags": ["Student Favorite", "Whole Grain"]
+        },
+        {
+            "main": "Loaded Beef Tacos w/ Queso",
+            "image": "assets/images/beef_tacos.jpg",
+            "sides": ["Fiesta Black Beans", "Salsa & Tortilla Chips", "Pineapple Tidbits"],
+            "tags": ["Tex-Mex Special", "Gluten-Friendly"]
+        },
+        {
+            "main": "Classic Bacon Cheeseburger on Brioche",
+            "image": "assets/images/bacon_cheeseburger.jpg",
+            "sides": ["Baked Potato Wedges", "Fresh Baby Carrots w/ Ranch", "Juicy Orange Wedges"],
+            "tags": ["Hearty", "Chef Selection"]
+        },
+        {
+            "main": "Italian Pasta Bake w/ Garlic Breadstick",
+            "image": "assets/images/italian_pasta.jpg",
+            "sides": ["Steamed Broccoli Florets", "Caesar Side Salad", "Mixed Fruit Cup"],
+            "tags": ["Vegetarian Option", "Italian"]
+        }
     ]
 
     kcms_breakfast_rotation = [
-        {"main": "Warm Mini Cinnamon Glazed Donuts", "sides": ["Fresh Fruit Cup", "100% Apple Juice", "Choice of Cold Milk"], "tags": ["Warm & Sweet"]},
+        {"main": "Warm Mini Cinnamon Glazed Donuts", "sides": ["Fresh Fruit Cup", "100% Apple Juice", "Choice of Milk"], "tags": ["Warm & Sweet"]},
         {"main": "Sausage, Egg & Cheese Biscuit", "sides": ["Crispy Hashbrown Patty", "Assorted Fresh Fruit", "Choice of Milk"], "tags": ["High Protein"]},
-        {"main": "Whole Grain French Toast Sticks", "sides": ["Warm Syrup", "Fresh Blueberry Cup", "Choice of Milk"], "tags": ["Whole Grain"]},
-        {"main": "Breakfast Burrito w/ Salsa", "sides": ["Chilled Fruit Cocktail", "100% Orange Juice", "Choice of Milk"], "tags": ["Savory"]},
+        {"main": "Whole Grain French Toast Sticks", "sides": ["Warm Maple Syrup", "Fresh Blueberries", "Choice of Milk"], "tags": ["Whole Grain"]},
+        {"main": "Breakfast Burrito w/ Fresh Salsa", "sides": ["Chilled Fruit Cocktail", "100% Orange Juice", "Choice of Milk"], "tags": ["Savory"]},
         {"main": "Assorted Cereal Bowl & Grahams", "sides": ["Fresh Sliced Apples", "Fruit Juice", "Choice of Milk"], "tags": ["Quick & Light"]}
     ]
 
     calendar_days = {}
-
     from datetime import date
 
     for year in [2026]:
@@ -93,14 +114,9 @@ def build_menu_database():
             for day in range(1, days_in_month + 1):
                 date_key = f"{month_str}-{day:02d}"
                 dt = date(year, month, day)
-                weekday = dt.weekday()
+                weekday = dt.weekday() # 0=Mon, 4=Fri, 5=Sat, 6=Sun
 
-                if weekday >= 5:
-                    calendar_days[date_key] = {
-                        "is_school_day": False,
-                        "note": "Weekend - No School Served"
-                    }
-                else:
+                if weekday < 5: # Only Monday to Friday (School Days)
                     lunch_idx = (day + month) % len(kcms_lunch_rotation)
                     bfast_idx = (day + month) % len(kcms_breakfast_rotation)
 
@@ -112,13 +128,15 @@ def build_menu_database():
                         "kcms_breakfast": kcms_breakfast_rotation[bfast_idx],
                         "elementary_lunch": {
                             "main": kcms_lunch_rotation[lunch_idx]["main"].replace("Pepperoni", "Cheese"),
+                            "image": kcms_lunch_rotation[lunch_idx]["image"],
                             "sides": kcms_lunch_rotation[lunch_idx]["sides"],
                             "tags": ["Kid Friendly"]
                         },
                         "high_school_lunch": {
-                            "main": kcms_lunch_rotation[lunch_idx]["main"] + " (Special Combo)",
-                            "sides": kcms_lunch_rotation[lunch_idx]["sides"] + ["Side Salad Bar"],
-                            "tags": kcms_lunch_rotation[lunch_idx]["tags"] + ["Sub Line Available"]
+                            "main": kcms_lunch_rotation[lunch_idx]["main"] + " (Combo)",
+                            "image": kcms_lunch_rotation[lunch_idx]["image"],
+                            "sides": kcms_lunch_rotation[lunch_idx]["sides"] + ["Salad Bar"],
+                            "tags": kcms_lunch_rotation[lunch_idx]["tags"] + ["Sub Line"]
                         }
                     }
 
@@ -152,7 +170,7 @@ def build_menu_database():
     with open("data/menus.json", "w", encoding="utf-8") as f:
         json.dump(dataset, f, indent=2, ensure_ascii=False)
 
-    print("data/menus.json successfully generated!")
+    print("data/menus.json successfully generated with meal images & 5-day school week!")
 
 if __name__ == "__main__":
     build_menu_database()
