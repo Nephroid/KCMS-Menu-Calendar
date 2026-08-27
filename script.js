@@ -10,6 +10,10 @@ document.addEventListener('DOMContentLoaded', () => {
   let selectedMealFilter = 'all';
   let searchQuery = '';
 
+  // Reference Today Date (August 27, 2026)
+  const todayDate = new Date(2026, 7, 27); // Month is 0-indexed (7 = August)
+  todayDate.setHours(0, 0, 0, 0);
+
   // DOM Elements
   const calendarGrid = document.getElementById('calendarGrid');
   const currentMonthLabel = document.getElementById('currentMonthLabel');
@@ -159,21 +163,32 @@ document.addEventListener('DOMContentLoaded', () => {
       const dayStr = day.toString().padStart(2, '0');
       const dateKey = `${currentYear}-${monthStr}-${dayStr}`;
 
-      const isToday = currentYear === 2026 && currentMonth === 8 && day === 27;
+      const cellDate = new Date(dt.getTime());
+      cellDate.setHours(0, 0, 0, 0);
+
+      const isToday = cellDate.getTime() === todayDate.getTime();
+      const isPast = cellDate.getTime() < todayDate.getTime();
       const dayData = menuData && menuData.calendar ? menuData.calendar[dateKey] : null;
 
       // Check if date is before 1st Day of School (Aug 12, 2026)
       const isBeforeFirstDay = currentYear === 2026 && currentMonth === 8 && day < 12;
 
       const cell = document.createElement('div');
-      cell.className = `calendar-day ${isToday ? 'is-today' : ''} ${isBeforeFirstDay ? 'before-school' : ''}`;
+      cell.className = `calendar-day ${isToday ? 'is-today' : ''} ${isPast && !isBeforeFirstDay ? 'past-day' : ''} ${isBeforeFirstDay ? 'before-school' : ''}`;
+
+      let statusBadgeText = '<i class="fa-solid fa-graduation-cap"></i> KCMS Day';
+      if (isBeforeFirstDay) {
+        statusBadgeText = 'Summer Recess';
+      } else if (isToday) {
+        statusBadgeText = '<i class="fa-solid fa-star" style="color:#F59E0B;"></i> TODAY';
+      } else if (isPast) {
+        statusBadgeText = '<i class="fa-solid fa-clock-rotate-left"></i> Past Menu';
+      }
 
       let cellHtml = `
         <div class="day-header">
           <span class="day-number">${day}</span>
-          <span class="day-status">
-            ${isBeforeFirstDay ? 'Pre-School' : '<i class="fa-solid fa-graduation-cap"></i> KCMS Day'}
-          </span>
+          <span class="day-status ${isToday ? 'today-status' : ''}">${statusBadgeText}</span>
         </div>
       `;
 
@@ -191,7 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         if (!matchesSearch) {
-          cell.style.opacity = '0.2';
+          cell.style.opacity = '0.15';
         }
 
         cellHtml += `<div class="meal-preview-container">`;
@@ -228,7 +243,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         cellHtml += `</div>
           <div class="cell-footer">
-            <span class="cell-action-hint">View Dish <i class="fa-solid fa-angle-right"></i></span>
+            <span class="cell-action-hint">${isPast ? 'Hover to unblur' : 'View Dish'} <i class="fa-solid fa-angle-right"></i></span>
           </div>
         `;
 
