@@ -1,7 +1,8 @@
 {
   "metadata": {
     "source": "Kate Collins Middle School (KCMS) - Official Nutrition Services",
-    "source_pdf": "https://docs.isitesoftware.com/snaf-assets/snaf-static/greenmenus/1495145617663/2026/8/880505-August_2026_MS_Menu_V3.pdf",
+    "source_lunch_pdf": "https://docs.isitesoftware.com/snaf-assets/snaf-static/greenmenus/1495145617663/2026/8/880505-August_2026_MS_Menu_V3.pdf",
+    "source_bfast_pdf": "https://docs.isitesoftware.com/snaf-assets/snaf-static/greenmenus/1495145617663/2026/8/880509-August_2026_Breakfast_Menu_V2.pdf",
     "last_updated": "2026-08-27",
     "staff": {
       "supervisor": "Kelly Shomo, MPH (540-946-4600 x8144)",
@@ -16,42 +17,20 @@
   },
   "pdf_downloads": [
     {
-      "title": "August 2026 KCMS Middle School Lunch Menu (Official V3)",
+      "title": "Official KCMS August 2026 Lunch Menu (V3 PDF)",
       "url": "https://docs.isitesoftware.com/snaf-assets/snaf-static/greenmenus/1495145617663/2026/8/880505-August_2026_MS_Menu_V3.pdf"
     },
     {
-      "title": "August 2026 Elementary Lunch Menu",
-      "url": "https://www.schoolnutritionandfitness.com/downloadMenu.php/1495145617663/880503"
-    },
-    {
-      "title": "August 2026 High School Lunch Menu",
-      "url": "https://www.schoolnutritionandfitness.com/downloadMenu.php/1495145617663/880763"
-    },
-    {
-      "title": "August 2026 Wayne Hills Preschool Menu",
-      "url": "https://www.schoolnutritionandfitness.com/downloadMenu.php/1495145617663/880506"
+      "title": "Official KCMS August 2026 Breakfast Menu (V2 PDF)",
+      "url": "https://docs.isitesoftware.com/snaf-assets/snaf-static/greenmenus/1495145617663/2026/8/880509-August_2026_Breakfast_Menu_V2.pdf"
     }
   ],
   "schools": {
     "middle": {
       "name": "Kate Collins Middle School (KCMS)",
       "short": "KCMS Middle",
-      "pdf_url": "https://docs.isitesoftware.com/snaf-assets/snaf-static/greenmenus/1495145617663/2026/8/880505-August_2026_MS_Menu_V3.pdf"
-    },
-    "elementary": {
-      "name": "Waynesboro Elementary Schools",
-      "short": "Elementary",
-      "pdf_url": "https://www.schoolnutritionandfitness.com/downloadMenu.php/1495145617663/880503"
-    },
-    "high": {
-      "name": "Waynesboro High School",
-      "short": "High School",
-      "pdf_url": "https://www.schoolnutritionandfitness.com/downloadMenu.php/1495145617663/880763"
-    },
-    "prek": {
-      "name": "Wayne Hills Preschool",
-      "short": "Pre-K",
-      "pdf_url": "https://www.schoolnutritionandfitness.com/downloadMenu.php/1495145617663/880506"
+      "pdf_lunch": "https://docs.isitesoftware.com/snaf-assets/snaf-static/greenmenus/1495145617663/2026/8/880505-August_2026_MS_Menu_V3.pdf",
+      "pdf_breakfast": "https://docs.isitesoftware.com/snaf-assets/snaf-static/greenmenus/1495145617663/2026/8/880509-August_2026_Breakfast_Menu_V2.pdf"
     }
   },
   "calendar": {
@@ -76,11 +55,17 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Glazed Pastry or Cereal",
+        "main": "Warm Cinnamon Pastry or Cereal",
+        "image": "assets/images/croissant_bfast.jpg",
         "sides": [
           "Fresh Fruit Cup",
           "100% Fruit Juice",
           "Choice of Low-Fat Milk"
+        ],
+        "daily_alts": [
+          "Breakfast Bar",
+          "Cereal Bowl",
+          "Grahams w/ Yogurt"
         ],
         "tags": [
           "Daily Breakfast"
@@ -108,11 +93,17 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Glazed Pastry or Cereal",
+        "main": "Warm Cinnamon Pastry or Cereal",
+        "image": "assets/images/croissant_bfast.jpg",
         "sides": [
           "Fresh Fruit Cup",
           "100% Fruit Juice",
           "Choice of Low-Fat Milk"
+        ],
+        "daily_alts": [
+          "Breakfast Bar",
+          "Cereal Bowl",
+          "Grahams w/ Yogurt"
         ],
         "tags": [
           "Daily Breakfast"
@@ -140,11 +131,17 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Glazed Pastry or Cereal",
+        "main": "Warm Cinnamon Pastry or Cereal",
+        "image": "assets/images/croissant_bfast.jpg",
         "sides": [
           "Fresh Fruit Cup",
           "100% Fruit Juice",
           "Choice of Low-Fat Milk"
+        ],
+        "daily_alts": [
+          "Breakfast Bar",
+          "Cereal Bowl",
+          "Grahams w/ Yogurt"
         ],
         "tags": [
           "Daily Breakfast"
@@ -172,11 +169,17 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Glazed Pastry or Cereal",
+        "main": "Warm Cinnamon Pastry or Cereal",
+        "image": "assets/images/croissant_bfast.jpg",
         "sides": [
           "Fresh Fruit Cup",
           "100% Fruit Juice",
           "Choice of Low-Fat Milk"
+        ],
+        "daily_alts": [
+          "Breakfast Bar",
+          "Cereal Bowl",
+          "Grahams w/ Yogurt"
         ],
         "tags": [
           "Daily Breakfast"
@@ -204,11 +207,17 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Glazed Pastry or Cereal",
+        "main": "Warm Cinnamon Pastry or Cereal",
+        "image": "assets/images/croissant_bfast.jpg",
         "sides": [
           "Fresh Fruit Cup",
           "100% Fruit Juice",
           "Choice of Low-Fat Milk"
+        ],
+        "daily_alts": [
+          "Breakfast Bar",
+          "Cereal Bowl",
+          "Grahams w/ Yogurt"
         ],
         "tags": [
           "Daily Breakfast"
@@ -247,52 +256,21 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Glazed Pastry or Cereal",
+        "main": "Egg & Cheese Croissant",
+        "image": "assets/images/croissant_bfast.jpg",
         "sides": [
-          "Fresh Fruit Cup",
+          "Fresh Fruit",
           "100% Fruit Juice",
           "Choice of Low-Fat Milk"
         ],
-        "tags": [
-          "Daily Breakfast"
-        ]
-      },
-      "elementary_lunch": {
-        "main": "Cheeseburger",
-        "image": "assets/images/bacon_cheeseburger.jpg",
-        "sides": [
-          "Potato Wedges",
-          "Homemade Baked Beans",
-          "Garden Side Salad",
-          "Fresh Whole Fruit",
-          "Fresh Banana"
-        ],
-        "alts": [
-          "PBJ Uncrustable",
-          "Bento Box"
+        "daily_alts": [
+          "Breakfast Bar",
+          "Cereal Bowl",
+          "Grahams w/ Yogurt"
         ],
         "tags": [
-          "All-American",
-          "Student Favorite"
-        ]
-      },
-      "high_school_lunch": {
-        "main": "Cheeseburger",
-        "image": "assets/images/bacon_cheeseburger.jpg",
-        "sides": [
-          "Potato Wedges",
-          "Homemade Baked Beans",
-          "Garden Side Salad",
-          "Fresh Whole Fruit",
-          "Fresh Banana"
-        ],
-        "alts": [
-          "PBJ Uncrustable",
-          "Bento Box"
-        ],
-        "tags": [
-          "All-American",
-          "Student Favorite"
+          "Hot Breakfast",
+          "Student Meal FREE"
         ]
       }
     },
@@ -320,52 +298,22 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Glazed Pastry or Cereal",
+        "main": "New! Homemade Breakfast Pizza",
+        "image": "assets/images/breakfast_pizza.jpg",
         "sides": [
-          "Fresh Fruit Cup",
-          "100% Fruit Juice",
-          "Choice of Low-Fat Milk"
+          "Seasonal Fruit & Yogurt Parfait",
+          "Fresh Banana",
+          "Dried Fruit",
+          "Choice of Milk"
+        ],
+        "daily_alts": [
+          "Breakfast Bar",
+          "Cereal Bowl",
+          "Grahams w/ Yogurt"
         ],
         "tags": [
-          "Daily Breakfast"
-        ]
-      },
-      "elementary_lunch": {
-        "main": "Walking Tacos w/ Toppings",
-        "image": "assets/images/beef_tacos.jpg",
-        "sides": [
-          "Roasted Sweet Potatoes",
-          "New! Homemade Black Bean & Corn Salad",
-          "Veggie Cup",
-          "Fresh Fruit Cup",
-          "Fresh Melon"
-        ],
-        "alts": [
-          "PBJ Uncrustable",
-          "Entrée Salad"
-        ],
-        "tags": [
-          "Tex-Mex",
-          "Popular"
-        ]
-      },
-      "high_school_lunch": {
-        "main": "Walking Tacos w/ Toppings",
-        "image": "assets/images/beef_tacos.jpg",
-        "sides": [
-          "Roasted Sweet Potatoes",
-          "New! Homemade Black Bean & Corn Salad",
-          "Veggie Cup",
-          "Fresh Fruit Cup",
-          "Fresh Melon"
-        ],
-        "alts": [
-          "PBJ Uncrustable",
-          "Entrée Salad"
-        ],
-        "tags": [
-          "Tex-Mex",
-          "Popular"
+          "New Item",
+          "Hot Breakfast"
         ]
       }
     },
@@ -393,52 +341,21 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Glazed Pastry or Cereal",
+        "main": "NEW! Bagel Bites w/ Cream Cheese",
+        "image": "assets/images/croissant_bfast.jpg",
         "sides": [
-          "Fresh Fruit Cup",
+          "Fresh Fruit",
           "100% Fruit Juice",
           "Choice of Low-Fat Milk"
         ],
-        "tags": [
-          "Daily Breakfast"
-        ]
-      },
-      "elementary_lunch": {
-        "main": "New! Beef Dumplings w/ Korean BBQ Sauce & Brown Rice",
-        "image": "assets/images/orange_chicken.jpg",
-        "sides": [
-          "Roasted Broccoli",
-          "Carrot Coins",
-          "Garden Side Salad",
-          "Fresh Whole Fruit",
-          "Fresh Grapes"
-        ],
-        "alts": [
-          "PBJ Uncrustable",
-          "Bento Box"
+        "daily_alts": [
+          "Breakfast Bar",
+          "Cereal Bowl",
+          "Grahams w/ Yogurt"
         ],
         "tags": [
           "New Item",
-          "Asian Fusion"
-        ]
-      },
-      "high_school_lunch": {
-        "main": "New! Beef Dumplings w/ Korean BBQ Sauce & Brown Rice",
-        "image": "assets/images/orange_chicken.jpg",
-        "sides": [
-          "Roasted Broccoli",
-          "Carrot Coins",
-          "Garden Side Salad",
-          "Fresh Whole Fruit",
-          "Fresh Grapes"
-        ],
-        "alts": [
-          "PBJ Uncrustable",
-          "Bento Box"
-        ],
-        "tags": [
-          "New Item",
-          "Asian Fusion"
+          "Quick & Light"
         ]
       }
     },
@@ -466,52 +383,21 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Glazed Pastry or Cereal",
+        "main": "Breakfast Chicken Biscuit",
+        "image": "assets/images/croissant_bfast.jpg",
         "sides": [
-          "Fresh Fruit Cup",
+          "Fresh Apple",
           "100% Fruit Juice",
           "Choice of Low-Fat Milk"
         ],
-        "tags": [
-          "Daily Breakfast"
-        ]
-      },
-      "elementary_lunch": {
-        "main": "Orange Chicken w/ Homemade Fried Rice",
-        "image": "assets/images/orange_chicken.jpg",
-        "sides": [
-          "Mixed Vegetables",
-          "Garden Side Salad",
-          "Fresh Cucumber",
-          "Fresh Whole Fruit",
-          "Fresh Banana"
-        ],
-        "alts": [
-          "PBJ Uncrustable",
-          "Bento Box"
+        "daily_alts": [
+          "Breakfast Bar",
+          "Cereal Bowl",
+          "Grahams w/ Yogurt"
         ],
         "tags": [
-          "Popular",
-          "Chef Special"
-        ]
-      },
-      "high_school_lunch": {
-        "main": "Orange Chicken w/ Homemade Fried Rice",
-        "image": "assets/images/orange_chicken.jpg",
-        "sides": [
-          "Mixed Vegetables",
-          "Garden Side Salad",
-          "Fresh Cucumber",
-          "Fresh Whole Fruit",
-          "Fresh Banana"
-        ],
-        "alts": [
-          "PBJ Uncrustable",
-          "Bento Box"
-        ],
-        "tags": [
-          "Popular",
-          "Chef Special"
+          "High Protein",
+          "Hot Breakfast"
         ]
       }
     },
@@ -538,50 +424,22 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Glazed Pastry or Cereal",
+        "main": "Breakfast Stacker",
+        "image": "assets/images/breakfast_pizza.jpg",
         "sides": [
-          "Fresh Fruit Cup",
-          "100% Fruit Juice",
-          "Choice of Low-Fat Milk"
+          "Seasonal Fruit & Yogurt Parfait",
+          "Fresh Orange",
+          "Canned or Frozen Fruit",
+          "Choice of Milk"
+        ],
+        "daily_alts": [
+          "Breakfast Bar",
+          "Cereal Bowl",
+          "Grahams w/ Yogurt"
         ],
         "tags": [
-          "Daily Breakfast"
-        ]
-      },
-      "elementary_lunch": {
-        "main": "Turkey Hot Dog w/ Homemade Chili",
-        "image": "assets/images/bacon_cheeseburger.jpg",
-        "sides": [
-          "Roasted Broccoli",
-          "Harvest of the Month Tomatoes",
-          "Veggie Cup",
-          "Fresh Fruit Cup",
-          "Fresh Melon"
-        ],
-        "alts": [
-          "PBJ Uncrustable",
-          "Entrée Salad"
-        ],
-        "tags": [
-          "Harvest of the Month"
-        ]
-      },
-      "high_school_lunch": {
-        "main": "Turkey Hot Dog w/ Homemade Chili",
-        "image": "assets/images/bacon_cheeseburger.jpg",
-        "sides": [
-          "Roasted Broccoli",
-          "Harvest of the Month Tomatoes",
-          "Veggie Cup",
-          "Fresh Fruit Cup",
-          "Fresh Melon"
-        ],
-        "alts": [
-          "PBJ Uncrustable",
-          "Entrée Salad"
-        ],
-        "tags": [
-          "Harvest of the Month"
+          "Popular",
+          "Hot Breakfast"
         ]
       }
     },
@@ -609,52 +467,21 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Glazed Pastry or Cereal",
+        "main": "Homemade Smoothie w/ Muffin",
+        "image": "assets/images/croissant_bfast.jpg",
         "sides": [
-          "Fresh Fruit Cup",
+          "Fresh Fruit",
           "100% Fruit Juice",
           "Choice of Low-Fat Milk"
         ],
-        "tags": [
-          "Daily Breakfast"
-        ]
-      },
-      "elementary_lunch": {
-        "main": "Homemade Mac n' Cheese w/ Breadstick",
-        "image": "assets/images/mac_and_cheese.jpg",
-        "sides": [
-          "Steamed Peas",
-          "Garden Side Salad",
-          "Baby Carrots",
-          "Fresh Whole Fruit",
-          "Fresh Berries"
-        ],
-        "alts": [
-          "PBJ Uncrustable",
-          "Bento Box"
+        "daily_alts": [
+          "Breakfast Bar",
+          "Cereal Bowl",
+          "Grahams w/ Yogurt"
         ],
         "tags": [
-          "Comfort Food",
-          "Vegetarian Option"
-        ]
-      },
-      "high_school_lunch": {
-        "main": "Homemade Mac n' Cheese w/ Breadstick",
-        "image": "assets/images/mac_and_cheese.jpg",
-        "sides": [
-          "Steamed Peas",
-          "Garden Side Salad",
-          "Baby Carrots",
-          "Fresh Whole Fruit",
-          "Fresh Berries"
-        ],
-        "alts": [
-          "PBJ Uncrustable",
-          "Bento Box"
-        ],
-        "tags": [
-          "Comfort Food",
-          "Vegetarian Option"
+          "Fresh Fruit",
+          "Homemade"
         ]
       }
     },
@@ -682,52 +509,22 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Glazed Pastry or Cereal",
+        "main": "Homemade Energy Bites",
+        "image": "assets/images/breakfast_pizza.jpg",
         "sides": [
-          "Fresh Fruit Cup",
-          "100% Fruit Juice",
-          "Choice of Low-Fat Milk"
+          "Seasonal Fruit & Yogurt Parfait",
+          "Fresh Banana",
+          "Dried Fruit",
+          "Choice of Milk"
+        ],
+        "daily_alts": [
+          "Breakfast Bar",
+          "Cereal Bowl",
+          "Grahams w/ Yogurt"
         ],
         "tags": [
-          "Daily Breakfast"
-        ]
-      },
-      "elementary_lunch": {
-        "main": "Chicken Drumstick w/ Warm Roll",
-        "image": "assets/images/chicken_drumstick.jpg",
-        "sides": [
-          "Mashed Potatoes w/ Gravy",
-          "Broccoli Salad",
-          "Veggie Cup",
-          "Fresh Fruit Cup",
-          "Fresh Grapes"
-        ],
-        "alts": [
-          "PBJ Uncrustable",
-          "Entrée Salad"
-        ],
-        "tags": [
-          "Homestyle",
-          "High Protein"
-        ]
-      },
-      "high_school_lunch": {
-        "main": "Chicken Drumstick w/ Warm Roll",
-        "image": "assets/images/chicken_drumstick.jpg",
-        "sides": [
-          "Mashed Potatoes w/ Gravy",
-          "Broccoli Salad",
-          "Veggie Cup",
-          "Fresh Fruit Cup",
-          "Fresh Grapes"
-        ],
-        "alts": [
-          "PBJ Uncrustable",
-          "Entrée Salad"
-        ],
-        "tags": [
-          "Homestyle",
-          "High Protein"
+          "Energy Boost",
+          "Homemade"
         ]
       }
     },
@@ -754,50 +551,21 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Glazed Pastry or Cereal",
+        "main": "Western Frittata",
+        "image": "assets/images/croissant_bfast.jpg",
         "sides": [
-          "Fresh Fruit Cup",
+          "Fresh Fruit",
           "100% Fruit Juice",
           "Choice of Low-Fat Milk"
         ],
-        "tags": [
-          "Daily Breakfast"
-        ]
-      },
-      "elementary_lunch": {
-        "main": "Crispy Fish Sandwich",
-        "image": "assets/images/fish_sandwich.jpg",
-        "sides": [
-          "Oven Roasted Fries",
-          "Garden Side Salad",
-          "Cherry Tomatoes",
-          "Fresh Whole Fruit",
-          "Dried Fruit"
-        ],
-        "alts": [
-          "PBJ Uncrustable",
-          "Bento Box"
+        "daily_alts": [
+          "Breakfast Bar",
+          "Cereal Bowl",
+          "Grahams w/ Yogurt"
         ],
         "tags": [
-          "Seafood Friday"
-        ]
-      },
-      "high_school_lunch": {
-        "main": "Crispy Fish Sandwich",
-        "image": "assets/images/fish_sandwich.jpg",
-        "sides": [
-          "Oven Roasted Fries",
-          "Garden Side Salad",
-          "Cherry Tomatoes",
-          "Fresh Whole Fruit",
-          "Dried Fruit"
-        ],
-        "alts": [
-          "PBJ Uncrustable",
-          "Bento Box"
-        ],
-        "tags": [
-          "Seafood Friday"
+          "Hot Breakfast",
+          "Egg Special"
         ]
       }
     },
@@ -825,52 +593,21 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Glazed Pastry or Cereal",
+        "main": "NEW! Dutch Waffle",
+        "image": "assets/images/croissant_bfast.jpg",
         "sides": [
-          "Fresh Fruit Cup",
+          "Fresh Apple",
           "100% Fruit Juice",
           "Choice of Low-Fat Milk"
         ],
-        "tags": [
-          "Daily Breakfast"
-        ]
-      },
-      "elementary_lunch": {
-        "main": "New! BBQ Pork w/ Hot Honey Poppers",
-        "image": "assets/images/bacon_cheeseburger.jpg",
-        "sides": [
-          "Homemade Baked Beans",
-          "Corn on the Cob",
-          "Garden Side Salad",
-          "Fresh Whole Fruit",
-          "Dried Fruit"
-        ],
-        "alts": [
-          "PBJ Uncrustable",
-          "Bento Box"
+        "daily_alts": [
+          "Breakfast Bar",
+          "Cereal Bowl",
+          "Grahams w/ Yogurt"
         ],
         "tags": [
           "New Item",
-          "Southern BBQ"
-        ]
-      },
-      "high_school_lunch": {
-        "main": "New! BBQ Pork w/ Hot Honey Poppers",
-        "image": "assets/images/bacon_cheeseburger.jpg",
-        "sides": [
-          "Homemade Baked Beans",
-          "Corn on the Cob",
-          "Garden Side Salad",
-          "Fresh Whole Fruit",
-          "Dried Fruit"
-        ],
-        "alts": [
-          "PBJ Uncrustable",
-          "Bento Box"
-        ],
-        "tags": [
-          "New Item",
-          "Southern BBQ"
+          "Sweet & Warm"
         ]
       }
     },
@@ -898,52 +635,22 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Glazed Pastry or Cereal",
+        "main": "NEW! Egg Bite w/ Baby Cakes",
+        "image": "assets/images/breakfast_pizza.jpg",
         "sides": [
-          "Fresh Fruit Cup",
-          "100% Fruit Juice",
-          "Choice of Low-Fat Milk"
+          "Seasonal Fruit & Yogurt Parfait",
+          "Fresh Orange",
+          "Canned or Frozen Fruit",
+          "Choice of Milk"
+        ],
+        "daily_alts": [
+          "Breakfast Bar",
+          "Cereal Bowl",
+          "Grahams w/ Yogurt"
         ],
         "tags": [
-          "Daily Breakfast"
-        ]
-      },
-      "elementary_lunch": {
-        "main": "Breakfast for Lunch",
-        "image": "assets/images/chicken_tenders.jpg",
-        "sides": [
-          "Seasoned Diced Potatoes",
-          "Seasonal Vegetable",
-          "Veggie Cup",
-          "Baked Cinnamon Apples",
-          "Fresh Banana"
-        ],
-        "alts": [
-          "PBJ Uncrustable",
-          "Entrée Salad"
-        ],
-        "tags": [
-          "Fan Favorite",
-          "Breakfast for Lunch"
-        ]
-      },
-      "high_school_lunch": {
-        "main": "Breakfast for Lunch",
-        "image": "assets/images/chicken_tenders.jpg",
-        "sides": [
-          "Seasoned Diced Potatoes",
-          "Seasonal Vegetable",
-          "Veggie Cup",
-          "Baked Cinnamon Apples",
-          "Fresh Banana"
-        ],
-        "alts": [
-          "PBJ Uncrustable",
-          "Entrée Salad"
-        ],
-        "tags": [
-          "Fan Favorite",
-          "Breakfast for Lunch"
+          "New Item",
+          "High Protein"
         ]
       }
     },
@@ -970,50 +677,20 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Glazed Pastry or Cereal",
+        "main": "Egg & Cheese Croissant",
+        "image": "assets/images/croissant_bfast.jpg",
         "sides": [
-          "Fresh Fruit Cup",
+          "Fresh Fruit",
           "100% Fruit Juice",
           "Choice of Low-Fat Milk"
         ],
-        "tags": [
-          "Daily Breakfast"
-        ]
-      },
-      "elementary_lunch": {
-        "main": "Beef & Cheese Tacos",
-        "image": "assets/images/beef_tacos.jpg",
-        "sides": [
-          "Pinto Beans",
-          "Garden Side Salad",
-          "Mixed Bell Peppers",
-          "Fresh Whole Fruit",
-          "Fresh Melon"
-        ],
-        "alts": [
-          "PBJ Uncrustable",
-          "Bento Box"
+        "daily_alts": [
+          "Breakfast Bar",
+          "Cereal Bowl",
+          "Grahams w/ Yogurt"
         ],
         "tags": [
-          "Fiesta Wednesday"
-        ]
-      },
-      "high_school_lunch": {
-        "main": "Beef & Cheese Tacos",
-        "image": "assets/images/beef_tacos.jpg",
-        "sides": [
-          "Pinto Beans",
-          "Garden Side Salad",
-          "Mixed Bell Peppers",
-          "Fresh Whole Fruit",
-          "Fresh Melon"
-        ],
-        "alts": [
-          "PBJ Uncrustable",
-          "Bento Box"
-        ],
-        "tags": [
-          "Fiesta Wednesday"
+          "Fan Favorite"
         ]
       }
     },
@@ -1041,52 +718,21 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Glazed Pastry or Cereal",
+        "main": "Homemade Breakfast Pizza",
+        "image": "assets/images/breakfast_pizza.jpg",
         "sides": [
-          "Fresh Fruit Cup",
-          "100% Fruit Juice",
-          "Choice of Low-Fat Milk"
+          "Seasonal Fruit & Yogurt Parfait",
+          "Fresh Banana",
+          "Dried Fruit",
+          "Choice of Milk"
+        ],
+        "daily_alts": [
+          "Breakfast Bar",
+          "Cereal Bowl",
+          "Grahams w/ Yogurt"
         ],
         "tags": [
-          "Daily Breakfast"
-        ]
-      },
-      "elementary_lunch": {
-        "main": "Pizza Dippers w/ Marinara Sauce",
-        "image": "assets/images/pizza_dippers.jpg",
-        "sides": [
-          "Steamed Broccoli",
-          "Carrot Sticks",
-          "Cucumber Tomato Salad",
-          "Fresh Fruit Cup",
-          "Fresh Berries"
-        ],
-        "alts": [
-          "PBJ Uncrustable",
-          "Entrée Salad"
-        ],
-        "tags": [
-          "Whole Grain",
-          "Cheesy"
-        ]
-      },
-      "high_school_lunch": {
-        "main": "Pizza Dippers w/ Marinara Sauce",
-        "image": "assets/images/pizza_dippers.jpg",
-        "sides": [
-          "Steamed Broccoli",
-          "Carrot Sticks",
-          "Cucumber Tomato Salad",
-          "Fresh Fruit Cup",
-          "Fresh Berries"
-        ],
-        "alts": [
-          "PBJ Uncrustable",
-          "Entrée Salad"
-        ],
-        "tags": [
-          "Whole Grain",
-          "Cheesy"
+          "Hot Breakfast"
         ]
       }
     },
@@ -1114,52 +760,20 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Glazed Pastry or Cereal",
+        "main": "Bagel Bites w/ Cream Cheese",
+        "image": "assets/images/croissant_bfast.jpg",
         "sides": [
-          "Fresh Fruit Cup",
+          "Fresh Fruit",
           "100% Fruit Juice",
           "Choice of Low-Fat Milk"
         ],
-        "tags": [
-          "Daily Breakfast"
-        ]
-      },
-      "elementary_lunch": {
-        "main": "Crispy or Grilled Chicken Sandwich",
-        "image": "assets/images/chicken_tenders.jpg",
-        "sides": [
-          "Sweet Potato Fries",
-          "Garden Side Salad",
-          "Veggie Cup",
-          "Fresh Whole Fruit",
-          "Fresh Grapes"
-        ],
-        "alts": [
-          "PBJ Uncrustable",
-          "Bento Box"
+        "daily_alts": [
+          "Breakfast Bar",
+          "Cereal Bowl",
+          "Grahams w/ Yogurt"
         ],
         "tags": [
-          "High Protein",
-          "Student Favorite"
-        ]
-      },
-      "high_school_lunch": {
-        "main": "Crispy or Grilled Chicken Sandwich",
-        "image": "assets/images/chicken_tenders.jpg",
-        "sides": [
-          "Sweet Potato Fries",
-          "Garden Side Salad",
-          "Veggie Cup",
-          "Fresh Whole Fruit",
-          "Fresh Grapes"
-        ],
-        "alts": [
-          "PBJ Uncrustable",
-          "Bento Box"
-        ],
-        "tags": [
-          "High Protein",
-          "Student Favorite"
+          "Friday Breakfast"
         ]
       }
     },
@@ -1187,52 +801,20 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Glazed Pastry or Cereal",
+        "main": "Breakfast Chicken Biscuit",
+        "image": "assets/images/croissant_bfast.jpg",
         "sides": [
-          "Fresh Fruit Cup",
+          "Fresh Apple",
           "100% Fruit Juice",
           "Choice of Low-Fat Milk"
         ],
-        "tags": [
-          "Daily Breakfast"
-        ]
-      },
-      "elementary_lunch": {
-        "main": "Variety Pizza Slice",
-        "image": "assets/images/pepperoni_pizza.jpg",
-        "sides": [
-          "Green Beans w/ Fresh Garlic",
-          "Baby Carrots",
-          "Garden Side Salad",
-          "Fresh Whole Fruit",
-          "Fresh Melon"
-        ],
-        "alts": [
-          "PBJ Uncrustable",
-          "Bento Box"
+        "daily_alts": [
+          "Breakfast Bar",
+          "Cereal Bowl",
+          "Grahams w/ Yogurt"
         ],
         "tags": [
-          "Pizza Monday",
-          "Whole Grain"
-        ]
-      },
-      "high_school_lunch": {
-        "main": "Variety Pizza Slice",
-        "image": "assets/images/pepperoni_pizza.jpg",
-        "sides": [
-          "Green Beans w/ Fresh Garlic",
-          "Baby Carrots",
-          "Garden Side Salad",
-          "Fresh Whole Fruit",
-          "Fresh Melon"
-        ],
-        "alts": [
-          "PBJ Uncrustable",
-          "Bento Box"
-        ],
-        "tags": [
-          "Pizza Monday",
-          "Whole Grain"
+          "High Protein"
         ]
       }
     },
@@ -1257,11 +839,17 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Glazed Pastry or Cereal",
+        "main": "Warm Cinnamon Pastry or Cereal",
+        "image": "assets/images/croissant_bfast.jpg",
         "sides": [
           "Fresh Fruit Cup",
           "100% Fruit Juice",
           "Choice of Low-Fat Milk"
+        ],
+        "daily_alts": [
+          "Breakfast Bar",
+          "Cereal Bowl",
+          "Grahams w/ Yogurt"
         ],
         "tags": [
           "Daily Breakfast"
@@ -1289,11 +877,17 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Glazed Pastry or Cereal",
+        "main": "Warm Cinnamon Pastry or Cereal",
+        "image": "assets/images/croissant_bfast.jpg",
         "sides": [
           "Fresh Fruit Cup",
           "100% Fruit Juice",
           "Choice of Low-Fat Milk"
+        ],
+        "daily_alts": [
+          "Breakfast Bar",
+          "Cereal Bowl",
+          "Grahams w/ Yogurt"
         ],
         "tags": [
           "Daily Breakfast"
@@ -1321,11 +915,17 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Glazed Pastry or Cereal",
+        "main": "Warm Cinnamon Pastry or Cereal",
+        "image": "assets/images/croissant_bfast.jpg",
         "sides": [
           "Fresh Fruit Cup",
           "100% Fruit Juice",
           "Choice of Low-Fat Milk"
+        ],
+        "daily_alts": [
+          "Breakfast Bar",
+          "Cereal Bowl",
+          "Grahams w/ Yogurt"
         ],
         "tags": [
           "Daily Breakfast"
@@ -1353,11 +953,17 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Glazed Pastry or Cereal",
+        "main": "Warm Cinnamon Pastry or Cereal",
+        "image": "assets/images/croissant_bfast.jpg",
         "sides": [
           "Fresh Fruit Cup",
           "100% Fruit Juice",
           "Choice of Low-Fat Milk"
+        ],
+        "daily_alts": [
+          "Breakfast Bar",
+          "Cereal Bowl",
+          "Grahams w/ Yogurt"
         ],
         "tags": [
           "Daily Breakfast"
@@ -1385,11 +991,17 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Glazed Pastry or Cereal",
+        "main": "Warm Cinnamon Pastry or Cereal",
+        "image": "assets/images/croissant_bfast.jpg",
         "sides": [
           "Fresh Fruit Cup",
           "100% Fruit Juice",
           "Choice of Low-Fat Milk"
+        ],
+        "daily_alts": [
+          "Breakfast Bar",
+          "Cereal Bowl",
+          "Grahams w/ Yogurt"
         ],
         "tags": [
           "Daily Breakfast"
@@ -1417,11 +1029,17 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Glazed Pastry or Cereal",
+        "main": "Warm Cinnamon Pastry or Cereal",
+        "image": "assets/images/croissant_bfast.jpg",
         "sides": [
           "Fresh Fruit Cup",
           "100% Fruit Juice",
           "Choice of Low-Fat Milk"
+        ],
+        "daily_alts": [
+          "Breakfast Bar",
+          "Cereal Bowl",
+          "Grahams w/ Yogurt"
         ],
         "tags": [
           "Daily Breakfast"
@@ -1449,11 +1067,17 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Glazed Pastry or Cereal",
+        "main": "Warm Cinnamon Pastry or Cereal",
+        "image": "assets/images/croissant_bfast.jpg",
         "sides": [
           "Fresh Fruit Cup",
           "100% Fruit Juice",
           "Choice of Low-Fat Milk"
+        ],
+        "daily_alts": [
+          "Breakfast Bar",
+          "Cereal Bowl",
+          "Grahams w/ Yogurt"
         ],
         "tags": [
           "Daily Breakfast"
@@ -1481,11 +1105,17 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Glazed Pastry or Cereal",
+        "main": "Warm Cinnamon Pastry or Cereal",
+        "image": "assets/images/croissant_bfast.jpg",
         "sides": [
           "Fresh Fruit Cup",
           "100% Fruit Juice",
           "Choice of Low-Fat Milk"
+        ],
+        "daily_alts": [
+          "Breakfast Bar",
+          "Cereal Bowl",
+          "Grahams w/ Yogurt"
         ],
         "tags": [
           "Daily Breakfast"
@@ -1513,11 +1143,17 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Glazed Pastry or Cereal",
+        "main": "Warm Cinnamon Pastry or Cereal",
+        "image": "assets/images/croissant_bfast.jpg",
         "sides": [
           "Fresh Fruit Cup",
           "100% Fruit Juice",
           "Choice of Low-Fat Milk"
+        ],
+        "daily_alts": [
+          "Breakfast Bar",
+          "Cereal Bowl",
+          "Grahams w/ Yogurt"
         ],
         "tags": [
           "Daily Breakfast"
@@ -1545,11 +1181,17 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Glazed Pastry or Cereal",
+        "main": "Warm Cinnamon Pastry or Cereal",
+        "image": "assets/images/croissant_bfast.jpg",
         "sides": [
           "Fresh Fruit Cup",
           "100% Fruit Juice",
           "Choice of Low-Fat Milk"
+        ],
+        "daily_alts": [
+          "Breakfast Bar",
+          "Cereal Bowl",
+          "Grahams w/ Yogurt"
         ],
         "tags": [
           "Daily Breakfast"
@@ -1577,11 +1219,17 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Glazed Pastry or Cereal",
+        "main": "Warm Cinnamon Pastry or Cereal",
+        "image": "assets/images/croissant_bfast.jpg",
         "sides": [
           "Fresh Fruit Cup",
           "100% Fruit Juice",
           "Choice of Low-Fat Milk"
+        ],
+        "daily_alts": [
+          "Breakfast Bar",
+          "Cereal Bowl",
+          "Grahams w/ Yogurt"
         ],
         "tags": [
           "Daily Breakfast"
@@ -1609,11 +1257,17 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Glazed Pastry or Cereal",
+        "main": "Warm Cinnamon Pastry or Cereal",
+        "image": "assets/images/croissant_bfast.jpg",
         "sides": [
           "Fresh Fruit Cup",
           "100% Fruit Juice",
           "Choice of Low-Fat Milk"
+        ],
+        "daily_alts": [
+          "Breakfast Bar",
+          "Cereal Bowl",
+          "Grahams w/ Yogurt"
         ],
         "tags": [
           "Daily Breakfast"
@@ -1641,11 +1295,17 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Glazed Pastry or Cereal",
+        "main": "Warm Cinnamon Pastry or Cereal",
+        "image": "assets/images/croissant_bfast.jpg",
         "sides": [
           "Fresh Fruit Cup",
           "100% Fruit Juice",
           "Choice of Low-Fat Milk"
+        ],
+        "daily_alts": [
+          "Breakfast Bar",
+          "Cereal Bowl",
+          "Grahams w/ Yogurt"
         ],
         "tags": [
           "Daily Breakfast"
@@ -1673,11 +1333,17 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Glazed Pastry or Cereal",
+        "main": "Warm Cinnamon Pastry or Cereal",
+        "image": "assets/images/croissant_bfast.jpg",
         "sides": [
           "Fresh Fruit Cup",
           "100% Fruit Juice",
           "Choice of Low-Fat Milk"
+        ],
+        "daily_alts": [
+          "Breakfast Bar",
+          "Cereal Bowl",
+          "Grahams w/ Yogurt"
         ],
         "tags": [
           "Daily Breakfast"
@@ -1705,11 +1371,17 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Glazed Pastry or Cereal",
+        "main": "Warm Cinnamon Pastry or Cereal",
+        "image": "assets/images/croissant_bfast.jpg",
         "sides": [
           "Fresh Fruit Cup",
           "100% Fruit Juice",
           "Choice of Low-Fat Milk"
+        ],
+        "daily_alts": [
+          "Breakfast Bar",
+          "Cereal Bowl",
+          "Grahams w/ Yogurt"
         ],
         "tags": [
           "Daily Breakfast"
@@ -1737,11 +1409,17 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Glazed Pastry or Cereal",
+        "main": "Warm Cinnamon Pastry or Cereal",
+        "image": "assets/images/croissant_bfast.jpg",
         "sides": [
           "Fresh Fruit Cup",
           "100% Fruit Juice",
           "Choice of Low-Fat Milk"
+        ],
+        "daily_alts": [
+          "Breakfast Bar",
+          "Cereal Bowl",
+          "Grahams w/ Yogurt"
         ],
         "tags": [
           "Daily Breakfast"
@@ -1769,11 +1447,17 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Glazed Pastry or Cereal",
+        "main": "Warm Cinnamon Pastry or Cereal",
+        "image": "assets/images/croissant_bfast.jpg",
         "sides": [
           "Fresh Fruit Cup",
           "100% Fruit Juice",
           "Choice of Low-Fat Milk"
+        ],
+        "daily_alts": [
+          "Breakfast Bar",
+          "Cereal Bowl",
+          "Grahams w/ Yogurt"
         ],
         "tags": [
           "Daily Breakfast"
@@ -1801,11 +1485,17 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Glazed Pastry or Cereal",
+        "main": "Warm Cinnamon Pastry or Cereal",
+        "image": "assets/images/croissant_bfast.jpg",
         "sides": [
           "Fresh Fruit Cup",
           "100% Fruit Juice",
           "Choice of Low-Fat Milk"
+        ],
+        "daily_alts": [
+          "Breakfast Bar",
+          "Cereal Bowl",
+          "Grahams w/ Yogurt"
         ],
         "tags": [
           "Daily Breakfast"
@@ -1833,11 +1523,17 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Glazed Pastry or Cereal",
+        "main": "Warm Cinnamon Pastry or Cereal",
+        "image": "assets/images/croissant_bfast.jpg",
         "sides": [
           "Fresh Fruit Cup",
           "100% Fruit Juice",
           "Choice of Low-Fat Milk"
+        ],
+        "daily_alts": [
+          "Breakfast Bar",
+          "Cereal Bowl",
+          "Grahams w/ Yogurt"
         ],
         "tags": [
           "Daily Breakfast"
@@ -1865,11 +1561,17 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Glazed Pastry or Cereal",
+        "main": "Warm Cinnamon Pastry or Cereal",
+        "image": "assets/images/croissant_bfast.jpg",
         "sides": [
           "Fresh Fruit Cup",
           "100% Fruit Juice",
           "Choice of Low-Fat Milk"
+        ],
+        "daily_alts": [
+          "Breakfast Bar",
+          "Cereal Bowl",
+          "Grahams w/ Yogurt"
         ],
         "tags": [
           "Daily Breakfast"
@@ -1897,11 +1599,17 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Glazed Pastry or Cereal",
+        "main": "Warm Cinnamon Pastry or Cereal",
+        "image": "assets/images/croissant_bfast.jpg",
         "sides": [
           "Fresh Fruit Cup",
           "100% Fruit Juice",
           "Choice of Low-Fat Milk"
+        ],
+        "daily_alts": [
+          "Breakfast Bar",
+          "Cereal Bowl",
+          "Grahams w/ Yogurt"
         ],
         "tags": [
           "Daily Breakfast"
@@ -1929,11 +1637,17 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Glazed Pastry or Cereal",
+        "main": "Warm Cinnamon Pastry or Cereal",
+        "image": "assets/images/croissant_bfast.jpg",
         "sides": [
           "Fresh Fruit Cup",
           "100% Fruit Juice",
           "Choice of Low-Fat Milk"
+        ],
+        "daily_alts": [
+          "Breakfast Bar",
+          "Cereal Bowl",
+          "Grahams w/ Yogurt"
         ],
         "tags": [
           "Daily Breakfast"

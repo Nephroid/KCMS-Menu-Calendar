@@ -1,5 +1,5 @@
 /**
- * KCMS (Kate Collins Middle School) - Dedicated V3 Menu Calendar Engine
+ * KCMS (Kate Collins Middle School) - Official V3 Lunch & V2 Breakfast Menu Calendar Engine
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -253,20 +253,17 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function renderPdfDownloads() {
-    const officialPdf = {
-      title: "Official KCMS August 2026 Middle School Menu (V3 PDF)",
-      url: "https://docs.isitesoftware.com/snaf-assets/snaf-static/greenmenus/1495145617663/2026/8/880505-August_2026_MS_Menu_V3.pdf"
-    };
+    if (!menuData || !menuData.pdf_downloads) return;
 
-    pdfGrid.innerHTML = `
-      <a href="${officialPdf.url}" target="_blank" rel="noopener" class="pdf-card">
+    pdfGrid.innerHTML = menuData.pdf_downloads.map(pdf => `
+      <a href="${pdf.url}" target="_blank" rel="noopener" class="pdf-card">
         <i class="fa-solid fa-file-pdf pdf-icon"></i>
         <div class="pdf-info">
-          <span class="pdf-title">${officialPdf.title}</span>
-          <span class="pdf-meta">Kate Collins Middle School • Official School Nutrition PDF</span>
+          <span class="pdf-title">${pdf.title}</span>
+          <span class="pdf-meta">Kate Collins Middle School • Official PDF Download</span>
         </div>
       </a>
-    `;
+    `).join('');
   }
 
   function openModal(dt, dateKey, dayData) {
@@ -296,6 +293,15 @@ document.addEventListener('DOMContentLoaded', () => {
         <ul class="modal-sides-list">
           ${(bfast?.sides || ['Fresh Fruit Cup', '100% Fruit Juice', 'Choice of Milk']).map(s => `<li>${s}</li>`).join('')}
         </ul>
+
+        ${bfast?.daily_alts ? `
+          <div style="margin-top: 10px; padding-top: 8px; border-top: 1px rgba(255,255,255,0.1) solid;">
+            <span style="font-size: 0.78rem; color: #3B82F6; font-weight: 700;">DAILY BREAKFAST ALTERNATIVES:</span>
+            <div style="display: flex; gap: 6px; margin-top: 4px; flex-wrap: wrap;">
+              ${bfast.daily_alts.map(alt => `<span class="badge badge-tag" style="background: rgba(59,130,246,0.15); color:#93C5FD;">${alt}</span>`).join('')}
+            </div>
+          </div>
+        ` : ''}
       </div>
 
       <div class="modal-meal-section">
@@ -307,7 +313,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         ${lunch?.alts ? `
           <div style="margin-top: 12px; padding-top: 10px; border-top: 1px rgba(255,255,255,0.1) solid;">
-            <span style="font-size: 0.8rem; color: #F59E0B; font-weight: 700;">KCMS DAILY ALTERNATIVE OPTIONS:</span>
+            <span style="font-size: 0.8rem; color: #F59E0B; font-weight: 700;">KCMS DAILY LUNCH ALTERNATIVES:</span>
             <div style="display: flex; gap: 6px; margin-top: 4px; flex-wrap: wrap;">
               ${lunch.alts.map(alt => `<span class="badge badge-tag" style="background: rgba(255,255,255,0.1); color:#FFF;">${alt}</span>`).join('')}
             </div>

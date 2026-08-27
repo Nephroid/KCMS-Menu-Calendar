@@ -5,37 +5,23 @@ import os
 import sys
 
 BASE_URL = "https://www.schoolnutritionandfitness.com"
-MENU_PAGE_URL = "https://www.schoolnutritionandfitness.com/index.php?sid=1495145617663&page=menus"
-OFFICIAL_KCMS_PDF_URL = "https://docs.isitesoftware.com/snaf-assets/snaf-static/greenmenus/1495145617663/2026/8/880505-August_2026_MS_Menu_V3.pdf"
+OFFICIAL_KCMS_LUNCH_PDF = "https://docs.isitesoftware.com/snaf-assets/snaf-static/greenmenus/1495145617663/2026/8/880505-August_2026_MS_Menu_V3.pdf"
+OFFICIAL_KCMS_BFAST_PDF = "https://docs.isitesoftware.com/snaf-assets/snaf-static/greenmenus/1495145617663/2026/8/880509-August_2026_Breakfast_Menu_V2.pdf"
 
 def build_menu_database():
-    print("Building exact KCMS August 2026 database from official V3 PDF...")
+    print("Building exact KCMS August 2026 database from official Lunch V3 & Breakfast V2 PDFs...")
 
     schools = {
         "middle": {
             "name": "Kate Collins Middle School (KCMS)",
             "short": "KCMS Middle",
-            "pdf_url": OFFICIAL_KCMS_PDF_URL
-        },
-        "elementary": {
-            "name": "Waynesboro Elementary Schools",
-            "short": "Elementary",
-            "pdf_url": "https://www.schoolnutritionandfitness.com/downloadMenu.php/1495145617663/880503"
-        },
-        "high": {
-            "name": "Waynesboro High School",
-            "short": "High School",
-            "pdf_url": "https://www.schoolnutritionandfitness.com/downloadMenu.php/1495145617663/880763"
-        },
-        "prek": {
-            "name": "Wayne Hills Preschool",
-            "short": "Pre-K",
-            "pdf_url": "https://www.schoolnutritionandfitness.com/downloadMenu.php/1495145617663/880506"
+            "pdf_lunch": OFFICIAL_KCMS_LUNCH_PDF,
+            "pdf_breakfast": OFFICIAL_KCMS_BFAST_PDF
         }
     }
 
     # Exact daily KCMS lunch items parsed from August_2026_MS_Menu_V3.pdf
-    exact_kcms_august = {
+    exact_kcms_august_lunch = {
         "2026-08-10": {"no_school": True, "note": "NO SCHOOL (Teacher Workday)"},
         "2026-08-11": {"no_school": True, "note": "NO SCHOOL (Teacher Workday)"},
         
@@ -139,9 +125,113 @@ def build_menu_database():
         }
     }
 
+    # Exact daily KCMS breakfast items parsed from August_2026_Breakfast_Menu_V2.pdf
+    exact_kcms_august_bfast = {
+        "2026-08-12": {
+            "main": "Egg & Cheese Croissant",
+            "image": "assets/images/croissant_bfast.jpg",
+            "sides": ["Fresh Fruit", "100% Fruit Juice", "Choice of Low-Fat Milk"],
+            "daily_alts": ["Breakfast Bar", "Cereal Bowl", "Grahams w/ Yogurt"],
+            "tags": ["Hot Breakfast", "Student Meal FREE"]
+        },
+        "2026-08-13": {
+            "main": "New! Homemade Breakfast Pizza",
+            "image": "assets/images/breakfast_pizza.jpg",
+            "sides": ["Seasonal Fruit & Yogurt Parfait", "Fresh Banana", "Dried Fruit", "Choice of Milk"],
+            "daily_alts": ["Breakfast Bar", "Cereal Bowl", "Grahams w/ Yogurt"],
+            "tags": ["New Item", "Hot Breakfast"]
+        },
+        "2026-08-14": {
+            "main": "NEW! Bagel Bites w/ Cream Cheese",
+            "image": "assets/images/croissant_bfast.jpg",
+            "sides": ["Fresh Fruit", "100% Fruit Juice", "Choice of Low-Fat Milk"],
+            "daily_alts": ["Breakfast Bar", "Cereal Bowl", "Grahams w/ Yogurt"],
+            "tags": ["New Item", "Quick & Light"]
+        },
+        "2026-08-17": {
+            "main": "Breakfast Chicken Biscuit",
+            "image": "assets/images/croissant_bfast.jpg",
+            "sides": ["Fresh Apple", "100% Fruit Juice", "Choice of Low-Fat Milk"],
+            "daily_alts": ["Breakfast Bar", "Cereal Bowl", "Grahams w/ Yogurt"],
+            "tags": ["High Protein", "Hot Breakfast"]
+        },
+        "2026-08-18": {
+            "main": "Breakfast Stacker",
+            "image": "assets/images/breakfast_pizza.jpg",
+            "sides": ["Seasonal Fruit & Yogurt Parfait", "Fresh Orange", "Canned or Frozen Fruit", "Choice of Milk"],
+            "daily_alts": ["Breakfast Bar", "Cereal Bowl", "Grahams w/ Yogurt"],
+            "tags": ["Popular", "Hot Breakfast"]
+        },
+        "2026-08-19": {
+            "main": "Homemade Smoothie w/ Muffin",
+            "image": "assets/images/croissant_bfast.jpg",
+            "sides": ["Fresh Fruit", "100% Fruit Juice", "Choice of Low-Fat Milk"],
+            "daily_alts": ["Breakfast Bar", "Cereal Bowl", "Grahams w/ Yogurt"],
+            "tags": ["Fresh Fruit", "Homemade"]
+        },
+        "2026-08-20": {
+            "main": "Homemade Energy Bites",
+            "image": "assets/images/breakfast_pizza.jpg",
+            "sides": ["Seasonal Fruit & Yogurt Parfait", "Fresh Banana", "Dried Fruit", "Choice of Milk"],
+            "daily_alts": ["Breakfast Bar", "Cereal Bowl", "Grahams w/ Yogurt"],
+            "tags": ["Energy Boost", "Homemade"]
+        },
+        "2026-08-21": {
+            "main": "Western Frittata",
+            "image": "assets/images/croissant_bfast.jpg",
+            "sides": ["Fresh Fruit", "100% Fruit Juice", "Choice of Low-Fat Milk"],
+            "daily_alts": ["Breakfast Bar", "Cereal Bowl", "Grahams w/ Yogurt"],
+            "tags": ["Hot Breakfast", "Egg Special"]
+        },
+        "2026-08-24": {
+            "main": "NEW! Dutch Waffle",
+            "image": "assets/images/croissant_bfast.jpg",
+            "sides": ["Fresh Apple", "100% Fruit Juice", "Choice of Low-Fat Milk"],
+            "daily_alts": ["Breakfast Bar", "Cereal Bowl", "Grahams w/ Yogurt"],
+            "tags": ["New Item", "Sweet & Warm"]
+        },
+        "2026-08-25": {
+            "main": "NEW! Egg Bite w/ Baby Cakes",
+            "image": "assets/images/breakfast_pizza.jpg",
+            "sides": ["Seasonal Fruit & Yogurt Parfait", "Fresh Orange", "Canned or Frozen Fruit", "Choice of Milk"],
+            "daily_alts": ["Breakfast Bar", "Cereal Bowl", "Grahams w/ Yogurt"],
+            "tags": ["New Item", "High Protein"]
+        },
+        "2026-08-26": {
+            "main": "Egg & Cheese Croissant",
+            "image": "assets/images/croissant_bfast.jpg",
+            "sides": ["Fresh Fruit", "100% Fruit Juice", "Choice of Low-Fat Milk"],
+            "daily_alts": ["Breakfast Bar", "Cereal Bowl", "Grahams w/ Yogurt"],
+            "tags": ["Fan Favorite"]
+        },
+        "2026-08-27": {
+            "main": "Homemade Breakfast Pizza",
+            "image": "assets/images/breakfast_pizza.jpg",
+            "sides": ["Seasonal Fruit & Yogurt Parfait", "Fresh Banana", "Dried Fruit", "Choice of Milk"],
+            "daily_alts": ["Breakfast Bar", "Cereal Bowl", "Grahams w/ Yogurt"],
+            "tags": ["Hot Breakfast"]
+        },
+        "2026-08-28": {
+            "main": "Bagel Bites w/ Cream Cheese",
+            "image": "assets/images/croissant_bfast.jpg",
+            "sides": ["Fresh Fruit", "100% Fruit Juice", "Choice of Low-Fat Milk"],
+            "daily_alts": ["Breakfast Bar", "Cereal Bowl", "Grahams w/ Yogurt"],
+            "tags": ["Friday Breakfast"]
+        },
+        "2026-08-31": {
+            "main": "Breakfast Chicken Biscuit",
+            "image": "assets/images/croissant_bfast.jpg",
+            "sides": ["Fresh Apple", "100% Fruit Juice", "Choice of Low-Fat Milk"],
+            "daily_alts": ["Breakfast Bar", "Cereal Bowl", "Grahams w/ Yogurt"],
+            "tags": ["High Protein"]
+        }
+    }
+
     default_breakfast = {
-        "main": "Warm Cinnamon Glazed Pastry or Cereal",
+        "main": "Warm Cinnamon Pastry or Cereal",
+        "image": "assets/images/croissant_bfast.jpg",
         "sides": ["Fresh Fruit Cup", "100% Fruit Juice", "Choice of Low-Fat Milk"],
+        "daily_alts": ["Breakfast Bar", "Cereal Bowl", "Grahams w/ Yogurt"],
         "tags": ["Daily Breakfast"]
     }
 
@@ -159,8 +249,10 @@ def build_menu_database():
                 weekday = dt.weekday() # 0=Mon, 4=Fri
 
                 if weekday < 5:
-                    if date_key in exact_kcms_august:
-                        day_item = exact_kcms_august[date_key]
+                    if date_key in exact_kcms_august_lunch:
+                        day_item = exact_kcms_august_lunch[date_key]
+                        bfast_item = exact_kcms_august_bfast.get(date_key, default_breakfast)
+
                         if day_item.get("no_school"):
                             calendar_days[date_key] = {
                                 "is_school_day": False,
@@ -172,12 +264,9 @@ def build_menu_database():
                                 "date": date_key,
                                 "day_name": dt.strftime("%A"),
                                 "kcms_lunch": day_item,
-                                "kcms_breakfast": default_breakfast,
-                                "elementary_lunch": day_item,
-                                "high_school_lunch": day_item
+                                "kcms_breakfast": bfast_item
                             }
                     else:
-                        # Default weekday schedule for September
                         calendar_days[date_key] = {
                             "is_school_day": True,
                             "date": date_key,
@@ -194,27 +283,20 @@ def build_menu_database():
 
     pdf_links = [
         {
-            "title": "August 2026 KCMS Middle School Lunch Menu (Official V3)",
-            "url": OFFICIAL_KCMS_PDF_URL
+            "title": "Official KCMS August 2026 Lunch Menu (V3 PDF)",
+            "url": OFFICIAL_KCMS_LUNCH_PDF
         },
         {
-            "title": "August 2026 Elementary Lunch Menu",
-            "url": "https://www.schoolnutritionandfitness.com/downloadMenu.php/1495145617663/880503"
-        },
-        {
-            "title": "August 2026 High School Lunch Menu",
-            "url": "https://www.schoolnutritionandfitness.com/downloadMenu.php/1495145617663/880763"
-        },
-        {
-            "title": "August 2026 Wayne Hills Preschool Menu",
-            "url": "https://www.schoolnutritionandfitness.com/downloadMenu.php/1495145617663/880506"
+            "title": "Official KCMS August 2026 Breakfast Menu (V2 PDF)",
+            "url": OFFICIAL_KCMS_BFAST_PDF
         }
     ]
 
     dataset = {
         "metadata": {
             "source": "Kate Collins Middle School (KCMS) - Official Nutrition Services",
-            "source_pdf": OFFICIAL_KCMS_PDF_URL,
+            "source_lunch_pdf": OFFICIAL_KCMS_LUNCH_PDF,
+            "source_bfast_pdf": OFFICIAL_KCMS_BFAST_PDF,
             "last_updated": "2026-08-27",
             "staff": {
                 "supervisor": "Kelly Shomo, MPH (540-946-4600 x8144)",
@@ -236,7 +318,7 @@ def build_menu_database():
     with open("data/menus.json", "w", encoding="utf-8") as f:
         json.dump(dataset, f, indent=2, ensure_ascii=False)
 
-    print("data/menus.json updated with EXACT August_2026_MS_Menu_V3.pdf data!")
+    print("data/menus.json updated with EXACT August_2026_Breakfast_Menu_V2.pdf & Lunch V3 data!")
 
 if __name__ == "__main__":
     build_menu_database()
