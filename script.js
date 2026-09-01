@@ -6,12 +6,12 @@ document.addEventListener('DOMContentLoaded', () => {
   // App State
   let menuData = null;
   let currentYear = 2026;
-  let currentMonth = 8; // August 2026 default
+  let currentMonth = 9; // September 2026 default
   let selectedMealFilter = 'all';
   let searchQuery = '';
 
-  // Reference Today Date (August 27, 2026)
-  const todayDate = new Date(2026, 7, 27); // Month is 0-indexed (7 = August)
+  // Reference Today's actual date
+  const todayDate = new Date();
   todayDate.setHours(0, 0, 0, 0);
 
   // DOM Elements
@@ -97,8 +97,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     btnToday.addEventListener('click', () => {
-      currentYear = 2026;
-      currentMonth = 8;
+      currentYear = todayDate.getFullYear();
+      currentMonth = todayDate.getMonth() + 1;
       renderCalendar();
     });
 

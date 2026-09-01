@@ -51,39 +51,45 @@
     </nav>
 
     <!-- Harvest of the Month Banner (Prominently Featured at Top) -->
-    <section class="harvest-banner">
-      <div class="harvest-card">
+    <section class="harvest-banner" id="harvestBanner">
+      <div class="harvest-card" id="harvestCard">
         <div class="harvest-image-wrapper">
-          <!-- Stylized High-Definition Harvest Tomato Graphic -->
-          <svg class="harvest-svg-art" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="50" cy="54" r="40" fill="#EF4444" />
-            <circle cx="36" cy="42" r="12" fill="#F87171" opacity="0.6" />
-            <!-- Tomato Stem & Calyx -->
-            <path d="M50 18 Q45 28 32 20 Q44 30 50 32 Q56 30 68 20 Q55 28 50 18 Z" fill="#15803D" />
-            <path d="M50 18 Q50 8 46 4 Q48 14 50 18 Z" fill="#166534" />
-            <path d="M50 32 Q35 34 26 38 Q40 38 50 32 Z" fill="#166534" />
-            <path d="M50 32 Q65 34 74 38 Q60 38 50 32 Z" fill="#166534" />
+          <!-- Harvest Art - swapped by JS based on current month -->
+          <svg class="harvest-svg-art" id="harvestSvg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <!-- Apple (September) -->
+            <!-- Left lobe -->
+            <ellipse cx="40" cy="55" rx="22" ry="28" fill="#22C55E" />
+            <!-- Right lobe -->
+            <ellipse cx="60" cy="55" rx="22" ry="28" fill="#16A34A" />
+            <!-- Center overlap highlight -->
+            <ellipse cx="50" cy="56" rx="10" ry="26" fill="#4ADE80" opacity="0.4" />
+            <!-- Leaf -->
+            <ellipse cx="58" cy="28" rx="10" ry="5" fill="#15803D" transform="rotate(-30 58 28)" />
+            <!-- Stem -->
+            <rect x="48" y="16" width="4" height="14" rx="2" fill="#92400E" />
+            <!-- Shine highlight -->
+            <ellipse cx="38" cy="42" rx="6" ry="9" fill="#FFFFFF" opacity="0.25" />
           </svg>
-          <span class="harvest-badge">VIRGINIA FRESH</span>
+          <span class="harvest-badge" id="harvestBadge">VIRGINIA FRESH</span>
         </div>
 
         <div class="harvest-content">
           <div class="harvest-header-row">
-            <span class="badge badge-tag" style="background: rgba(239, 68, 68, 0.2); color: #FCA5A5; border-color: rgba(239, 68, 68, 0.4);">
+            <span class="badge badge-tag" id="harvestBadgeTag" style="background: rgba(239, 68, 68, 0.2); color: #FCA5A5; border-color: rgba(239, 68, 68, 0.4);">
               <i class="fa-solid fa-seedling"></i> HARVEST OF THE MONTH
             </span>
-            <span class="harvest-month">August 2026</span>
+            <span class="harvest-month" id="harvestMonth">September 2026</span>
           </div>
 
-          <h2 class="harvest-title">Fresh Local Tomatoes 🍅</h2>
-          <p class="harvest-desc">
-            Sourced locally from Virginia farms! Rich in Lycopene, Vitamin C, and Potassium.
-            Served fresh daily in KCMS garden salads, entrees, and side selections.
+          <h2 class="harvest-title" id="harvestTitle">Fresh Local Apples 🍎</h2>
+          <p class="harvest-desc" id="harvestDesc">
+            Sourced locally from Virginia orchards! Rich in fiber, Vitamin C, and antioxidants.
+            Served fresh daily in KCMS breakfasts, sides, and snack selections.
           </p>
 
           <div class="harvest-partners">
             <i class="fa-solid fa-handshake-angle"></i>
-            <span>Local Partners: <strong>4P Foods</strong> & <strong>The Waynesboro Education Farm</strong></span>
+            <span>Local Partners: <strong>4P Foods</strong> &amp; <strong>The Waynesboro Education Farm</strong></span>
           </div>
         </div>
       </div>

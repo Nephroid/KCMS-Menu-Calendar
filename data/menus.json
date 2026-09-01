@@ -1,9 +1,17 @@
 {
   "metadata": {
     "source": "Kate Collins Middle School (KCMS) - Official Nutrition Services",
-    "source_lunch_pdf": "https://docs.isitesoftware.com/snaf-assets/snaf-static/greenmenus/1495145617663/2026/8/880505-August_2026_MS_Menu_V3.pdf",
-    "source_bfast_pdf": "https://docs.isitesoftware.com/snaf-assets/snaf-static/greenmenus/1495145617663/2026/8/880509-August_2026_Breakfast_Menu_V2.pdf",
-    "last_updated": "2026-08-27",
+    "last_updated": "2026-09-01",
+    "harvest_of_month": {
+      "august": {
+        "item": "Fresh Local Tomatoes",
+        "emoji": "🍅"
+      },
+      "september": {
+        "item": "Fresh Local Apples",
+        "emoji": "🍎"
+      }
+    },
     "staff": {
       "supervisor": "Kelly Shomo, MPH (540-946-4600 x8144)",
       "manager": "Mickie Rohrbacher (540-946-4635 x6026)"
@@ -17,220 +25,56 @@
   },
   "pdf_downloads": [
     {
-      "title": "Official KCMS August 2026 Lunch Menu (V3 PDF)",
+      "title": "Official KCMS September 2026 Lunch Menu",
+      "url": "https://www.schoolnutritionandfitness.com/downloadMenu.php/1495145617663/888538"
+    },
+    {
+      "title": "Official KCMS September 2026 Breakfast Menu",
+      "url": "https://www.schoolnutritionandfitness.com/downloadMenu.php/1495145617663/893592"
+    },
+    {
+      "title": "Official KCMS August 2026 Lunch Menu (V3)",
       "url": "https://docs.isitesoftware.com/snaf-assets/snaf-static/greenmenus/1495145617663/2026/8/880505-August_2026_MS_Menu_V3.pdf"
     },
     {
-      "title": "Official KCMS August 2026 Breakfast Menu (V2 PDF)",
+      "title": "Official KCMS August 2026 Breakfast Menu (V2)",
       "url": "https://docs.isitesoftware.com/snaf-assets/snaf-static/greenmenus/1495145617663/2026/8/880509-August_2026_Breakfast_Menu_V2.pdf"
     }
   ],
   "schools": {
     "middle": {
       "name": "Kate Collins Middle School (KCMS)",
-      "short": "KCMS Middle",
-      "pdf_lunch": "https://docs.isitesoftware.com/snaf-assets/snaf-static/greenmenus/1495145617663/2026/8/880505-August_2026_MS_Menu_V3.pdf",
-      "pdf_breakfast": "https://docs.isitesoftware.com/snaf-assets/snaf-static/greenmenus/1495145617663/2026/8/880509-August_2026_Breakfast_Menu_V2.pdf"
+      "short": "KCMS Middle"
     }
   },
   "calendar": {
     "2026-08-03": {
-      "is_school_day": true,
-      "date": "2026-08-03",
-      "day_name": "Monday",
-      "kcms_lunch": {
-        "main": "Chef Choice Special Entrée",
-        "image": "assets/images/pepperoni_pizza.jpg",
-        "sides": [
-          "Garden Salad",
-          "Fresh Fruit",
-          "Choice of Milk"
-        ],
-        "alts": [
-          "PBJ Uncrustable",
-          "Bento Box"
-        ],
-        "tags": [
-          "Daily Special"
-        ]
-      },
-      "kcms_breakfast": {
-        "main": "Warm Cinnamon Pastry or Cereal",
-        "image": "assets/images/croissant_bfast.jpg",
-        "sides": [
-          "Fresh Fruit Cup",
-          "100% Fruit Juice",
-          "Choice of Low-Fat Milk"
-        ],
-        "daily_alts": [
-          "Breakfast Bar",
-          "Cereal Bowl",
-          "Grahams w/ Yogurt"
-        ],
-        "tags": [
-          "Daily Breakfast"
-        ]
-      }
+      "is_school_day": false,
+      "note": "Summer Recess (1st Day: Aug 12)"
     },
     "2026-08-04": {
-      "is_school_day": true,
-      "date": "2026-08-04",
-      "day_name": "Tuesday",
-      "kcms_lunch": {
-        "main": "Chef Choice Special Entrée",
-        "image": "assets/images/pepperoni_pizza.jpg",
-        "sides": [
-          "Garden Salad",
-          "Fresh Fruit",
-          "Choice of Milk"
-        ],
-        "alts": [
-          "PBJ Uncrustable",
-          "Bento Box"
-        ],
-        "tags": [
-          "Daily Special"
-        ]
-      },
-      "kcms_breakfast": {
-        "main": "Warm Cinnamon Pastry or Cereal",
-        "image": "assets/images/croissant_bfast.jpg",
-        "sides": [
-          "Fresh Fruit Cup",
-          "100% Fruit Juice",
-          "Choice of Low-Fat Milk"
-        ],
-        "daily_alts": [
-          "Breakfast Bar",
-          "Cereal Bowl",
-          "Grahams w/ Yogurt"
-        ],
-        "tags": [
-          "Daily Breakfast"
-        ]
-      }
+      "is_school_day": false,
+      "note": "Summer Recess (1st Day: Aug 12)"
     },
     "2026-08-05": {
-      "is_school_day": true,
-      "date": "2026-08-05",
-      "day_name": "Wednesday",
-      "kcms_lunch": {
-        "main": "Chef Choice Special Entrée",
-        "image": "assets/images/pepperoni_pizza.jpg",
-        "sides": [
-          "Garden Salad",
-          "Fresh Fruit",
-          "Choice of Milk"
-        ],
-        "alts": [
-          "PBJ Uncrustable",
-          "Bento Box"
-        ],
-        "tags": [
-          "Daily Special"
-        ]
-      },
-      "kcms_breakfast": {
-        "main": "Warm Cinnamon Pastry or Cereal",
-        "image": "assets/images/croissant_bfast.jpg",
-        "sides": [
-          "Fresh Fruit Cup",
-          "100% Fruit Juice",
-          "Choice of Low-Fat Milk"
-        ],
-        "daily_alts": [
-          "Breakfast Bar",
-          "Cereal Bowl",
-          "Grahams w/ Yogurt"
-        ],
-        "tags": [
-          "Daily Breakfast"
-        ]
-      }
+      "is_school_day": false,
+      "note": "Summer Recess (1st Day: Aug 12)"
     },
     "2026-08-06": {
-      "is_school_day": true,
-      "date": "2026-08-06",
-      "day_name": "Thursday",
-      "kcms_lunch": {
-        "main": "Chef Choice Special Entrée",
-        "image": "assets/images/pepperoni_pizza.jpg",
-        "sides": [
-          "Garden Salad",
-          "Fresh Fruit",
-          "Choice of Milk"
-        ],
-        "alts": [
-          "PBJ Uncrustable",
-          "Bento Box"
-        ],
-        "tags": [
-          "Daily Special"
-        ]
-      },
-      "kcms_breakfast": {
-        "main": "Warm Cinnamon Pastry or Cereal",
-        "image": "assets/images/croissant_bfast.jpg",
-        "sides": [
-          "Fresh Fruit Cup",
-          "100% Fruit Juice",
-          "Choice of Low-Fat Milk"
-        ],
-        "daily_alts": [
-          "Breakfast Bar",
-          "Cereal Bowl",
-          "Grahams w/ Yogurt"
-        ],
-        "tags": [
-          "Daily Breakfast"
-        ]
-      }
+      "is_school_day": false,
+      "note": "Summer Recess (1st Day: Aug 12)"
     },
     "2026-08-07": {
-      "is_school_day": true,
-      "date": "2026-08-07",
-      "day_name": "Friday",
-      "kcms_lunch": {
-        "main": "Chef Choice Special Entrée",
-        "image": "assets/images/pepperoni_pizza.jpg",
-        "sides": [
-          "Garden Salad",
-          "Fresh Fruit",
-          "Choice of Milk"
-        ],
-        "alts": [
-          "PBJ Uncrustable",
-          "Bento Box"
-        ],
-        "tags": [
-          "Daily Special"
-        ]
-      },
-      "kcms_breakfast": {
-        "main": "Warm Cinnamon Pastry or Cereal",
-        "image": "assets/images/croissant_bfast.jpg",
-        "sides": [
-          "Fresh Fruit Cup",
-          "100% Fruit Juice",
-          "Choice of Low-Fat Milk"
-        ],
-        "daily_alts": [
-          "Breakfast Bar",
-          "Cereal Bowl",
-          "Grahams w/ Yogurt"
-        ],
-        "tags": [
-          "Daily Breakfast"
-        ]
-      }
+      "is_school_day": false,
+      "note": "Summer Recess (1st Day: Aug 12)"
     },
     "2026-08-10": {
       "is_school_day": false,
-      "note": "NO SCHOOL (Teacher Workday)"
+      "note": "Summer Recess (1st Day: Aug 12)"
     },
     "2026-08-11": {
       "is_school_day": false,
-      "note": "NO SCHOOL (Teacher Workday)"
+      "note": "Summer Recess (1st Day: Aug 12)"
     },
     "2026-08-12": {
       "is_school_day": true,
@@ -261,7 +105,7 @@
         "sides": [
           "Fresh Fruit",
           "100% Fruit Juice",
-          "Choice of Low-Fat Milk"
+          "Choice of Milk"
         ],
         "daily_alts": [
           "Breakfast Bar",
@@ -269,8 +113,7 @@
           "Grahams w/ Yogurt"
         ],
         "tags": [
-          "Hot Breakfast",
-          "Student Meal FREE"
+          "Hot Breakfast"
         ]
       }
     },
@@ -283,7 +126,7 @@
         "image": "assets/images/beef_tacos.jpg",
         "sides": [
           "Roasted Sweet Potatoes",
-          "New! Homemade Black Bean & Corn Salad",
+          "Homemade Black Bean & Corn Salad",
           "Veggie Cup",
           "Fresh Fruit Cup",
           "Fresh Melon"
@@ -298,7 +141,7 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "New! Homemade Breakfast Pizza",
+        "main": "Homemade Breakfast Pizza",
         "image": "assets/images/breakfast_pizza.jpg",
         "sides": [
           "Seasonal Fruit & Yogurt Parfait",
@@ -312,8 +155,7 @@
           "Grahams w/ Yogurt"
         ],
         "tags": [
-          "New Item",
-          "Hot Breakfast"
+          "New Item"
         ]
       }
     },
@@ -322,7 +164,7 @@
       "date": "2026-08-14",
       "day_name": "Friday",
       "kcms_lunch": {
-        "main": "New! Beef Dumplings w/ Korean BBQ Sauce & Brown Rice",
+        "main": "Beef Dumplings w/ Korean BBQ Sauce & Brown Rice",
         "image": "assets/images/orange_chicken.jpg",
         "sides": [
           "Roasted Broccoli",
@@ -341,12 +183,12 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "NEW! Bagel Bites w/ Cream Cheese",
+        "main": "Bagel Bites w/ Cream Cheese",
         "image": "assets/images/croissant_bfast.jpg",
         "sides": [
           "Fresh Fruit",
           "100% Fruit Juice",
-          "Choice of Low-Fat Milk"
+          "Choice of Milk"
         ],
         "daily_alts": [
           "Breakfast Bar",
@@ -354,8 +196,7 @@
           "Grahams w/ Yogurt"
         ],
         "tags": [
-          "New Item",
-          "Quick & Light"
+          "New Item"
         ]
       }
     },
@@ -388,7 +229,7 @@
         "sides": [
           "Fresh Apple",
           "100% Fruit Juice",
-          "Choice of Low-Fat Milk"
+          "Choice of Milk"
         ],
         "daily_alts": [
           "Breakfast Bar",
@@ -396,8 +237,7 @@
           "Grahams w/ Yogurt"
         ],
         "tags": [
-          "High Protein",
-          "Hot Breakfast"
+          "High Protein"
         ]
       }
     },
@@ -438,8 +278,7 @@
           "Grahams w/ Yogurt"
         ],
         "tags": [
-          "Popular",
-          "Hot Breakfast"
+          "Popular"
         ]
       }
     },
@@ -472,7 +311,7 @@
         "sides": [
           "Fresh Fruit",
           "100% Fruit Juice",
-          "Choice of Low-Fat Milk"
+          "Choice of Milk"
         ],
         "daily_alts": [
           "Breakfast Bar",
@@ -480,7 +319,6 @@
           "Grahams w/ Yogurt"
         ],
         "tags": [
-          "Fresh Fruit",
           "Homemade"
         ]
       }
@@ -523,8 +361,7 @@
           "Grahams w/ Yogurt"
         ],
         "tags": [
-          "Energy Boost",
-          "Homemade"
+          "Energy Boost"
         ]
       }
     },
@@ -556,7 +393,7 @@
         "sides": [
           "Fresh Fruit",
           "100% Fruit Juice",
-          "Choice of Low-Fat Milk"
+          "Choice of Milk"
         ],
         "daily_alts": [
           "Breakfast Bar",
@@ -564,7 +401,6 @@
           "Grahams w/ Yogurt"
         ],
         "tags": [
-          "Hot Breakfast",
           "Egg Special"
         ]
       }
@@ -574,7 +410,7 @@
       "date": "2026-08-24",
       "day_name": "Monday",
       "kcms_lunch": {
-        "main": "New! BBQ Pork w/ Hot Honey Poppers",
+        "main": "BBQ Pork w/ Hot Honey Poppers",
         "image": "assets/images/bacon_cheeseburger.jpg",
         "sides": [
           "Homemade Baked Beans",
@@ -593,12 +429,12 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "NEW! Dutch Waffle",
+        "main": "Dutch Waffle",
         "image": "assets/images/croissant_bfast.jpg",
         "sides": [
           "Fresh Apple",
           "100% Fruit Juice",
-          "Choice of Low-Fat Milk"
+          "Choice of Milk"
         ],
         "daily_alts": [
           "Breakfast Bar",
@@ -606,8 +442,7 @@
           "Grahams w/ Yogurt"
         ],
         "tags": [
-          "New Item",
-          "Sweet & Warm"
+          "New Item"
         ]
       }
     },
@@ -635,7 +470,7 @@
         ]
       },
       "kcms_breakfast": {
-        "main": "NEW! Egg Bite w/ Baby Cakes",
+        "main": "Egg Bite w/ Baby Cakes",
         "image": "assets/images/breakfast_pizza.jpg",
         "sides": [
           "Seasonal Fruit & Yogurt Parfait",
@@ -649,8 +484,7 @@
           "Grahams w/ Yogurt"
         ],
         "tags": [
-          "New Item",
-          "High Protein"
+          "New Item"
         ]
       }
     },
@@ -682,16 +516,14 @@
         "sides": [
           "Fresh Fruit",
           "100% Fruit Juice",
-          "Choice of Low-Fat Milk"
+          "Choice of Milk"
         ],
         "daily_alts": [
           "Breakfast Bar",
           "Cereal Bowl",
           "Grahams w/ Yogurt"
         ],
-        "tags": [
-          "Fan Favorite"
-        ]
+        "tags": []
       }
     },
     "2026-08-27": {
@@ -731,9 +563,7 @@
           "Cereal Bowl",
           "Grahams w/ Yogurt"
         ],
-        "tags": [
-          "Hot Breakfast"
-        ]
+        "tags": []
       }
     },
     "2026-08-28": {
@@ -765,16 +595,14 @@
         "sides": [
           "Fresh Fruit",
           "100% Fruit Juice",
-          "Choice of Low-Fat Milk"
+          "Choice of Milk"
         ],
         "daily_alts": [
           "Breakfast Bar",
           "Cereal Bowl",
           "Grahams w/ Yogurt"
         ],
-        "tags": [
-          "Friday Breakfast"
-        ]
+        "tags": []
       }
     },
     "2026-08-31": {
@@ -806,7 +634,7 @@
         "sides": [
           "Fresh Apple",
           "100% Fruit Juice",
-          "Choice of Low-Fat Milk"
+          "Choice of Milk"
         ],
         "daily_alts": [
           "Breakfast Bar",
@@ -823,28 +651,31 @@
       "date": "2026-09-01",
       "day_name": "Tuesday",
       "kcms_lunch": {
-        "main": "Chef Choice Special Entrée",
-        "image": "assets/images/pepperoni_pizza.jpg",
+        "main": "Homemade Mac n' Cheese w/ Roll",
+        "image": "assets/images/mac_and_cheese.jpg",
         "sides": [
-          "Garden Salad",
-          "Fresh Fruit",
-          "Choice of Milk"
+          "Steamed Peas",
+          "HOM or Seasonal Vegetable",
+          "Veggie Cup",
+          "Fresh Fruit Cup",
+          "Berries"
         ],
         "alts": [
           "PBJ Uncrustable",
-          "Bento Box"
+          "Entrée Salad"
         ],
         "tags": [
-          "Daily Special"
+          "Comfort Food",
+          "Vegetarian"
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Pastry or Cereal",
-        "image": "assets/images/croissant_bfast.jpg",
+        "main": "Breakfast Stacker",
+        "image": "assets/images/breakfast_pizza.jpg",
         "sides": [
-          "Fresh Fruit Cup",
-          "100% Fruit Juice",
-          "Choice of Low-Fat Milk"
+          "Fresh Orange",
+          "Canned or Frozen Fruit",
+          "Choice of Milk"
         ],
         "daily_alts": [
           "Breakfast Bar",
@@ -852,7 +683,7 @@
           "Grahams w/ Yogurt"
         ],
         "tags": [
-          "Daily Breakfast"
+          "Popular"
         ]
       }
     },
@@ -861,28 +692,31 @@
       "date": "2026-09-02",
       "day_name": "Wednesday",
       "kcms_lunch": {
-        "main": "Chef Choice Special Entrée",
-        "image": "assets/images/pepperoni_pizza.jpg",
+        "main": "Beef Dumpling w/ Teriyaki Sauce & Brown Rice",
+        "image": "assets/images/orange_chicken.jpg",
         "sides": [
-          "Garden Salad",
-          "Fresh Fruit",
-          "Choice of Milk"
+          "Roasted Broccoli",
+          "Carrot Coins",
+          "Garden Side Salad",
+          "Fresh Whole Fruit",
+          "Fresh Grapes"
         ],
         "alts": [
           "PBJ Uncrustable",
           "Bento Box"
         ],
         "tags": [
-          "Daily Special"
+          "Asian Fusion",
+          "Chef Special"
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Pastry or Cereal",
+        "main": "Homemade Smoothie w/ Muffin",
         "image": "assets/images/croissant_bfast.jpg",
         "sides": [
-          "Fresh Fruit Cup",
-          "100% Fruit Juice",
-          "Choice of Low-Fat Milk"
+          "Fresh Fruit",
+          "100% Juice",
+          "Choice of Milk"
         ],
         "daily_alts": [
           "Breakfast Bar",
@@ -890,7 +724,7 @@
           "Grahams w/ Yogurt"
         ],
         "tags": [
-          "Daily Breakfast"
+          "Homemade"
         ]
       }
     },
@@ -899,28 +733,32 @@
       "date": "2026-09-03",
       "day_name": "Thursday",
       "kcms_lunch": {
-        "main": "Chef Choice Special Entrée",
-        "image": "assets/images/pepperoni_pizza.jpg",
+        "main": "Walking Tacos w/ Toppings",
+        "image": "assets/images/beef_tacos.jpg",
         "sides": [
-          "Garden Salad",
-          "Fresh Fruit",
-          "Choice of Milk"
+          "Roasted Sweet Potatoes",
+          "Black Bean & Corn Salad",
+          "Veggie Cup",
+          "Fresh Fruit Cup",
+          "Dried Fruit"
         ],
         "alts": [
           "PBJ Uncrustable",
-          "Bento Box"
+          "Entrée Salad"
         ],
         "tags": [
-          "Daily Special"
+          "Tex-Mex",
+          "Popular"
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Pastry or Cereal",
-        "image": "assets/images/croissant_bfast.jpg",
+        "main": "Homemade Energy Bites",
+        "image": "assets/images/breakfast_pizza.jpg",
         "sides": [
-          "Fresh Fruit Cup",
-          "100% Fruit Juice",
-          "Choice of Low-Fat Milk"
+          "Seasonal Yogurt Parfait",
+          "Fresh Banana",
+          "Dried Fruit",
+          "Choice of Milk"
         ],
         "daily_alts": [
           "Breakfast Bar",
@@ -928,7 +766,7 @@
           "Grahams w/ Yogurt"
         ],
         "tags": [
-          "Daily Breakfast"
+          "Energy Boost"
         ]
       }
     },
@@ -937,28 +775,31 @@
       "date": "2026-09-04",
       "day_name": "Friday",
       "kcms_lunch": {
-        "main": "Chef Choice Special Entrée",
-        "image": "assets/images/pepperoni_pizza.jpg",
+        "main": "Cheeseburger",
+        "image": "assets/images/bacon_cheeseburger.jpg",
         "sides": [
-          "Garden Salad",
-          "Fresh Fruit",
-          "Choice of Milk"
+          "Potato Wedges",
+          "Homemade Baked Beans",
+          "Garden Side Salad",
+          "Fresh Whole Fruit",
+          "Fresh Banana"
         ],
         "alts": [
           "PBJ Uncrustable",
           "Bento Box"
         ],
         "tags": [
-          "Daily Special"
+          "All-American",
+          "Student Favorite"
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Pastry or Cereal",
+        "main": "Western Frittata",
         "image": "assets/images/croissant_bfast.jpg",
         "sides": [
-          "Fresh Fruit Cup",
-          "100% Fruit Juice",
-          "Choice of Low-Fat Milk"
+          "Fresh Fruit",
+          "100% Juice",
+          "Choice of Milk"
         ],
         "daily_alts": [
           "Breakfast Bar",
@@ -966,84 +807,50 @@
           "Grahams w/ Yogurt"
         ],
         "tags": [
-          "Daily Breakfast"
+          "Egg Special"
         ]
       }
     },
     "2026-09-07": {
-      "is_school_day": true,
-      "date": "2026-09-07",
-      "day_name": "Monday",
-      "kcms_lunch": {
-        "main": "Chef Choice Special Entrée",
-        "image": "assets/images/pepperoni_pizza.jpg",
-        "sides": [
-          "Garden Salad",
-          "Fresh Fruit",
-          "Choice of Milk"
-        ],
-        "alts": [
-          "PBJ Uncrustable",
-          "Bento Box"
-        ],
-        "tags": [
-          "Daily Special"
-        ]
-      },
-      "kcms_breakfast": {
-        "main": "Warm Cinnamon Pastry or Cereal",
-        "image": "assets/images/croissant_bfast.jpg",
-        "sides": [
-          "Fresh Fruit Cup",
-          "100% Fruit Juice",
-          "Choice of Low-Fat Milk"
-        ],
-        "daily_alts": [
-          "Breakfast Bar",
-          "Cereal Bowl",
-          "Grahams w/ Yogurt"
-        ],
-        "tags": [
-          "Daily Breakfast"
-        ]
-      }
+      "is_school_day": false,
+      "note": "HAPPY LABOR DAY! – NO SCHOOL"
     },
     "2026-09-08": {
       "is_school_day": true,
       "date": "2026-09-08",
       "day_name": "Tuesday",
       "kcms_lunch": {
-        "main": "Chef Choice Special Entrée",
-        "image": "assets/images/pepperoni_pizza.jpg",
+        "main": "Turkey Hot Dog w/ Homemade Chili",
+        "image": "assets/images/bacon_cheeseburger.jpg",
         "sides": [
-          "Garden Salad",
-          "Fresh Fruit",
-          "Choice of Milk"
+          "Roasted Broccoli",
+          "HOM or Seasonal Vegetable",
+          "Veggie Cup",
+          "Fresh Fruit Cup",
+          "Fresh Melon"
         ],
         "alts": [
           "PBJ Uncrustable",
-          "Bento Box"
+          "Entrée Salad"
         ],
         "tags": [
-          "Daily Special"
+          "Harvest of the Month"
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Pastry or Cereal",
-        "image": "assets/images/croissant_bfast.jpg",
+        "main": "Egg Bite w/ Baby Cakes",
+        "image": "assets/images/breakfast_pizza.jpg",
         "sides": [
-          "Fresh Fruit Cup",
-          "100% Fruit Juice",
-          "Choice of Low-Fat Milk"
+          "Fresh Orange",
+          "Canned or Frozen Fruit",
+          "Choice of Milk"
         ],
         "daily_alts": [
           "Breakfast Bar",
           "Cereal Bowl",
           "Grahams w/ Yogurt"
         ],
-        "tags": [
-          "Daily Breakfast"
-        ]
+        "tags": []
       }
     },
     "2026-09-09": {
@@ -1051,37 +858,38 @@
       "date": "2026-09-09",
       "day_name": "Wednesday",
       "kcms_lunch": {
-        "main": "Chef Choice Special Entrée",
-        "image": "assets/images/pepperoni_pizza.jpg",
+        "main": "Chicken Drumstick w/ Roll",
+        "image": "assets/images/chicken_drumstick.jpg",
         "sides": [
-          "Garden Salad",
-          "Fresh Fruit",
-          "Choice of Milk"
+          "Mashed Potatoes",
+          "Homemade Broccoli Salad",
+          "Veggie Cup",
+          "Fresh Fruit Cup",
+          "Fresh Grapes"
         ],
         "alts": [
           "PBJ Uncrustable",
-          "Bento Box"
+          "Entrée Salad"
         ],
         "tags": [
-          "Daily Special"
+          "Homestyle",
+          "High Protein"
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Pastry or Cereal",
+        "main": "Egg & Cheese Croissant",
         "image": "assets/images/croissant_bfast.jpg",
         "sides": [
-          "Fresh Fruit Cup",
-          "100% Fruit Juice",
-          "Choice of Low-Fat Milk"
+          "Fresh Fruit",
+          "100% Juice",
+          "Choice of Milk"
         ],
         "daily_alts": [
           "Breakfast Bar",
           "Cereal Bowl",
           "Grahams w/ Yogurt"
         ],
-        "tags": [
-          "Daily Breakfast"
-        ]
+        "tags": []
       }
     },
     "2026-09-10": {
@@ -1089,37 +897,39 @@
       "date": "2026-09-10",
       "day_name": "Thursday",
       "kcms_lunch": {
-        "main": "Chef Choice Special Entrée",
-        "image": "assets/images/pepperoni_pizza.jpg",
+        "main": "Homemade Fajita Chicken Baked Pasta w/ Breadstick",
+        "image": "assets/images/italian_pasta.jpg",
         "sides": [
-          "Garden Salad",
-          "Fresh Fruit",
-          "Choice of Milk"
+          "Steamed Peas",
+          "Garden Side Salad",
+          "Baby Carrots",
+          "Fresh Whole Fruit",
+          "Fresh Berries"
         ],
         "alts": [
           "PBJ Uncrustable",
           "Bento Box"
         ],
         "tags": [
-          "Daily Special"
+          "Homemade",
+          "Chef Special"
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Pastry or Cereal",
-        "image": "assets/images/croissant_bfast.jpg",
+        "main": "Homemade Breakfast Pizza",
+        "image": "assets/images/breakfast_pizza.jpg",
         "sides": [
-          "Fresh Fruit Cup",
-          "100% Fruit Juice",
-          "Choice of Low-Fat Milk"
+          "Seasonal Yogurt Parfait",
+          "Fresh Banana",
+          "Dried Fruit",
+          "Choice of Milk"
         ],
         "daily_alts": [
           "Breakfast Bar",
           "Cereal Bowl",
           "Grahams w/ Yogurt"
         ],
-        "tags": [
-          "Daily Breakfast"
-        ]
+        "tags": []
       }
     },
     "2026-09-11": {
@@ -1127,37 +937,37 @@
       "date": "2026-09-11",
       "day_name": "Friday",
       "kcms_lunch": {
-        "main": "Chef Choice Special Entrée",
-        "image": "assets/images/pepperoni_pizza.jpg",
+        "main": "Crispy Fish Sticks w/ Roll",
+        "image": "assets/images/fish_sandwich.jpg",
         "sides": [
-          "Garden Salad",
-          "Fresh Fruit",
-          "Choice of Milk"
+          "Oven Roasted Fries",
+          "Garden Side Salad",
+          "Cherry Tomatoes",
+          "Fresh Whole Fruit",
+          "Dried Fruit"
         ],
         "alts": [
           "PBJ Uncrustable",
           "Bento Box"
         ],
         "tags": [
-          "Daily Special"
+          "Seafood Friday"
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Pastry or Cereal",
+        "main": "Bagel Bites",
         "image": "assets/images/croissant_bfast.jpg",
         "sides": [
-          "Fresh Fruit Cup",
-          "100% Fruit Juice",
-          "Choice of Low-Fat Milk"
+          "Fresh Fruit",
+          "100% Juice",
+          "Choice of Milk"
         ],
         "daily_alts": [
           "Breakfast Bar",
           "Cereal Bowl",
           "Grahams w/ Yogurt"
         ],
-        "tags": [
-          "Daily Breakfast"
-        ]
+        "tags": []
       }
     },
     "2026-09-14": {
@@ -1165,28 +975,30 @@
       "date": "2026-09-14",
       "day_name": "Monday",
       "kcms_lunch": {
-        "main": "Chef Choice Special Entrée",
-        "image": "assets/images/pepperoni_pizza.jpg",
+        "main": "BBQ Pork w/ Hot Honey Poppers",
+        "image": "assets/images/bacon_cheeseburger.jpg",
         "sides": [
-          "Garden Salad",
-          "Fresh Fruit",
-          "Choice of Milk"
+          "Homemade Baked Beans",
+          "Corn on the Cob",
+          "Garden Side Salad",
+          "Fresh Whole Fruit",
+          "Dried Fruit"
         ],
         "alts": [
           "PBJ Uncrustable",
           "Bento Box"
         ],
         "tags": [
-          "Daily Special"
+          "Southern BBQ"
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Pastry or Cereal",
+        "main": "Breakfast Chicken Biscuit",
         "image": "assets/images/croissant_bfast.jpg",
         "sides": [
-          "Fresh Fruit Cup",
-          "100% Fruit Juice",
-          "Choice of Low-Fat Milk"
+          "Fresh Apple",
+          "100% Juice",
+          "Choice of Milk"
         ],
         "daily_alts": [
           "Breakfast Bar",
@@ -1194,7 +1006,7 @@
           "Grahams w/ Yogurt"
         ],
         "tags": [
-          "Daily Breakfast"
+          "High Protein"
         ]
       }
     },
@@ -1203,28 +1015,31 @@
       "date": "2026-09-15",
       "day_name": "Tuesday",
       "kcms_lunch": {
-        "main": "Chef Choice Special Entrée",
-        "image": "assets/images/pepperoni_pizza.jpg",
+        "main": "Breakfast for Lunch",
+        "image": "assets/images/breakfast_pizza.jpg",
         "sides": [
-          "Garden Salad",
-          "Fresh Fruit",
-          "Choice of Milk"
+          "Seasoned Diced Potatoes",
+          "HOM or Seasonal Vegetable",
+          "Veggie Cup",
+          "Baked Cinnamon Apples",
+          "Fresh Banana"
         ],
         "alts": [
           "PBJ Uncrustable",
-          "Bento Box"
+          "Entrée Salad"
         ],
         "tags": [
-          "Daily Special"
+          "Fan Favorite",
+          "Breakfast for Lunch"
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Pastry or Cereal",
-        "image": "assets/images/croissant_bfast.jpg",
+        "main": "Apple Bites & Berry Trio Parfait",
+        "image": "assets/images/breakfast_pizza.jpg",
         "sides": [
-          "Fresh Fruit Cup",
-          "100% Fruit Juice",
-          "Choice of Low-Fat Milk"
+          "Fresh Orange",
+          "Canned or Frozen Fruit",
+          "Choice of Milk"
         ],
         "daily_alts": [
           "Breakfast Bar",
@@ -1232,7 +1047,7 @@
           "Grahams w/ Yogurt"
         ],
         "tags": [
-          "Daily Breakfast"
+          "Harvest of Month"
         ]
       }
     },
@@ -1241,28 +1056,31 @@
       "date": "2026-09-16",
       "day_name": "Wednesday",
       "kcms_lunch": {
-        "main": "Chef Choice Special Entrée",
-        "image": "assets/images/pepperoni_pizza.jpg",
+        "main": "Pizza Dippers w/ Marinara",
+        "image": "assets/images/pizza_dippers.jpg",
         "sides": [
-          "Garden Salad",
-          "Fresh Fruit",
-          "Choice of Milk"
+          "Steamed Broccoli",
+          "Carrot Sticks",
+          "Cucumber Tomato Salad",
+          "Fresh Fruit Cup",
+          "Fresh Berries"
         ],
         "alts": [
           "PBJ Uncrustable",
-          "Bento Box"
+          "Entrée Salad"
         ],
         "tags": [
-          "Daily Special"
+          "Whole Grain",
+          "Cheesy"
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Pastry or Cereal",
+        "main": "Homemade Smoothie w/ Muffin",
         "image": "assets/images/croissant_bfast.jpg",
         "sides": [
-          "Fresh Fruit Cup",
-          "100% Fruit Juice",
-          "Choice of Low-Fat Milk"
+          "Fresh Fruit",
+          "100% Juice",
+          "Choice of Milk"
         ],
         "daily_alts": [
           "Breakfast Bar",
@@ -1270,7 +1088,7 @@
           "Grahams w/ Yogurt"
         ],
         "tags": [
-          "Daily Breakfast"
+          "Homemade"
         ]
       }
     },
@@ -1279,28 +1097,31 @@
       "date": "2026-09-17",
       "day_name": "Thursday",
       "kcms_lunch": {
-        "main": "Chef Choice Special Entrée",
-        "image": "assets/images/pepperoni_pizza.jpg",
+        "main": "Homemade Beef & Cheese Tacos",
+        "image": "assets/images/beef_tacos.jpg",
         "sides": [
-          "Garden Salad",
-          "Fresh Fruit",
-          "Choice of Milk"
+          "Pinto Beans",
+          "Garden Side Salad",
+          "Mixed Bell Peppers",
+          "Fresh Whole Fruit",
+          "Fresh Melon"
         ],
         "alts": [
           "PBJ Uncrustable",
           "Bento Box"
         ],
         "tags": [
-          "Daily Special"
+          "Fiesta Thursday"
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Pastry or Cereal",
-        "image": "assets/images/croissant_bfast.jpg",
+        "main": "New! Homemade Apple Cinnamon Breakfast Bar",
+        "image": "assets/images/breakfast_pizza.jpg",
         "sides": [
-          "Fresh Fruit Cup",
-          "100% Fruit Juice",
-          "Choice of Low-Fat Milk"
+          "Seasonal Yogurt Parfait",
+          "Fresh Banana",
+          "Dried Fruit",
+          "Choice of Milk"
         ],
         "daily_alts": [
           "Breakfast Bar",
@@ -1308,7 +1129,7 @@
           "Grahams w/ Yogurt"
         ],
         "tags": [
-          "Daily Breakfast"
+          "New Item"
         ]
       }
     },
@@ -1317,28 +1138,31 @@
       "date": "2026-09-18",
       "day_name": "Friday",
       "kcms_lunch": {
-        "main": "Chef Choice Special Entrée",
-        "image": "assets/images/pepperoni_pizza.jpg",
+        "main": "Crispy or Grilled Chicken Sandwich",
+        "image": "assets/images/chicken_tenders.jpg",
         "sides": [
-          "Garden Salad",
-          "Fresh Fruit",
-          "Choice of Milk"
+          "Sweet Potato Fries",
+          "Garden Side Salad",
+          "Veggie Cup",
+          "Fresh Whole Fruit",
+          "Fresh Grapes"
         ],
         "alts": [
           "PBJ Uncrustable",
           "Bento Box"
         ],
         "tags": [
-          "Daily Special"
+          "High Protein",
+          "Student Favorite"
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Pastry or Cereal",
+        "main": "Western Frittata",
         "image": "assets/images/croissant_bfast.jpg",
         "sides": [
-          "Fresh Fruit Cup",
-          "100% Fruit Juice",
-          "Choice of Low-Fat Milk"
+          "Fresh Fruit",
+          "100% Juice",
+          "Choice of Milk"
         ],
         "daily_alts": [
           "Breakfast Bar",
@@ -1346,84 +1170,51 @@
           "Grahams w/ Yogurt"
         ],
         "tags": [
-          "Daily Breakfast"
+          "Egg Special"
         ]
       }
     },
     "2026-09-21": {
-      "is_school_day": true,
-      "date": "2026-09-21",
-      "day_name": "Monday",
-      "kcms_lunch": {
-        "main": "Chef Choice Special Entrée",
-        "image": "assets/images/pepperoni_pizza.jpg",
-        "sides": [
-          "Garden Salad",
-          "Fresh Fruit",
-          "Choice of Milk"
-        ],
-        "alts": [
-          "PBJ Uncrustable",
-          "Bento Box"
-        ],
-        "tags": [
-          "Daily Special"
-        ]
-      },
-      "kcms_breakfast": {
-        "main": "Warm Cinnamon Pastry or Cereal",
-        "image": "assets/images/croissant_bfast.jpg",
-        "sides": [
-          "Fresh Fruit Cup",
-          "100% Fruit Juice",
-          "Choice of Low-Fat Milk"
-        ],
-        "daily_alts": [
-          "Breakfast Bar",
-          "Cereal Bowl",
-          "Grahams w/ Yogurt"
-        ],
-        "tags": [
-          "Daily Breakfast"
-        ]
-      }
+      "is_school_day": false,
+      "note": "NO SCHOOL"
     },
     "2026-09-22": {
       "is_school_day": true,
       "date": "2026-09-22",
       "day_name": "Tuesday",
       "kcms_lunch": {
-        "main": "Chef Choice Special Entrée",
-        "image": "assets/images/pepperoni_pizza.jpg",
+        "main": "Homemade Mac n' Cheese w/ Roll",
+        "image": "assets/images/mac_and_cheese.jpg",
         "sides": [
-          "Garden Salad",
-          "Fresh Fruit",
-          "Choice of Milk"
+          "Steamed Peas",
+          "HOM or Seasonal Vegetable",
+          "Veggie Cup",
+          "Fresh Fruit Cup",
+          "Berries"
         ],
         "alts": [
           "PBJ Uncrustable",
-          "Bento Box"
+          "Entrée Salad"
         ],
         "tags": [
-          "Daily Special"
+          "Comfort Food",
+          "Vegetarian"
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Pastry or Cereal",
-        "image": "assets/images/croissant_bfast.jpg",
+        "main": "Egg Bite w/ Baby Cakes & Berry Trio Parfait",
+        "image": "assets/images/breakfast_pizza.jpg",
         "sides": [
-          "Fresh Fruit Cup",
-          "100% Fruit Juice",
-          "Choice of Low-Fat Milk"
+          "Fresh Orange",
+          "Canned or Frozen Fruit",
+          "Choice of Milk"
         ],
         "daily_alts": [
           "Breakfast Bar",
           "Cereal Bowl",
           "Grahams w/ Yogurt"
         ],
-        "tags": [
-          "Daily Breakfast"
-        ]
+        "tags": []
       }
     },
     "2026-09-23": {
@@ -1431,37 +1222,37 @@
       "date": "2026-09-23",
       "day_name": "Wednesday",
       "kcms_lunch": {
-        "main": "Chef Choice Special Entrée",
-        "image": "assets/images/pepperoni_pizza.jpg",
+        "main": "Beef Dumpling w/ Teriyaki Sauce & Brown Rice",
+        "image": "assets/images/orange_chicken.jpg",
         "sides": [
-          "Garden Salad",
-          "Fresh Fruit",
-          "Choice of Milk"
+          "Roasted Broccoli",
+          "Carrot Coins",
+          "Garden Side Salad",
+          "Fresh Whole Fruit",
+          "Fresh Grapes"
         ],
         "alts": [
           "PBJ Uncrustable",
           "Bento Box"
         ],
         "tags": [
-          "Daily Special"
+          "Asian Fusion"
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Pastry or Cereal",
+        "main": "Egg & Cheese Croissant",
         "image": "assets/images/croissant_bfast.jpg",
         "sides": [
-          "Fresh Fruit Cup",
-          "100% Fruit Juice",
-          "Choice of Low-Fat Milk"
+          "Fresh Fruit",
+          "100% Juice",
+          "Choice of Milk"
         ],
         "daily_alts": [
           "Breakfast Bar",
           "Cereal Bowl",
           "Grahams w/ Yogurt"
         ],
-        "tags": [
-          "Daily Breakfast"
-        ]
+        "tags": []
       }
     },
     "2026-09-24": {
@@ -1469,37 +1260,39 @@
       "date": "2026-09-24",
       "day_name": "Thursday",
       "kcms_lunch": {
-        "main": "Chef Choice Special Entrée",
-        "image": "assets/images/pepperoni_pizza.jpg",
+        "main": "Walking Tacos w/ Toppings",
+        "image": "assets/images/beef_tacos.jpg",
         "sides": [
-          "Garden Salad",
-          "Fresh Fruit",
-          "Choice of Milk"
+          "Roasted Sweet Potatoes",
+          "Black Bean & Corn Salad",
+          "Veggie Cup",
+          "Fresh Fruit Cup",
+          "Dried Fruit"
         ],
         "alts": [
           "PBJ Uncrustable",
-          "Bento Box"
+          "Entrée Salad"
         ],
         "tags": [
-          "Daily Special"
+          "Tex-Mex",
+          "Popular"
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Pastry or Cereal",
-        "image": "assets/images/croissant_bfast.jpg",
+        "main": "Homemade Breakfast Pizza",
+        "image": "assets/images/breakfast_pizza.jpg",
         "sides": [
-          "Fresh Fruit Cup",
-          "100% Fruit Juice",
-          "Choice of Low-Fat Milk"
+          "Seasonal Yogurt Parfait",
+          "Fresh Banana",
+          "Dried Fruit",
+          "Choice of Milk"
         ],
         "daily_alts": [
           "Breakfast Bar",
           "Cereal Bowl",
           "Grahams w/ Yogurt"
         ],
-        "tags": [
-          "Daily Breakfast"
-        ]
+        "tags": []
       }
     },
     "2026-09-25": {
@@ -1507,37 +1300,38 @@
       "date": "2026-09-25",
       "day_name": "Friday",
       "kcms_lunch": {
-        "main": "Chef Choice Special Entrée",
-        "image": "assets/images/pepperoni_pizza.jpg",
+        "main": "Cheeseburger",
+        "image": "assets/images/bacon_cheeseburger.jpg",
         "sides": [
-          "Garden Salad",
-          "Fresh Fruit",
-          "Choice of Milk"
+          "Potato Wedges",
+          "Homemade Baked Beans",
+          "Garden Side Salad",
+          "Fresh Whole Fruit",
+          "Fresh Banana"
         ],
         "alts": [
           "PBJ Uncrustable",
           "Bento Box"
         ],
         "tags": [
-          "Daily Special"
+          "All-American",
+          "Student Favorite"
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Pastry or Cereal",
+        "main": "Bagel Bites w/ Cream Cheese",
         "image": "assets/images/croissant_bfast.jpg",
         "sides": [
-          "Fresh Fruit Cup",
-          "100% Fruit Juice",
-          "Choice of Low-Fat Milk"
+          "Fresh Fruit",
+          "100% Juice",
+          "Choice of Milk"
         ],
         "daily_alts": [
           "Breakfast Bar",
           "Cereal Bowl",
           "Grahams w/ Yogurt"
         ],
-        "tags": [
-          "Daily Breakfast"
-        ]
+        "tags": []
       }
     },
     "2026-09-28": {
@@ -1545,28 +1339,31 @@
       "date": "2026-09-28",
       "day_name": "Monday",
       "kcms_lunch": {
-        "main": "Chef Choice Special Entrée",
-        "image": "assets/images/pepperoni_pizza.jpg",
+        "main": "Orange Chicken w/ Homemade Fried Rice",
+        "image": "assets/images/orange_chicken.jpg",
         "sides": [
-          "Garden Salad",
-          "Fresh Fruit",
-          "Choice of Milk"
+          "Mixed Vegetables",
+          "Garden Side Salad",
+          "Fresh Cucumber",
+          "Fresh Whole Fruit",
+          "Fresh Banana"
         ],
         "alts": [
           "PBJ Uncrustable",
           "Bento Box"
         ],
         "tags": [
-          "Daily Special"
+          "Popular",
+          "Chef Special"
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Pastry or Cereal",
+        "main": "Breakfast Chicken Biscuit",
         "image": "assets/images/croissant_bfast.jpg",
         "sides": [
-          "Fresh Fruit Cup",
-          "100% Fruit Juice",
-          "Choice of Low-Fat Milk"
+          "Fresh Apple",
+          "100% Juice",
+          "Choice of Milk"
         ],
         "daily_alts": [
           "Breakfast Bar",
@@ -1574,7 +1371,7 @@
           "Grahams w/ Yogurt"
         ],
         "tags": [
-          "Daily Breakfast"
+          "High Protein"
         ]
       }
     },
@@ -1583,37 +1380,37 @@
       "date": "2026-09-29",
       "day_name": "Tuesday",
       "kcms_lunch": {
-        "main": "Chef Choice Special Entrée",
-        "image": "assets/images/pepperoni_pizza.jpg",
+        "main": "Turkey Hot Dog w/ Homemade Chili",
+        "image": "assets/images/bacon_cheeseburger.jpg",
         "sides": [
-          "Garden Salad",
-          "Fresh Fruit",
-          "Choice of Milk"
+          "Roasted Broccoli",
+          "HOM or Seasonal Vegetable",
+          "Veggie Cup",
+          "Fresh Fruit Cup",
+          "Fresh Melon"
         ],
         "alts": [
           "PBJ Uncrustable",
-          "Bento Box"
+          "Entrée Salad"
         ],
         "tags": [
-          "Daily Special"
+          "Harvest of the Month"
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Pastry or Cereal",
-        "image": "assets/images/croissant_bfast.jpg",
+        "main": "Breakfast Stacker & Berry Trio Parfait",
+        "image": "assets/images/breakfast_pizza.jpg",
         "sides": [
-          "Fresh Fruit Cup",
-          "100% Fruit Juice",
-          "Choice of Low-Fat Milk"
+          "Fresh Orange",
+          "Canned or Frozen Fruit",
+          "Choice of Milk"
         ],
         "daily_alts": [
           "Breakfast Bar",
           "Cereal Bowl",
           "Grahams w/ Yogurt"
         ],
-        "tags": [
-          "Daily Breakfast"
-        ]
+        "tags": []
       }
     },
     "2026-09-30": {
@@ -1621,37 +1418,38 @@
       "date": "2026-09-30",
       "day_name": "Wednesday",
       "kcms_lunch": {
-        "main": "Chef Choice Special Entrée",
-        "image": "assets/images/pepperoni_pizza.jpg",
+        "main": "Chicken Drumstick w/ Roll",
+        "image": "assets/images/chicken_drumstick.jpg",
         "sides": [
-          "Garden Salad",
-          "Fresh Fruit",
-          "Choice of Milk"
+          "Mashed Potatoes",
+          "Homemade Broccoli Salad",
+          "Veggie Cup",
+          "Fresh Fruit Cup",
+          "Fresh Grapes"
         ],
         "alts": [
           "PBJ Uncrustable",
-          "Bento Box"
+          "Entrée Salad"
         ],
         "tags": [
-          "Daily Special"
+          "Homestyle",
+          "High Protein"
         ]
       },
       "kcms_breakfast": {
-        "main": "Warm Cinnamon Pastry or Cereal",
+        "main": "Homemade Smoothie w/ Muffin",
         "image": "assets/images/croissant_bfast.jpg",
         "sides": [
-          "Fresh Fruit Cup",
-          "100% Fruit Juice",
-          "Choice of Low-Fat Milk"
+          "Fresh Fruit",
+          "100% Juice",
+          "Choice of Milk"
         ],
         "daily_alts": [
           "Breakfast Bar",
           "Cereal Bowl",
           "Grahams w/ Yogurt"
         ],
-        "tags": [
-          "Daily Breakfast"
-        ]
+        "tags": []
       }
     }
   }
